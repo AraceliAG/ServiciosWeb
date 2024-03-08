@@ -74,10 +74,188 @@ def extraer_clima():
                 })
        
     driver.close()
+    
+def extraer_clima2():
+    driver = webdriver.Edge()
 
-# Repite el mismo proceso para las funciones extraer_clima2, extraer_clima3, extraer_clima4, extraer_clima5
+    for url in start_urls1:
+        driver.get(url)
+        time.sleep(2)
 
-schedule.every(2).minutes.do(extraer_clima)
+        ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
+        current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
+        real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
+        
+    for url in second_urls1:
+        driver.get(url)
+        time.sleep(2)
+         
+        air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
+        pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
+        uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
+        
+
+    for url in third_url1:
+        driver.get(url)
+        time.sleep(2)
+        
+        precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
+      
+
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        collection.insert_one({
+                    "ciudad": ciudad,
+                    "current": current,
+                    "real_feal": real_feal,
+                    "air_quality": air_quality,
+                    "pollen": pollen,
+                    "uv_index": uv_index,
+                    "precipitation": precipitation,
+                    "timestamp": current_datetime
+                })
+
+    driver.close()
+
+def extraer_clima3():
+    driver = webdriver.Edge()
+
+    for url in start_urls2:
+        driver.get(url)
+        time.sleep(2)
+
+        ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
+        current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
+        real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
+        
+    for url in second_urls2:
+        driver.get(url)
+        time.sleep(2)
+         
+        air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
+        pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
+        uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
+        
+
+    for url in third_url2:
+        driver.get(url)
+        time.sleep(2)
+        
+        precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
+      
+
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        collection.insert_one({
+                    "ciudad": ciudad,
+                    "current": current,
+                    "real_feal": real_feal,
+                    "air_quality": air_quality,
+                    "pollen": pollen,
+                    "uv_index": uv_index,
+                    "precipitation": precipitation,
+                    "timestamp": current_datetime
+                })
+
+    driver.close()    
+
+def extraer_clima4():
+    driver = webdriver.Edge()
+
+    for url in start_urls3:
+        driver.get(url)
+        time.sleep(2)
+
+        ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
+        current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
+        real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
+        
+    for url in second_urls3:
+        driver.get(url)
+        time.sleep(2)
+         
+        air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
+        pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
+        uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
+        
+
+    for url in third_url3:
+        driver.get(url)
+        time.sleep(2)
+        
+        precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
+      
+
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        collection.insert_one({
+                    "ciudad": ciudad,
+                    "current": current,
+                    "real_feal": real_feal,
+                    "air_quality": air_quality,
+                    "pollen": pollen,
+                    "uv_index": uv_index,
+                    "precipitation": precipitation,
+                    "timestamp": current_datetime
+                })
+
+    driver.close()
+    
+def extraer_clima5():
+    driver = webdriver.Edge()
+
+    for url in start_urls4:
+        driver.get(url)
+        time.sleep(2)
+
+        ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
+        current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
+        real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
+        
+    for url in second_urls4:
+        driver.get(url)
+        time.sleep(2)
+         
+        air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
+        pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
+        uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
+        
+
+    for url in third_url4:
+        driver.get(url)
+        time.sleep(2)
+        
+        precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
+      
+
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        collection.insert_one({
+                    "ciudad": ciudad,
+                    "current": current,
+                    "real_feal": real_feal,
+                    "air_quality": air_quality,
+                    "pollen": pollen,
+                    "uv_index": uv_index,
+                    "precipitation": precipitation,
+                    "timestamp": current_datetime
+                })
+
+    driver.close()
+        
+
+schedule.every(3).minutes.do(extraer_clima)
+schedule.every(3).minutes.do(extraer_clima2)
+schedule.every(3).minutes.do(extraer_clima3)
+schedule.every(3).minutes.do(extraer_clima4)
+schedule.every(3).minutes.do(extraer_clima5)
+
+
+extraer_clima()
+extraer_clima2()
+extraer_clima3()
+extraer_clima4()
+extraer_clima5()
 
 while True:
     schedule.run_pending()
