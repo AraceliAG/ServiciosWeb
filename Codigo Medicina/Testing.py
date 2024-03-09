@@ -15,33 +15,87 @@ db = client["Medicamentos"]
 # Selecciona la colección en la que deseas guardar los datos
 collection = db["Datos"]
 
-farmacias_guadalajara = ['']
-farmacias_del_ahorro = ['']
-walmart = ['']
-soriana = ['']
+farmacias_guadalajara = ['https://www.farmaciasguadalajara.com/aspirina-500-mg-40-tabletas-35645#']
+farmacias_del_ahorro = ['https://www.fahorro.com/aspirina-analgesico-40-tabletas.html']
+walmart = ['https://super.walmart.com.mx/ip/aspirina-40-tabletas-500-mg/00750100849196?from=/search']
+soriana = ['https://www.soriana.com/analgesico-aspirina-para-dolor-de-cabeza-dolor-corporal-y-fiebre-40-tabletas-nbsp/361111.html']
 
 
 
 def extraer():
     driver = webdriver.Edge()
 
-    for url in start_urls:
+    for url in farmacias_guadalajara:
         driver.get(url)
         time.sleep(2)
 
-        name = driver.find_element(By.XPATH, '').text
-        price = driver.find_element(By.XPATH, '').text
-        availability = driver.find_element(By.XPATH, '').text
+        farmacia = "Farmacias Guadalajara"
+        name = driver.find_element(By.XPATH, '//*[@id="fgProductName"]').text
+        price = driver.find_element(By.XPATH, '//*[@id="offerPrice_3074457345616708123"]').text
+       
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
+                # Inserta los datos en MongoDB
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })
+         
+    """  for url in farmacias_del_ahorro:
+        driver.get(url)
+        time.sleep(2)
+
+        farmacia = "Farmacias del Ahorro"
+        name = driver.find_element(By.XPATH, '//*[@id="maincontent"]/div[2]/div/div[1]/div[1]/h1/span').text
+        price = driver.find_element(By.XPATH, '//*[@id="product-price-48539"]/span').text
+       
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                  
+                  # Inserta los datos en MongoDB
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                }) 
+    """   
+        
+    for url in walmart:
+        driver.get(url)
+        time.sleep(2)
+
+        farmacia = "Walmart"
+        name = driver.find_element(By.XPATH, '//*[@id="main-title"]').text
+        price = driver.find_element(By.XPATH, '//*[@id="maincontent"]/section/main/div[2]/div[2]/div/div[1]/div/div/div[2]/div/div/div[2]/div/div/div[1]/span/span[2]/span').text
+        
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+                # Inserta los datos en MongoDB
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })       
     
+    for url in soriana:
+        driver.get(url)
+        time.sleep(2)
         
+        farmacia = "Soriana"
+        name = driver.find_element(By.XPATH, '//*[@id="maincontent"]/div[3]/div/div/div[1]/h1').text
+        price = driver.find_element(By.XPATH, '//*[@id="maincontent"]/div[3]/div/div/div[3]/div[3]/div[1]/div/div/div[1]/div[1]/span/span').text
+       
+                   
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 
                 # Inserta los datos en MongoDB
         collection.insert_one({
+                    "Establecimiento": farmacia,
                     "Nombre": name,
                     "Precio": price,
-                    "Disponibilidad": availability,
                     "timestamp": current_datetime
                 })
        
@@ -49,7 +103,7 @@ def extraer():
     
 
 
-schedule.every(3).minutes.do(extraer)
+schedule.every(1).minutes.do(extraer)
 
 
 extraer()
