@@ -22,7 +22,7 @@ soriana = ['https://www.soriana.com/analgesico-aspirina-para-dolor-de-cabeza-dol
 
 
 
-def extraer():
+def aspirina():
     driver = webdriver.Edge()
 
     for url in farmacias_guadalajara:
@@ -72,7 +72,6 @@ def extraer():
         
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-                # Inserta los datos en MongoDB
         collection.insert_one({
                     "Establecimiento": farmacia,
                     "Nombre": name,
@@ -91,7 +90,6 @@ def extraer():
                    
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 
-                # Inserta los datos en MongoDB
         collection.insert_one({
                     "Establecimiento": farmacia,
                     "Nombre": name,
@@ -102,12 +100,190 @@ def extraer():
     driver.close()
     
 
+def suero():
+    driver = webdriver.Edge()
 
-schedule.every(1).minutes.do(extraer)
+    for url in farmacias_guadalajara:
+        driver.get(url)
+        time.sleep(2)
+
+        farmacia = "Farmacias Guadalajara"
+        name = driver.find_element(By.XPATH, '//*[@id="fgProductName"]').text
+        price = driver.find_element(By.XPATH, '//*[@id="offerPrice_3074457345616708123"]').text
+       
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })
+           
+        
+    for url in walmart:
+        driver.get(url)
+        time.sleep(2)
+
+        farmacia = "Walmart"
+        name = driver.find_element(By.XPATH, '').text
+        price = driver.find_element(By.XPATH, '').text
+        
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })       
+    
+    for url in soriana:
+        driver.get(url)
+        time.sleep(2)
+        
+        farmacia = "Soriana"
+        name = driver.find_element(By.XPATH, '').text
+        price = driver.find_element(By.XPATH, '').text
+       
+                   
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })
+       
+    driver.close()
+
+def omeprazol():
+    driver = webdriver.Edge()
+
+    for url in farmacias_guadalajara:
+        driver.get(url)
+        time.sleep(2)
+
+        farmacia = "Farmacias Guadalajara"
+        name = driver.find_element(By.XPATH, '').text
+        price = driver.find_element(By.XPATH, '').text
+       
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })
+         
+   
+    for url in walmart:
+        driver.get(url)
+        time.sleep(2)
+
+        farmacia = "Walmart"
+        name = driver.find_element(By.XPATH, '').text
+        price = driver.find_element(By.XPATH, '').text
+        
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })       
+    
+    for url in soriana:
+        driver.get(url)
+        time.sleep(2)
+        
+        farmacia = "Soriana"
+        name = driver.find_element(By.XPATH, '').text
+        price = driver.find_element(By.XPATH, '').text
+       
+                   
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })
+       
+    driver.close()
+
+def paracetamol():
+    driver = webdriver.Edge()
+
+    for url in farmacias_guadalajara:
+        driver.get(url)
+        time.sleep(2)
+
+        farmacia = "Farmacias Guadalajara"
+        name = driver.find_element(By.XPATH, '').text
+        price = driver.find_element(By.XPATH, '').text
+       
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })
+           
+        
+    for url in walmart:
+        driver.get(url)
+        time.sleep(2)
+
+        farmacia = "Walmart"
+        name = driver.find_element(By.XPATH, '').text
+        price = driver.find_element(By.XPATH, '').text
+        
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })       
+    
+    for url in soriana:
+        driver.get(url)
+        time.sleep(2)
+        
+        farmacia = "Soriana"
+        name = driver.find_element(By.XPATH, '').text
+        price = driver.find_element(By.XPATH, '').text
+                       
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                
+        
+        collection.insert_one({
+                    "Establecimiento": farmacia,
+                    "Nombre": name,
+                    "Precio": price,
+                    "timestamp": current_datetime
+                })
+       
+    driver.close()
+
+schedule.every(1).minutes.do(aspirina)
+schedule.every(1).minutes.do(suero)
+schedule.every(1).minutes.do(omeprazol)
+schedule.every(1).minutes.do(paracetamol)
 
 
-extraer()
-
+aspirina()
+suero()
+omeprazol()
+paracetamol()
 
 while True:
     schedule.run_pending()
