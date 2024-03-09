@@ -1,30 +1,36 @@
-import pymongo
 import csv
+import pymongo
 
 # Conéctate a tu clúster de MongoDB
 client = pymongo.MongoClient("mongodb+srv://POE:Manu7190@cluster0.avhhgxe.mongodb.net/?retryWrites=true&w=majority")
 
 # Selecciona la base de datos que deseas utilizar
-db = client["Medicina"]
+db = client["Medicamentos"]
 
-# Selecciona la colección de la que deseas exportar los datos
+# Selecciona la colección en la que has guardado los datos
 collection = db["Datos"]
 
-# Campos a exportar
-fields = ["Establecimiento", "Nombre", "Precio", "timestamp"]
+# Obtén todos los documentos de la colección
+data = collection.find()
 
 # Nombre del archivo CSV de salida
-csv_file = "datos_medicina.csv"
+csv_file = "datos_medicamentos.csv"
 
-# Abrir el archivo CSV en modo escritura
-with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
-    writer = csv.DictWriter(file, fieldnames=fields)
-    
-    # Escribir el encabezado del archivo CSV
-    writer.writeheader()
-    
-    # Iterar sobre los documentos en la colección y escribirlos en el archivo CSV
-    for document in collection.find():
-        writer.writerow({field: document[field] for field in fields})
+# Encabezados del archivo CSV
+fields = ["Establecimiento", "Nombre", "Precio", "timestamp"]
 
-print("Exportación completada. Los datos han sido guardados en", csv_file)
+# Abre el archivo CSV en modo escritura
+with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
+    # Crea un escritor CSV
+    csvwriter = csv.DictWriter(csvfile, fieldnames=fields)
+    
+    # Escribe los encabezados en el archivo CSV
+    csvwriter.writeheader()
+    
+    # Itera sobre los documentos en la colección
+    for doc in data:
+        # Elimina el campo '_id' del documento
+        doc.pop('_id', None)
+        # Escribe cada documento como una fila en el archivo CSV
+        csvwriter.writerow(doc)
+
