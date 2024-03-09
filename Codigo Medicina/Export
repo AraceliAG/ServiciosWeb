@@ -11,10 +11,10 @@ db = client["Medicina"]
 collection = db["Datos"]
 
 # Campos a exportar
-fields = ["Establecimiento","Nombre","Precio","timestamp"]
+fields = ["Establecimiento", "Nombre", "Precio", "timestamp"]
 
 # Nombre del archivo CSV de salida
-csv_file = "datos_exportados.csv"
+csv_file = "datos_medicina.csv"
 
 # Abrir el archivo CSV en modo escritura
 with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
