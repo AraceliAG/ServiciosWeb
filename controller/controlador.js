@@ -45,7 +45,7 @@ module.exports = {
      mostrarGrafico:function(res, req) {
         // No es necesario abrir el archivo en el navegador cuando se genera en Node.js
         // console.log("El archivo del gráfico interactivo se ha generado correctamente.");
-        res.render('index', { title: 'Express' });
+        res.render('index');
     }
 
 }
