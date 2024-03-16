@@ -1,4 +1,4 @@
-const cargarDatos = require('./modelo');
+const cargarDatos = require('./model');
 const plotly = require('plotly')('username', 'apiKey');
 const fs = require('fs');
 
