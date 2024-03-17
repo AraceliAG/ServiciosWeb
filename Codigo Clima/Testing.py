@@ -34,9 +34,22 @@ third_url3 = ['https://www.wunderground.com/precipitation/mx/tonalá?cm_ven=loca
 third_url4 = ['https://www.wunderground.com/precipitation/mx/tlajomulco-de-zúñiga/ITLAJO3?cm_ven=localwx_modprecip']
 
 
+
+def insertarDatos (ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime):
+    collection.insert_one({
+                    "ciudad": ciudad,
+                    "current": current,
+                    "real_feal": real_feal,
+                    "air_quality": air_quality,
+                    "pollen": pollen,
+                    "uv_index": uv_index,
+                    "precipitation": precipitation,
+                    "timestamp": current_datetime
+                })
+    
 def extraer_clima():
     driver = webdriver.Edge()
-
+    
     for url in start_urls:
         driver.get(url)
         time.sleep(2)
@@ -63,17 +76,7 @@ def extraer_clima():
         
                 current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 
-                # Inserta los datos en MongoDB
-                collection.insert_one({
-                    "ciudad": ciudad,
-                    "current": current,
-                    "real_feal": real_feal,
-                    "air_quality": air_quality,
-                    "pollen": pollen,
-                    "uv_index": uv_index,
-                    "precipitation": precipitation,
-                    "timestamp": current_datetime
-                })
+                insertarDatos(ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime)
        
     driver.close()
     
@@ -106,16 +109,7 @@ def extraer_clima2():
 
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
-        collection.insert_one({
-                    "ciudad": ciudad,
-                    "current": current,
-                    "real_feal": real_feal,
-                    "air_quality": air_quality,
-                    "pollen": pollen,
-                    "uv_index": uv_index,
-                    "precipitation": precipitation,
-                    "timestamp": current_datetime
-                })
+        insertarDatos(ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime)
 
     driver.close()
 
@@ -159,7 +153,7 @@ def extraer_clima3():
                     "timestamp": current_datetime
                 })
 
-    driver.close()    
+    # driver.close()    
 
 def extraer_clima4():
     driver = webdriver.Edge()
@@ -201,7 +195,7 @@ def extraer_clima4():
                     "timestamp": current_datetime
                 })
 
-    driver.close()
+    # driver.close()
     
 def extraer_clima5():
     driver = webdriver.Edge()
@@ -243,7 +237,7 @@ def extraer_clima5():
                     "timestamp": current_datetime
                 })
 
-    driver.close()
+    # driver.close()
         
 
 schedule.every(3).minutes.do(extraer_clima)
