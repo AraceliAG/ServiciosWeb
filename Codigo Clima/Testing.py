@@ -67,7 +67,6 @@ def extraer_clima():
         pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
         uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
         
-        
         third_urlv = third_url[i]
         driver.get(third_urlv)
         time.sleep(2)
@@ -79,7 +78,6 @@ def extraer_clima():
     driver.close()
 
 schedule.every(3).minutes.do(extraer_clima)
-
 extraer_clima()
 
 while True:
