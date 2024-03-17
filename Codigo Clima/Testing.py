@@ -46,167 +46,41 @@ def insertarDatos (ciudad, current, real_feal, air_quality, pollen, uv_index, pr
                     "precipitation": precipitation,
                     "timestamp": current_datetime
                 })
-    
+
 def extraer_clima():
+
     driver = webdriver.Edge()
     
-    url = start_urls[0]
-    driver.get(url)
-    time.sleep(2)
-
-    ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
-    current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
-    real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
-     
-    ciudad= ciudad.replace(', Mexico Weather Conditions', '')
+    for i, url in enumerate (start_urls):
+        driver.get(url)
+        time.sleep(2)
     
-    url = second_urls[0]
-    driver.get(url)
-    time.sleep(2)
-         
-    air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
-    pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
-    uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
+        ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
+        current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
+        real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
+        ciudad= ciudad.replace(', Mexico Weather Conditions', '')
         
-    url = third_url[0]
-    driver.get(url)
-    time.sleep(2)
+        second_url = second_urls[i]
+        driver.get(second_url)
+        time.sleep(2)
+        air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
+        pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
+        uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
         
-    precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
-    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")       
-    insertarDatos(ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime)
-
-    driver.close()
-    
-    
-def extraer_clima2():
-    driver = webdriver.Edge()
-    url = start_urls[1]
-    driver.get(url)
-    time.sleep(2)
-
-    ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
-    current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
-    real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
-    ciudad= ciudad.replace(', Mexico Weather Conditions', '')
-    
-    url = second_urls[1]
-    driver.get(url)
-    time.sleep(2)
-         
-    air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
-    pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
-    uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
         
-    url = third_url[1]
-    driver.get(url)
-    time.sleep(2)
+        third_urlv = third_url[i]
+        driver.get(third_urlv)
+        time.sleep(2)
+        precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
-    precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
-    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")      
-    insertarDatos(ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime)
-       
+        insertarDatos(ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime)
+        
     driver.close()
 
-def extraer_clima3():
-    driver = webdriver.Edge()
-    url = start_urls[2]
-    driver.get(url)
-    time.sleep(2)
-
-    ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
-    current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
-    real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
-    ciudad= ciudad.replace(', Mexico Weather Conditions', '')
-    
-    url = second_urls[2]
-    driver.get(url)
-    time.sleep(2)
-         
-    air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
-    pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
-    uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
-        
-    url = third_url[2]
-    driver.get(url)
-    time.sleep(2)
-        
-    precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
-    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")      
-    insertarDatos(ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime)
-       
-    driver.close()
-
-def extraer_clima4():
-    driver = webdriver.Edge()
-    url = start_urls[3]
-    driver.get(url)
-    time.sleep(2)
-
-    ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
-    current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
-    real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
-    ciudad= ciudad.replace(', Mexico Weather Conditions', '')
-    
-    url = second_urls[3]
-    driver.get(url)
-    time.sleep(2)
-         
-    air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
-    pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
-    uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
-        
-    url = third_url[3]
-    driver.get(url)
-    time.sleep(2)
-        
-    precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
-    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")      
-    insertarDatos(ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime)
-       
-    driver.close()
-
-def extraer_clima5():
-    driver = webdriver.Edge()
-    url = start_urls[4]
-    driver.get(url)
-    time.sleep(2)
-
-    ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
-    current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
-    real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
-    ciudad= ciudad.replace(', Mexico Weather Conditions', '')
-    
-    url = second_urls[4]
-    driver.get(url)
-    time.sleep(2)
-         
-    air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
-    pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
-    uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
-        
-    url = third_url[4]
-    driver.get(url)
-    time.sleep(2)
-        
-    precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
-    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")      
-    insertarDatos(ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime)
-       
-    driver.close()
-    
-    
 schedule.every(3).minutes.do(extraer_clima)
-schedule.every(3).minutes.do(extraer_clima2)
-schedule.every(3).minutes.do(extraer_clima3)
-schedule.every(3).minutes.do(extraer_clima4)
-schedule.every(3).minutes.do(extraer_clima5)
 
 extraer_clima()
-extraer_clima2()
-extraer_clima3()
-extraer_clima4()
-extraer_clima5()
 
 while True:
     schedule.run_pending()
