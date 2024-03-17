@@ -81,7 +81,6 @@ def extraer_clima():
     
 def extraer_clima2():
     driver = webdriver.Edge()
-    
     url = start_urls[1]
     driver.get(url)
     time.sleep(2)
@@ -111,7 +110,6 @@ def extraer_clima2():
 
 def extraer_clima3():
     driver = webdriver.Edge()
-    
     url = start_urls[2]
     driver.get(url)
     time.sleep(2)
@@ -141,7 +139,6 @@ def extraer_clima3():
 
 def extraer_clima4():
     driver = webdriver.Edge()
-    
     url = start_urls[3]
     driver.get(url)
     time.sleep(2)
@@ -171,7 +168,6 @@ def extraer_clima4():
 
 def extraer_clima5():
     driver = webdriver.Edge()
-    
     url = start_urls[4]
     driver.get(url)
     time.sleep(2)
