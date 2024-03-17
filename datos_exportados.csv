@@ -18,7 +18,6 @@ ciudad,current,real_feal,air_quality,pollen,uv_index,precipitation,timestamp
 "Guadalajara, Jalisco, Mexico Weather Conditions",64 °F,64°,52,HIGH,0,Expect dry conditions for the next 6 hours.,2024-03-07 23:09:27
 "Zapopan, Jalisco, Mexico Weather Conditions",65 °F,65°,52,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-07 23:09:43
 "Tlaquepaque, Jalisco, Mexico Weather Conditions",66 °F,66°,53,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-07 23:10:03
-"Tonalá, Jalisco, Mexico Weather Conditions",64 °F,64°,53,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-07 23:10:20
 "Tlajomulco de Zúñiga, Jalisco, Mexico Weather Conditions",64 °F,64°,52,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-07 23:10:36
 "Guadalajara, Jalisco, Mexico Weather Conditions",64 °F,64°,53,HIGH,0,Expect dry conditions for the next 6 hours.,2024-03-07 23:12:45
 "Zapopan, Jalisco, Mexico Weather Conditions",65 °F,65°,52,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-07 23:13:05
@@ -121,66 +120,7 @@ ciudad,current,real_feal,air_quality,pollen,uv_index,precipitation,timestamp
 "Tlajomulco de Zúñiga, Jalisco",80 °F,79°,44,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:13:54
 "Tlajomulco de Zúñiga, Jalisco",80 °F,79°,44,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:13:57
 "Tlajomulco de Zúñiga, Jalisco",80 °F,79°,44,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:14:02
-"Guadalajara, Jalisco",81 °F,80°,,,,,
-"Zapopan, Jalisco",80 °F,79°,,,,,
-"Tlaquepaque, Jalisco",79 °F,78°,,,,,
-"Tonalá, Jalisco",81 °F,81°,,,,,
-"Tlajomulco de Zúñiga, Jalisco",81 °F,79°,,,,,
-,,,51,moderate,11,,
-,,,48,moderate,11,,
-,,,51,moderate,11,,
-,,,52,moderate,10,,
-,,,44,moderate,11,,
-,,,44,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:20:28
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:20:31
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:20:36
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:20:40
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:20:43
-,,,,,,Expect dry conditions for the next 6 hours.,
-"Guadalajara, Jalisco",81 °F,80°,,,,,
-,,,51,moderate,11,,
-"Zapopan, Jalisco",80 °F,79°,,,,,
-,,,48,moderate,11,,
-"Tlaquepaque, Jalisco",79 °F,77°,,,,,
-,,,51,moderate,11,,
-"Tonalá, Jalisco",81 °F,81°,,,,,
-,,,52,moderate,10,,
-"Tlajomulco de Zúñiga, Jalisco",82 °F,80°,,,,,
-,,,44,moderate,11,,
-,,,44,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:26:18
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:26:22
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:26:26
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:26:30
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:26:34
-,,,,,,Expect dry conditions for the next 6 hours.,
-"Guadalajara, Jalisco",81 °F,80°,,,,,
-,,,51,moderate,11,,
-"Zapopan, Jalisco",80 °F,79°,,,,,
-,,,48,moderate,11,,
-"Tlaquepaque, Jalisco",79 °F,78°,,,,,
-,,,51,moderate,11,,
-"Tonalá, Jalisco",81 °F,81°,,,,,
-,,,52,moderate,10,,
-"Tlajomulco de Zúñiga, Jalisco",82 °F,80°,,,,,
-,,,44,moderate,11,,
 ,,,44,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:28:21
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:28:24
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:28:27
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:28:29
-,,,,,,Expect dry conditions for the next 6 hours.,
-,,,,,,Expect dry conditions for the next 6 hours.,2024-03-17 11:28:33
-,,,,,,Expect dry conditions for the next 6 hours.,
 "Guadalajara, Jalisco",82 °F,81°,51,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:37:31
 "Zapopan, Jalisco",80 °F,79°,48,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:37:47
 "Tlaquepaque, Jalisco",80 °F,79°,51,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:37:59
@@ -196,3 +136,14 @@ ciudad,current,real_feal,air_quality,pollen,uv_index,precipitation,timestamp
 "Tlaquepaque, Jalisco",81 °F,80°,51,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:46:16
 "Tonalá, Jalisco",83 °F,83°,52,moderate,10,Expect dry conditions for the next 6 hours.,2024-03-17 11:46:37
 "Tlajomulco de Zúñiga, Jalisco",83 °F,80°,44,moderate,11,Expect dry conditions for the next 6 hours.,2024-03-17 11:46:58
+"Guadalajara, Jalisco",89 °F,85°,48,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 15:57:59
+"Guadalajara, Jalisco",89 °F,85°,48,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 15:58:47
+"Zapopan, Jalisco",85 °F,82°,45,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 15:59:00
+"Tlaquepaque, Jalisco",87 °F,84°,49,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 15:59:16
+"Tonalá, Jalisco",88 °F,88°,50,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 15:59:29
+"Tlajomulco de Zúñiga, Jalisco",90 °F,86°,41,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 15:59:45
+"Guadalajara, Jalisco",89 °F,85°,48,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 16:00:49
+"Zapopan, Jalisco",85 °F,82°,45,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 16:01:00
+"Tlaquepaque, Jalisco",87 °F,84°,49,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 16:01:10
+"Tonalá, Jalisco",88 °F,88°,50,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 16:01:20
+"Tlajomulco de Zúñiga, Jalisco",90 °F,86°,41,moderate,0,Expect dry conditions for the next 6 hours.,2024-03-17 16:01:30
