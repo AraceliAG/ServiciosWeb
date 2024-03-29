@@ -4,83 +4,81 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import datetime
 import pymongo
+from datetime import datetime, timedelta
+from selenium.common.exceptions import NoSuchElementException, TimeoutException, WebDriverException
 
 # Conéctate a tu clúster de MongoDB
 client = pymongo.MongoClient("mongodb+srv://POE:Manu7190@cluster0.avhhgxe.mongodb.net/?retryWrites=true&w=majority")
 #mongodb+srv://Ara:<cEGeCjYRsWoluKg5>@clustertest.p1rrutb.mongodb.net/
 
 # Selecciona la base de datos que deseas utilizar
-db = client["Clima_Test"]
+db = client["Historico"]
 
 # Selecciona la colección en la que deseas guardar los datos
 collection = db["Datos"]
 
-start_urls = ['https://www.wunderground.com/weather/mx/guadalajara/KJAGUADA1',
-              'https://www.wunderground.com/weather/mx/zapopan/IZAPOP11',
-              'https://www.wunderground.com/weather/mx/tlaquepaque/ITLAQU4',
-              'https://www.wunderground.com/weather/mx/tonalá',
-              'https://www.wunderground.com/weather/mx/tlajomulco-de-zúñiga/ITLAJO3'
-              ]
+urls = ['https://www.tutiempo.net/registros/mmgl/1-enero-2018.html']
 
-second_urls = ['https://www.wunderground.com/health/mx/guadalajara/KJAGUADA1?cm_ven=localwx_modaq',
-               'https://www.wunderground.com/health/mx/zapopan/IZAPOP11?cm_ven=localwx_modaq',
-               'https://www.wunderground.com/health/mx/tlaquepaque/ITLAQU4?cm_ven=localwx_modaq',
-               'https://www.wunderground.com/health/mx/tonalá?cm_ven=localwx_modaq',
-               'https://www.wunderground.com/health/mx/tlajomulco-de-zúñiga/ITLAJO3?cm_ven=localwx_modaq']
+meses_espanol = {
+    'January': 'enero',
+    'February': 'febrero',
+    'March': 'marzo',
+    'April': 'abril',
+    'May': 'mayo',
+    'June': 'junio',
+    'July': 'julio',
+    'August': 'agosto',
+    'September': 'septiembre',
+    'October': 'octubre',
+    'November': 'noviembre',
+    'December': 'diciembre'
+}
 
-third_url = ['https://www.wunderground.com/precipitation/mx/guadalajara/KJAGUADA1?cm_ven=localwx_modprecip',
-             'https://www.wunderground.com/precipitation/mx/zapopan/IZAPOP11?cm_ven=localwx_modprecip',
-             'https://www.wunderground.com/precipitation/mx/tlaquepaque/ITLAQU4?cm_ven=localwx_modprecip',
-             'https://www.wunderground.com/precipitation/mx/tonalá?cm_ven=localwx_modprecip',
-             'https://www.wunderground.com/precipitation/mx/tlajomulco-de-zúñiga/ITLAJO3?cm_ven=localwx_modprecip']
+fecha_inicio = datetime(2018, 1, 1)
+fecha_fin = datetime(2022, 12, 31)
 
+urls = []
 
-def insertarDatos (ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime):
+# Iterar sobre cada día en el rango de fechas y generar la URL correspondiente
+fecha_actual = fecha_inicio
+while fecha_actual <= fecha_fin:
+
+    nombre_mes_ingles = fecha_actual.strftime('%B')
+    nombre_mes_espanol = meses_espanol[nombre_mes_ingles]
+    url = f'https://www.tutiempo.net/registros/mmgl/{fecha_actual.day}-{nombre_mes_espanol}-{fecha_actual.year}.html'
+    urls.append(url)
+    
+    # Avanzamos al siguiente día en teoria
+    fecha_actual += timedelta(days=1)
+
+def insertarDatos (clima):
     collection.insert_one({
-                    "ciudad": ciudad,
-                    "current": current,
-                    "real_feal": real_feal,
-                    "air_quality": air_quality,
-                    "pollen": pollen,
-                    "uv_index": uv_index,
-                    "precipitation": precipitation,
-                    "timestamp": current_datetime
+                    "clima": clima,
                 })
 
 def extraer_clima():
-
-
     driver = webdriver.Edge()
     
-    for i, url in enumerate (start_urls):
-        driver.get(url)
-        time.sleep(2)
-    
-        ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
-        current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
-        real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
-        ciudad= ciudad.replace(', Mexico Weather Conditions', '')
+    for url in urls:
+        try:
+            driver.get(url)
+            time.sleep(2)
+            
+            clima = driver.find_element(By.XPATH, '//*[@id="HistoricosData"]/div/table/tbody/tr[7]/td[2]/span').text
+            insertarDatos(clima)
         
+        # Captura la excepción si no se encuentra el elemento
+        except NoSuchElementException:
+            print(f"No se encontraron datos climáticos para la URL: {url}. Saltando al siguiente día.")
         
-        second_url = second_urls[i]
-        driver.get(second_url)
-        time.sleep(2)
-        air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
-        pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
-        uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
+        # Captura la excepción si la página no existe o no está disponible
+        except (TimeoutException, WebDriverException):
+            print(f"La página {url} no existe o no está disponible. Saltando al siguiente día.")
         
-        third_urlv = third_url[i]
-        driver.get(third_urlv)
-        time.sleep(2)
-        precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
-        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        
+        finally:
+            driver.quit()
 
-        insertarDatos(ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime)
-    
-    driver.close()
-
-schedule.every(3).minutes.do(extraer_clima)
+#schedule.every(7).seconds.do(extraer_clima)
 
 extraer_clima()
 
