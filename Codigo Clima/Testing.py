@@ -19,6 +19,7 @@ collection = db["Datos"]
 
 urls = ['https://www.tutiempo.net/registros/mmgl/1-enero-2018.html']
 
+#diccionario de datos dado a que la funcion que convierte los numeros de meses a su nombre lo hace in ingles
 meses_espanol = {
     'January': 'enero',
     'February': 'febrero',
