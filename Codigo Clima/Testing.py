@@ -33,7 +33,7 @@ def generar_urls_desde_2018():
     
     urls = []
     fecha_actual = datetime.date.today()
-    fecha_inicial = datetime.date(2018, 1, 1)
+    fecha_inicial = datetime.date(2020, 11, 15)
     
     while fecha_inicial <= fecha_actual:
         mes_esp = meses[fecha_inicial.strftime("%B")]
@@ -62,11 +62,11 @@ def extraer_clima():
         time.sleep(2)
     
         fecha = driver.find_element(By.XPATH, '//*[@id="HistoricosData"]/div/table/tbody/tr[1]/th').text
-        nubosidad = driver.find_element(By.XPATH, '//*[@id="HistoricosData"]/div/table/tbody/tr[17]/td[2]/span').text 
-        temperatura = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[21]/td[3]').text
-        viento = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[17]/td[4]').text
-        humedad = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[15]/td[5]').text
-        presion = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[15]/td[6]').text
+        nubosidad = driver.find_element(By.XPATH, '//*[@id="HistoricosData"]/div/table/tbody/tr[3]/td[2]/span').text 
+        temperatura = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[3]/td[3]').text
+        viento = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[3]/td[4]').text
+        humedad = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[3]/td[5]').text
+        presion = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[3]/td[6]').text
         
         
 

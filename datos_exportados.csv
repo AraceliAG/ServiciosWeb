@@ -1,18 +1,1846 @@
 fecha,nubosidad,temperatura,viento,humedad,presion
-Lunes 1 Enero 2018,Neblina,22°,En calma,87%,1026 hPa
-Martes 2 Enero 2018,Neblina,24°,En calma,71%,1027 hPa
-Miércoles 3 Enero 2018,Neblina,19°,En calma,87%,1025 hPa
-Jueves 4 Enero 2018,Neblina,24°,7 km/h,33%,1025 hPa
-Viernes 5 Enero 2018,Neblina,22°,En calma,87%,1025 hPa
-Sábado 6 Enero 2018,Neblina,23°,11 km/h,51%,1028 hPa
-Domingo 7 Enero 2018,Despejado,15°,En calma,81%,1025 hPa
-Lunes 8 Enero 2018,Neblina,24°,En calma,37%,1025 hPa
-Martes 9 Enero 2018,Neblina,23°,En calma,62%,1026 hPa
-Miércoles 10 Enero 2018,Neblina,23°,En calma,81%,1023 hPa
-Jueves 11 Enero 2018,Niebla espesa,25°,7 km/h,23%,1022 hPa
-Viernes 12 Enero 2018,Despejado,17°,9 km/h,56%,1023 hPa
-Sábado 13 Enero 2018,Neblina,23°,En calma,36%,1027 hPa
-Domingo 14 Enero 2018,Despejado,20°,En calma,35%,1031 hPa
-Lunes 15 Enero 2018,Parcialmente cubierto,9°,7 km/h,11%,1021 hPa
-Martes 16 Enero 2018,Neblina,21°,6 km/h,46%,1026 hPa
-Miércoles 17 Enero 2018,Parcialmente cubierto,23°,13 km/h,23%,1023 hPa
+Lunes 1 Enero 2018,Neblina,11°,En calma,87%,1026 hPa
+Martes 2 Enero 2018,Neblina,10°,En calma,71%,1027 hPa
+Miércoles 3 Enero 2018,Neblina,10°,En calma,87%,1025 hPa
+Jueves 4 Enero 2018,Neblina,9°,7 km/h,33%,1025 hPa
+Viernes 5 Enero 2018,Neblina,11°,En calma,87%,1025 hPa
+Sábado 6 Enero 2018,Neblina,8°,11 km/h,51%,1028 hPa
+Domingo 7 Enero 2018,Despejado,8°,En calma,81%,1025 hPa
+Lunes 8 Enero 2018,Neblina,7°,En calma,37%,1025 hPa
+Martes 9 Enero 2018,Neblina,6°,En calma,62%,1026 hPa
+Miércoles 10 Enero 2018,Neblina,8°,En calma,81%,1023 hPa
+Jueves 11 Enero 2018,Niebla espesa,12°,7 km/h,23%,1022 hPa
+Viernes 12 Enero 2018,Despejado,4°,9 km/h,56%,1023 hPa
+Sábado 13 Enero 2018,Neblina,3°,En calma,36%,1027 hPa
+Domingo 14 Enero 2018,Despejado,6°,En calma,35%,1031 hPa
+Lunes 15 Enero 2018,Parcialmente cubierto,3°,7 km/h,11%,1021 hPa
+Martes 16 Enero 2018,Neblina,4°,6 km/h,46%,1026 hPa
+Miércoles 17 Enero 2018,Parcialmente cubierto,14°,13 km/h,23%,1023 hPa
+Jueves 18 Enero 2018,Despejado,8°,En calma,75%,1024 hPa
+Viernes 19 Enero 2018,Mayormente cubierto,12°,13 km/h,40%,1023 hPa
+Sábado 20 Enero 2018,Despejado,9°,En calma,87%,1023 hPa
+Domingo 21 Enero 2018,Parcialmente cubierto,10°,33 km/h,8%,1020 hPa
+Lunes 22 Enero 2018,Parcialmente cubierto,7°,En calma,65%,1021 hPa
+Martes 23 Enero 2018,Mayormente cubierto,19°,22 km/h,23%,1018 hPa
+Miércoles 24 Enero 2018,Neblina,11°,En calma,37%,1025 hPa
+Jueves 25 Enero 2018,Cielo cubierto,13°,6 km/h,59%,1027 hPa
+Viernes 26 Enero 2018,Neblina,11°,En calma,93%,1025 hPa
+Sábado 27 Enero 2018,Parcialmente cubierto,12°,En calma,31%,1022 hPa
+Domingo 28 Enero 2018,Despejado,9°,En calma,87%,1021 hPa
+Lunes 29 Enero 2018,Cielo cubierto,12°,7 km/h,59%,1026 hPa
+Martes 30 Enero 2018,Mayormente cubierto,10°,24 km/h,50%,1028 hPa
+Miércoles 31 Enero 2018,Cielo cubierto,11°,En calma,35%,1025 hPa
+Jueves 1 Febrero 2018,Mayormente cubierto,9°,En calma,81%,1023 hPa
+Viernes 2 Febrero 2018,Mayormente cubierto,17°,15 km/h,32%,1023 hPa
+Sábado 3 Febrero 2018,Mayormente cubierto,13°,En calma,76%,1024 hPa
+Domingo 4 Febrero 2018,Parcialmente cubierto,13°,En calma,20%,1021 hPa
+Lunes 5 Febrero 2018,Parcialmente cubierto,13°,En calma,81%,1023 hPa
+Martes 6 Febrero 2018,Mayormente cubierto,8°,En calma,24%,1023 hPa
+Miércoles 7 Febrero 2018,Mayormente cubierto,12°,En calma,82%,1025 hPa
+Jueves 8 Febrero 2018,Cielo cubierto,17°,13 km/h,33%,1022 hPa
+Viernes 9 Febrero 2018,Cielo cubierto,14°,En calma,88%,1025 hPa
+Sábado 10 Febrero 2018,Cielo cubierto,12°,9 km/h,46%,1021 hPa
+Domingo 11 Febrero 2018,Mayormente cubierto,11°,En calma,87%,1021 hPa
+Lunes 12 Febrero 2018,Mayormente cubierto,9°,15 km/h,29%,1023 hPa
+Martes 13 Febrero 2018,Neblina,12°,11 km/h,67%,1028 hPa
+Miércoles 14 Febrero 2018,Parcialmente cubierto,19°,6 km/h,34%,1026 hPa
+Jueves 15 Febrero 2018,Parcialmente cubierto,16°,6 km/h,67%,1026 hPa
+Viernes 16 Febrero 2018,Mayormente cubierto,16°,6 km/h,30%,1023 hPa
+Sábado 17 Febrero 2018,Despejado,16°,7 km/h,63%,1024 hPa
+Domingo 18 Febrero 2018,Parcialmente cubierto,16°,19 km/h,26%,1021 hPa
+Lunes 19 Febrero 2018,Parcialmente cubierto,17°,En calma,67%,1021 hPa
+Martes 20 Febrero 2018,Nubes dispersas,8°,19 km/h,29%,1023 hPa
+Miércoles 21 Febrero 2018,Despejado,11°,En calma,87%,1025 hPa
+Jueves 22 Febrero 2018,Despejado,9°,En calma,43%,1026 hPa
+Viernes 23 Febrero 2018,Despejado,13°,En calma,76%,1026 hPa
+Sábado 24 Febrero 2018,Nubes dispersas,20°,32 km/h,16%,1021 hPa
+Domingo 25 Febrero 2018,Mayormente cubierto,11°,15 km/h,27%,1023 hPa
+Lunes 26 Febrero 2018,Despejado,9°,9 km/h,35%,1025 hPa
+Martes 27 Febrero 2018,Mayormente cubierto,13°,En calma,67%,1024 hPa
+Miércoles 28 Febrero 2018,Nubes dispersas,23°,19 km/h,22%,1018 hPa
+Jueves 1 Marzo 2018,Neblina,12°,En calma,28%,1023 hPa
+Viernes 2 Marzo 2018,Despejado,17°,13 km/h,20%,1023 hPa
+Sábado 3 Marzo 2018,Neblina,13°,6 km/h,77%,1025 hPa
+Domingo 4 Marzo 2018,Despejado,18°,15 km/h,23%,1021 hPa
+Lunes 5 Marzo 2018,Despejado,11°,7 km/h,42%,1023 hPa
+Martes 6 Marzo 2018,Mayormente cubierto,18°,15 km/h,15%,1020 hPa
+Miércoles 7 Marzo 2018,Despejado,13°,En calma,57%,1021 hPa
+Jueves 8 Marzo 2018,Despejado,13°,En calma,20%,1024 hPa
+Viernes 9 Marzo 2018,Despejado,10°,7 km/h,26%,1022 hPa
+Sábado 10 Marzo 2018,Despejado,20°,7 > 30 km/h,13%,1019 hPa
+Domingo 11 Marzo 2018,Despejado,13°,9 km/h,25%,1022 hPa
+Lunes 12 Marzo 2018,Despejado,29°,En calma,12%,1017 hPa
+Martes 13 Marzo 2018,Despejado,11°,9 km/h,9%,1020 hPa
+Miércoles 14 Marzo 2018,Despejado,12°,En calma,26%,1023 hPa
+Jueves 15 Marzo 2018,Despejado,14°,En calma,87%,1023 hPa
+Viernes 16 Marzo 2018,Despejado,23°,13 km/h,9%,1019 hPa
+Sábado 17 Marzo 2018,Despejado,11°,En calma,66%,1022 hPa
+Domingo 18 Marzo 2018,Mayormente cubierto,9°,En calma,15%,1023 hPa
+Lunes 19 Marzo 2018,Despejado,11°,7 km/h,13%,1020 hPa
+Martes 20 Marzo 2018,Despejado,20°,17 km/h,7%,1014 hPa
+Miércoles 21 Marzo 2018,Neblina,13°,7 km/h,58%,1021 hPa
+Jueves 22 Marzo 2018,Neblina,15°,En calma,20%,1026 hPa
+Viernes 23 Marzo 2018,Despejado,13°,En calma,26%,1025 hPa
+Sábado 24 Marzo 2018,Granitos de nieve,26°,En calma,9%,1017 hPa
+Domingo 25 Marzo 2018,Despejado,16°,19 km/h,14%,1021 hPa
+Lunes 26 Marzo 2018,Granitos de nieve,24°,19 km/h,9%,1016 hPa
+Martes 27 Marzo 2018,Granitos de nieve,22°,11 km/h,11%,1018 hPa
+Miércoles 28 Marzo 2018,Mayormente cubierto,25°,39 km/h,14%,1016 hPa
+Jueves 29 Marzo 2018,Neblina,13°,En calma,32%,1020 hPa
+Viernes 30 Marzo 2018,Nubes dispersas,21°,19 km/h,14%,1021 hPa
+Sábado 31 Marzo 2018,Parcialmente cubierto,15°,En calma,51%,1026 hPa
+Domingo 1 Abril 2018,Mayormente cubierto,24°,11 km/h,16%,1017 hPa
+Lunes 2 Abril 2018,Despejado,12°,9 > 28 km/h,19%,1021 hPa
+Martes 3 Abril 2018,Despejado,10°,19 km/h,6%,1021 hPa
+Miércoles 4 Abril 2018,Despejado,12°,9 km/h,17%,1022 hPa
+Jueves 5 Abril 2018,Despejado,26°,26 km/h,10%,1018 hPa
+Viernes 6 Abril 2018,Despejado,16°,11 km/h,16%,1022 hPa
+Sábado 7 Abril 2018,Despejado,14°,9 km/h,7%,1017 hPa
+Domingo 8 Abril 2018,Despejado,14°,7 km/h,26%,1021 hPa
+Lunes 9 Abril 2018,Despejado,14°,7 km/h,6%,1019 hPa
+Martes 10 Abril 2018,Neblina,11°,11 km/h,12%,1025 hPa
+Miércoles 11 Abril 2018,Parcialmente cubierto,16°,13 km/h,17%,1023 hPa
+Jueves 12 Abril 2018,Neblina,14°,En calma,59%,1025 hPa
+Viernes 13 Abril 2018,Despejado,11°,33 km/h,15%,1022 hPa
+Sábado 14 Abril 2018,Despejado,12°,13 km/h,21%,1021 hPa
+Domingo 15 Abril 2018,Neblina,14°,En calma,44%,1022 hPa
+Lunes 16 Abril 2018,Parcialmente cubierto,14°,En calma,32%,1027 hPa
+Martes 17 Abril 2018,Parcialmente cubierto,14°,13 > 39 km/h,17%,1024 hPa
+Miércoles 18 Abril 2018,Despejado,19°,En calma,59%,1021 hPa
+Jueves 19 Abril 2018,Despejado,16°,En calma,50%,1023 hPa
+Viernes 20 Abril 2018,Parcialmente cubierto,20°,En calma,55%,1023 hPa
+Sábado 21 Abril 2018,Despejado,20°,6 km/h,49%,1023 hPa
+Domingo 22 Abril 2018,Mayormente cubierto,17°,En calma,52%,1022 hPa
+Lunes 23 Abril 2018,Nubes dispersas,16°,6 km/h,32%,1023 hPa
+Martes 24 Abril 2018,Mayormente cubierto,19°,7 km/h,55%,1023 hPa
+Miércoles 25 Abril 2018,Despejado,19°,En calma,37%,1024 hPa
+Jueves 26 Abril 2018,Despejado,16°,7 km/h,30%,1021 hPa
+Viernes 27 Abril 2018,Despejado,19°,7 km/h,31%,1020 hPa
+Sábado 28 Abril 2018,Despejado,17°,7 km/h,19%,1021 hPa
+Domingo 29 Abril 2018,Mayormente cubierto,18°,7 km/h,43%,1024 hPa
+Lunes 30 Abril 2018,Cielo cubierto,17°,En calma,27%,1025 hPa
+Martes 1 Mayo 2018,Cielo cubierto,15°,En calma,28%,1024 hPa
+Miércoles 2 Mayo 2018,Neblina,14°,En calma,41%,1025 hPa
+Jueves 3 Mayo 2018,Cielo cubierto,17°,En calma,82%,1024 hPa
+Viernes 4 Mayo 2018,Neblina,19°,En calma,72%,1023 hPa
+Sábado 5 Mayo 2018,Parcialmente cubierto,20°,11 km/h,60%,1021 hPa
+Domingo 6 Mayo 2018,Mayormente cubierto,16°,En calma,88%,1026 hPa
+Lunes 7 Mayo 2018,Mayormente cubierto,19°,13 km/h,53%,1026 hPa
+Martes 8 Mayo 2018,Neblina,16°,En calma,94%,1026 hPa
+Miércoles 9 Mayo 2018,Despejado,19°,13 km/h,82%,1022 hPa
+Jueves 10 Mayo 2018,Neblina,15°,13 km/h,34%,1021 hPa
+Viernes 11 Mayo 2018,Despejado,13°,En calma,72%,1024 hPa
+Sábado 12 Mayo 2018,Neblina,18°,9 km/h,73%,1025 hPa
+Domingo 13 Mayo 2018,Neblina,18°,En calma,60%,1023 hPa
+Lunes 14 Mayo 2018,Despejado,16°,7 km/h,47%,1022 hPa
+Martes 15 Mayo 2018,Neblina,17°,En calma,47%,1022 hPa
+Miércoles 16 Mayo 2018,Parcialmente cubierto,20°,6 km/h,73%,1020 hPa
+Jueves 17 Mayo 2018,Neblina,20°,En calma,60%,1021 hPa
+Viernes 18 Mayo 2018,Despejado,20°,7 km/h,64%,1020 hPa
+Sábado 19 Mayo 2018,Despejado,17°,9 km/h,43%,1020 hPa
+Domingo 20 Mayo 2018,Despejado,18°,En calma,44%,1021 hPa
+Lunes 21 Mayo 2018,Neblina,14°,En calma,38%,1021 hPa
+Martes 22 Mayo 2018,Despejado,17°,En calma,53%,1021 hPa
+Miércoles 23 Mayo 2018,Despejado,18°,En calma,58%,1021 hPa
+Jueves 24 Mayo 2018,Neblina,22°,En calma,72%,1023 hPa
+Viernes 25 Mayo 2018,Despejado,21°,En calma,64%,1023 hPa
+Sábado 26 Mayo 2018,Neblina,19°,En calma,63%,1020 hPa
+Domingo 27 Mayo 2018,Neblina,22°,En calma,73%,1018 hPa
+Lunes 28 Mayo 2018,Despejado,33°,19 km/h,35%,1016 hPa
+Martes 29 Mayo 2018,Neblina,22°,En calma,68%,1019 hPa
+Miércoles 30 Mayo 2018,Neblina,22°,En calma,78%,1019 hPa
+Jueves 31 Mayo 2018,Neblina,22°,En calma,78%,1018 hPa
+Jueves 31 Mayo 2018,Despejado,22°,En calma,88%,1018 hPa
+Sábado 2 Junio 2018,Neblina,21°,En calma,83%,1020 hPa
+Domingo 3 Junio 2018,Parcialmente cubierto,17°,19 km/h,49%,1022 hPa
+Lunes 4 Junio 2018,Nubes dispersas,22°,6 km/h,52%,1023 hPa
+Martes 5 Junio 2018,Nubes dispersas,19°,En calma,57%,1022 hPa
+Miércoles 6 Junio 2018,Mayormente cubierto,21°,7 km/h,35%,1020 hPa
+Jueves 7 Junio 2018,Nubes dispersas,19°,En calma,83%,1021 hPa
+Viernes 8 Junio 2018,Neblina,14°,En calma,94%,1022 hPa
+Sábado 9 Junio 2018,Neblina,20°,11 km/h,61%,1023 hPa
+Domingo 10 Junio 2018,Neblina,18°,7 km/h,78%,1021 hPa
+Lunes 11 Junio 2018,Parcialmente cubierto,18°,11 km/h,64%,1020 hPa
+Martes 12 Junio 2018,Lluvia,21°,17 km/h,78%,1020 hPa
+Miércoles 13 Junio 2018,Cielo cubierto,18°,En calma,88%,1020 hPa
+Jueves 14 Junio 2018,Mayormente cubierto,18°,En calma,78%,1021 hPa
+Viernes 15 Junio 2018,Parcialmente cubierto,18°,9 km/h,88%,1020 hPa
+Sábado 16 Junio 2018,Nubes dispersas,18°,6 km/h,88%,1019 hPa
+Domingo 17 Junio 2018,Mayormente cubierto,19°,7 km/h,73%,1021 hPa
+Lunes 18 Junio 2018,Cielo cubierto,19°,7 km/h,73%,1021 hPa
+Martes 19 Junio 2018,Lluvia ligera,18°,7 km/h,94%,1021 hPa
+Miércoles 20 Junio 2018,Lluvia ligera,17°,En calma,94%,1020 hPa
+Jueves 21 Junio 2018,Mayormente cubierto,19°,7 km/h,83%,1021 hPa
+Viernes 22 Junio 2018,Neblina,17°,6 km/h,83%,1021 hPa
+Sábado 23 Junio 2018,Neblina,16°,7 km/h,57%,1023 hPa
+Domingo 24 Junio 2018,Lluvia ligera,19°,9 km/h,88%,1022 hPa
+Lunes 25 Junio 2018,Neblina,19°,7 km/h,83%,1021 hPa
+Martes 26 Junio 2018,Mayormente cubierto,16°,7 km/h,94%,1023 hPa
+Miércoles 27 Junio 2018,Cielo cubierto,18°,En calma,94%,1025 hPa
+Jueves 28 Junio 2018,Neblina,17°,7 km/h,94%,1023 hPa
+Viernes 29 Junio 2018,Neblina,19°,En calma,94%,1024 hPa
+Sábado 30 Junio 2018,Parcialmente cubierto,16°,6 km/h,60%,1025 hPa
+Domingo 1 Julio 2018,Neblina,19°,En calma,88%,1023 hPa
+Lunes 2 Julio 2018,Neblina,18°,En calma,88%,1023 hPa
+Martes 3 Julio 2018,Parcialmente cubierto,17°,En calma,60%,1024 hPa
+Miércoles 4 Julio 2018,Neblina,19°,En calma,73%,1025 hPa
+Jueves 5 Julio 2018,Nubes dispersas,14°,11 km/h,94%,1023 hPa
+Viernes 6 Julio 2018,Nubes dispersas,18°,19 km/h,56%,1026 hPa
+Sábado 7 Julio 2018,Mayormente cubierto,17°,7 km/h,57%,1025 hPa
+Domingo 8 Julio 2018,Cielo cubierto,18°,9 km/h,77%,1024 hPa
+Lunes 9 Julio 2018,Neblina,17°,En calma,88%,1026 hPa
+Martes 10 Julio 2018,Neblina,18°,En calma,88%,1025 hPa
+Miércoles 11 Julio 2018,Neblina,17°,En calma,83%,1025 hPa
+Jueves 12 Julio 2018,Neblina,17°,6 km/h,83%,1025 hPa
+Viernes 13 Julio 2018,Nubes dispersas,14°,13 km/h,73%,1026 hPa
+Sábado 14 Julio 2018,Parcialmente cubierto,18°,6 km/h,64%,1026 hPa
+Domingo 15 Julio 2018,Neblina,17°,6 km/h,94%,1025 hPa
+Lunes 16 Julio 2018,Neblina,18°,En calma,73%,1026 hPa
+Martes 17 Julio 2018,Mayormente cubierto,17°,9 km/h,64%,1027 hPa
+Miércoles 18 Julio 2018,Neblina,16°,En calma,94%,1027 hPa
+Jueves 19 Julio 2018,Neblina,16°,7 km/h,69%,1024 hPa
+Viernes 20 Julio 2018,Neblina,18°,7 km/h,69%,1025 hPa
+Sábado 21 Julio 2018,Neblina,20°,En calma,83%,1025 hPa
+Domingo 22 Julio 2018,Tormenta de polvo,17°,7 km/h,54%,1024 hPa
+Lunes 23 Julio 2018,Despejado,17°,6 km/h,22%,1020 hPa
+Martes 24 Julio 2018,Mayormente cubierto,18°,En calma,42%,1024 hPa
+Miércoles 25 Julio 2018,Mayormente cubierto,15°,11 km/h,77%,1026 hPa
+Jueves 26 Julio 2018,Despejado,19°,En calma,51%,1025 hPa
+Viernes 27 Julio 2018,Mayormente cubierto,17°,9 km/h,88%,1023 hPa
+Sábado 28 Julio 2018,Lluvia,16°,19 km/h,40%,1022 hPa
+Domingo 29 Julio 2018,Parcialmente cubierto,15°,En calma,94%,1025 hPa
+Lunes 30 Julio 2018,Mayormente cubierto,16°,En calma,94%,1023 hPa
+Martes 31 Julio 2018,Neblina,25°,En calma,57%,1023 hPa
+Miércoles 1 Agosto 2018,Mayormente cubierto,18°,En calma,83%,1023 hPa
+Jueves 2 Agosto 2018,Neblina,17°,7 km/h,82%,1023 hPa
+Viernes 3 Agosto 2018,Mayormente cubierto,19°,En calma,78%,1021 hPa
+Sábado 4 Agosto 2018,Lluvia ligera,19°,En calma,73%,1022 hPa
+Domingo 5 Agosto 2018,Hielo cristalizado,20°,En calma,73%,1021 hPa
+Lunes 6 Agosto 2018,Cielo cubierto,20°,En calma,68%,1022 hPa
+Martes 7 Agosto 2018,Cielo cubierto,18°,En calma,88%,1025 hPa
+Miércoles 8 Agosto 2018,Mayormente cubierto,19°,En calma,78%,1023 hPa
+Jueves 9 Agosto 2018,Lluvia ligera,17°,7 km/h,88%,1025 hPa
+Viernes 10 Agosto 2018,Cielo cubierto,18°,En calma,88%,1026 hPa
+Sábado 11 Agosto 2018,Cielo cubierto,17°,6 km/h,94%,1025 hPa
+Domingo 12 Agosto 2018,Parcialmente cubierto,20°,En calma,73%,1025 hPa
+Lunes 13 Agosto 2018,Mayormente cubierto,20°,9 km/h,73%,1024 hPa
+Martes 14 Agosto 2018,Tormenta de polvo,18°,En calma,83%,1023 hPa
+Miércoles 15 Agosto 2018,Mayormente cubierto,18°,En calma,77%,1023 hPa
+Jueves 16 Agosto 2018,Hielo cristalizado,19°,En calma,68%,1024 hPa
+Viernes 17 Agosto 2018,Mayormente cubierto,20°,En calma,73%,1026 hPa
+Sábado 18 Agosto 2018,Parcialmente cubierto,17°,13 km/h,82%,1026 hPa
+Domingo 19 Agosto 2018,Mayormente cubierto,20°,En calma,68%,1023 hPa
+Lunes 20 Agosto 2018,Mayormente cubierto,19°,En calma,83%,1022 hPa
+Martes 21 Agosto 2018,Mayormente cubierto,16°,En calma,94%,1023 hPa
+Miércoles 22 Agosto 2018,Mayormente cubierto,18°,7 km/h,77%,1026 hPa
+Jueves 23 Agosto 2018,Cielo cubierto,19°,En calma,78%,1026 hPa
+Viernes 24 Agosto 2018,Parcialmente cubierto,18°,6 km/h,83%,1023 hPa
+Sábado 25 Agosto 2018,Neblina,14°,En calma,94%,1023 hPa
+Domingo 26 Agosto 2018,Hielo cristalizado,19°,24 km/h,88%,1023 hPa
+Lunes 27 Agosto 2018,Mayormente cubierto,18°,En calma,83%,1023 hPa
+Martes 28 Agosto 2018,Despejado,18°,En calma,88%,1021 hPa
+Miércoles 29 Agosto 2018,Lluvia ligera,19°,11 km/h,83%,1023 hPa
+Jueves 30 Agosto 2018,Lluvia ligera,19°,26 km/h,73%,1024 hPa
+Viernes 31 Agosto 2018,Mayormente cubierto,18°,6 km/h,83%,1023 hPa
+Viernes 31 Agosto 2018,Mayormente cubierto,19°,En calma,78%,1021 hPa
+Domingo 2 Septiembre 2018,Parcialmente cubierto,18°,En calma,88%,1022 hPa
+Lunes 3 Septiembre 2018,Cielo cubierto,17°,En calma,94%,1021 hPa
+Martes 4 Septiembre 2018,Mayormente cubierto,17°,En calma,88%,1021 hPa
+Miércoles 5 Septiembre 2018,Mayormente cubierto,19°,6 km/h,73%,1021 hPa
+Jueves 6 Septiembre 2018,Parcialmente cubierto,19°,En calma,78%,1022 hPa
+Viernes 7 Septiembre 2018,Cielo cubierto,17°,En calma,94%,1023 hPa
+Sábado 8 Septiembre 2018,Cielo cubierto,17°,En calma,94%,1024 hPa
+Domingo 9 Septiembre 2018,Parcialmente cubierto,18°,En calma,83%,1021 hPa
+Lunes 10 Septiembre 2018,Mayormente cubierto,18°,11 km/h,88%,1021 hPa
+Martes 11 Septiembre 2018,Lluvia,18°,En calma,88%,1020 hPa
+Miércoles 12 Septiembre 2018,Parcialmente cubierto,18°,En calma,88%,1021 hPa
+Jueves 13 Septiembre 2018,Mayormente cubierto,18°,En calma,83%,1020 hPa
+Viernes 14 Septiembre 2018,Lluvia,17°,11 km/h,94%,1020 hPa
+Sábado 15 Septiembre 2018,Lluvia ligera,19°,28 km/h,83%,1020 hPa
+Domingo 16 Septiembre 2018,Cielo cubierto,20°,En calma,78%,1020 hPa
+Lunes 17 Septiembre 2018,Mayormente cubierto,17°,En calma,88%,1021 hPa
+Martes 18 Septiembre 2018,Cielo cubierto,17°,En calma,94%,1023 hPa
+Miércoles 19 Septiembre 2018,Cielo cubierto,17°,9 km/h,82%,1022 hPa
+Jueves 20 Septiembre 2018,Mayormente cubierto,18°,En calma,88%,1021 hPa
+Viernes 21 Septiembre 2018,Mayormente cubierto,19°,En calma,83%,1021 hPa
+Sábado 22 Septiembre 2018,Parcialmente cubierto,19°,En calma,88%,1021 hPa
+Domingo 23 Septiembre 2018,Lluvia ligera,18°,7 km/h,88%,1022 hPa
+Lunes 24 Septiembre 2018,Mayormente cubierto,19°,6 km/h,78%,1021 hPa
+Martes 25 Septiembre 2018,Mayormente cubierto,19°,En calma,78%,1021 hPa
+Miércoles 26 Septiembre 2018,Parcialmente cubierto,18°,En calma,88%,1021 hPa
+Jueves 27 Septiembre 2018,Mayormente cubierto,18°,En calma,88%,1020 hPa
+Viernes 28 Septiembre 2018,Parcialmente cubierto,17°,7 km/h,88%,1021 hPa
+Sábado 29 Septiembre 2018,Mayormente cubierto,17°,7 km/h,88%,1022 hPa
+Domingo 30 Septiembre 2018,Lluvia ligera,18°,19 km/h,83%,1023 hPa
+Lunes 1 Octubre 2018,Cielo cubierto,18°,En calma,88%,1023 hPa
+Martes 2 Octubre 2018,Mayormente cubierto,15°,En calma,94%,1023 hPa
+Miércoles 3 Octubre 2018,Parcialmente cubierto,17°,En calma,88%,1022 hPa
+Jueves 4 Octubre 2018,Lluvia,17°,30 km/h,88%,1022 hPa
+Viernes 5 Octubre 2018,Hielo cristalizado,17°,24 km/h,77%,1021 hPa
+Sábado 6 Octubre 2018,Cielo cubierto,18°,En calma,83%,1020 hPa
+Domingo 7 Octubre 2018,Mayormente cubierto,17°,En calma,88%,1021 hPa
+Lunes 8 Octubre 2018,Parcialmente cubierto,16°,En calma,88%,1020 hPa
+Martes 9 Octubre 2018,Nubes dispersas,13°,En calma,94%,1017 hPa
+Miércoles 10 Octubre 2018,Despejado,12°,En calma,88%,1019 hPa
+Jueves 11 Octubre 2018,Nubes dispersas,15°,En calma,88%,1021 hPa
+Viernes 12 Octubre 2018,Mayormente cubierto,19°,7 km/h,83%,1021 hPa
+Sábado 13 Octubre 2018,Mayormente cubierto,18°,11 km/h,88%,1020 hPa
+Domingo 14 Octubre 2018,Parcialmente cubierto,17°,En calma,88%,1019 hPa
+Lunes 15 Octubre 2018,Lluvia ligera,18°,En calma,94%,1020 hPa
+Martes 16 Octubre 2018,Mayormente cubierto,18°,6 km/h,88%,1020 hPa
+Miércoles 17 Octubre 2018,Mayormente cubierto,17°,En calma,88%,1020 hPa
+Jueves 18 Octubre 2018,Parcialmente cubierto,18°,11 km/h,77%,1022 hPa
+Viernes 19 Octubre 2018,Mayormente cubierto,17°,7 km/h,72%,1021 hPa
+Sábado 20 Octubre 2018,Cielo cubierto,20°,En calma,73%,1021 hPa
+Domingo 21 Octubre 2018,Lluvia ligera,18°,7 km/h,94%,1022 hPa
+Lunes 22 Octubre 2018,Lluvia,17°,En calma,94%,1021 hPa
+Martes 23 Octubre 2018,Cielo cubierto,18°,11 km/h,77%,1020 hPa
+Miércoles 24 Octubre 2018,Mayormente cubierto,18°,9 km/h,77%,1022 hPa
+Jueves 25 Octubre 2018,Nubes dispersas,15°,En calma,94%,1023 hPa
+Viernes 26 Octubre 2018,Despejado,15°,En calma,88%,1021 hPa
+Sábado 27 Octubre 2018,Despejado,16°,7 km/h,82%,1020 hPa
+Domingo 28 Octubre 2018,Despejado,18°,En calma,56%,1023 hPa
+Lunes 29 Octubre 2018,Nubes dispersas,13°,7 km/h,88%,1025 hPa
+Martes 30 Octubre 2018,Mayormente cubierto,14°,En calma,88%,1023 hPa
+Miércoles 31 Octubre 2018,Nubes dispersas,14°,En calma,88%,1021 hPa
+Jueves 1 Noviembre 2018,Cielo cubierto,15°,En calma,88%,1021 hPa
+Viernes 2 Noviembre 2018,Mayormente cubierto,16°,En calma,82%,1021 hPa
+Sábado 3 Noviembre 2018,Cielo cubierto,14°,En calma,94%,1021 hPa
+Domingo 4 Noviembre 2018,Cielo cubierto,15°,En calma,88%,1023 hPa
+Lunes 5 Noviembre 2018,Cielo cubierto,16°,En calma,82%,1022 hPa
+Martes 6 Noviembre 2018,Neblina,12°,En calma,94%,1021 hPa
+Miércoles 7 Noviembre 2018,Despejado,13°,En calma,94%,1021 hPa
+Jueves 8 Noviembre 2018,Despejado,16°,En calma,88%,1021 hPa
+Viernes 9 Noviembre 2018,Parcialmente cubierto,16°,En calma,77%,1021 hPa
+Sábado 10 Noviembre 2018,Parcialmente cubierto,14°,En calma,77%,1021 hPa
+Domingo 11 Noviembre 2018,Parcialmente cubierto,14°,En calma,88%,1022 hPa
+Lunes 12 Noviembre 2018,Despejado,15°,En calma,82%,1022 hPa
+Martes 13 Noviembre 2018,Cielo cubierto,14°,En calma,82%,1022 hPa
+Miércoles 14 Noviembre 2018,Parcialmente cubierto,7°,En calma,76%,1027 hPa
+Jueves 15 Noviembre 2018,Despejado,6°,En calma,87%,1025 hPa
+Viernes 16 Noviembre 2018,Despejado,8°,En calma,57%,1023 hPa
+Sábado 17 Noviembre 2018,Despejado,8°,En calma,87%,1023 hPa
+Domingo 18 Noviembre 2018,Mayormente cubierto,8°,En calma,76%,1023 hPa
+Lunes 19 Noviembre 2018,Despejado,9°,En calma,76%,1023 hPa
+Martes 20 Noviembre 2018,Despejado,10°,7 km/h,76%,1023 hPa
+Miércoles 21 Noviembre 2018,Parcialmente cubierto,13°,En calma,72%,1025 hPa
+Jueves 22 Noviembre 2018,Despejado,11°,En calma,76%,1025 hPa
+Viernes 23 Noviembre 2018,Despejado,9°,En calma,87%,1023 hPa
+Sábado 24 Noviembre 2018,Despejado,11°,En calma,71%,1021 hPa
+Domingo 25 Noviembre 2018,Parcialmente cubierto,10°,En calma,82%,1021 hPa
+Lunes 26 Noviembre 2018,Parcialmente cubierto,9°,En calma,76%,1021 hPa
+Martes 27 Noviembre 2018,Despejado,10°,6 km/h,76%,1022 hPa
+Miércoles 28 Noviembre 2018,Cielo cubierto,14°,En calma,88%,1019 hPa
+Jueves 29 Noviembre 2018,Lluvia,11°,9 km/h,94%,1020 hPa
+Viernes 30 Noviembre 2018,Mayormente cubierto,13°,6 km/h,88%,1021 hPa
+Sábado 1 Diciembre 2018,Despejado,7°,En calma,93%,1020 hPa
+Domingo 2 Diciembre 2018,Despejado,8°,En calma,93%,1020 hPa
+Lunes 3 Diciembre 2018,Despejado,8°,En calma,87%,1021 hPa
+Martes 4 Diciembre 2018,Neblina,22°,7 km/h,57%,1024 hPa
+Miércoles 5 Diciembre 2018,Despejado,12°,En calma,94%,1023 hPa
+Jueves 6 Diciembre 2018,Neblina,14°,En calma,94%,1025 hPa
+Viernes 7 Diciembre 2018,Parcialmente cubierto,12°,En calma,94%,1025 hPa
+Sábado 8 Diciembre 2018,Parcialmente cubierto,16°,15 km/h,82%,1026 hPa
+Domingo 9 Diciembre 2018,Nubes dispersas,12°,En calma,88%,1025 hPa
+Lunes 10 Diciembre 2018,Despejado,9°,En calma,93%,1025 hPa
+Martes 11 Diciembre 2018,Parcialmente cubierto,12°,En calma,82%,1025 hPa
+Miércoles 12 Diciembre 2018,Mayormente cubierto,10°,6 km/h,93%,1025 hPa
+Jueves 13 Diciembre 2018,Despejado,12°,6 km/h,88%,1023 hPa
+Viernes 14 Diciembre 2018,Mayormente cubierto,8°,En calma,87%,1024 hPa
+Sábado 15 Diciembre 2018,Despejado,2°,11 km/h,44%,1027 hPa
+Domingo 16 Diciembre 2018,Despejado,4°,En calma,81%,1026 hPa
+Lunes 17 Diciembre 2018,Mayormente cubierto,7°,En calma,81%,1025 hPa
+Martes 18 Diciembre 2018,Mayormente cubierto,12°,En calma,76%,1023 hPa
+Miércoles 19 Diciembre 2018,Nubes dispersas,10°,7 km/h,71%,1020 hPa
+Jueves 20 Diciembre 2018,Despejado,3°,En calma,75%,1021 hPa
+Viernes 21 Diciembre 2018,Despejado,3°,6 km/h,48%,1024 hPa
+Sábado 22 Diciembre 2018,Despejado,0°,En calma,86%,1023 hPa
+Domingo 23 Diciembre 2018,Parcialmente cubierto,4°,En calma,70%,1024 hPa
+Lunes 24 Diciembre 2018,Parcialmente cubierto,9°,En calma,49%,1024 hPa
+Martes 25 Diciembre 2018,Niebla espesa,6°,En calma,75%,1021 hPa
+Miércoles 26 Diciembre 2018,Mayormente cubierto,11°,6 km/h,76%,1021 hPa
+Jueves 27 Diciembre 2018,Despejado,8°,7 km/h,81%,1018 hPa
+Viernes 28 Diciembre 2018,Despejado,7°,En calma,81%,1020 hPa
+Sábado 29 Diciembre 2018,Mayormente cubierto,8°,En calma,81%,1021 hPa
+Domingo 30 Diciembre 2018,Mayormente cubierto,9°,En calma,76%,1020 hPa
+Lunes 31 Diciembre 2018,Cielo cubierto,11°,En calma,71%,1021 hPa
+Martes 1 Enero 2019,Parcialmente cubierto,8°,En calma,81%,1020 hPa
+Miércoles 2 Enero 2019,Mayormente cubierto,8°,En calma,81%,1021 hPa
+Jueves 3 Enero 2019,Mayormente cubierto,10°,En calma,66%,1021 hPa
+Viernes 4 Enero 2019,Parcialmente cubierto,11°,En calma,71%,1022 hPa
+Sábado 5 Enero 2019,Parcialmente cubierto,7°,En calma,87%,1023 hPa
+Domingo 6 Enero 2019,Mayormente cubierto,12°,En calma,76%,1025 hPa
+Lunes 7 Enero 2019,Parcialmente cubierto,12°,En calma,76%,1025 hPa
+Martes 8 Enero 2019,Parcialmente cubierto,10°,En calma,82%,1025 hPa
+Miércoles 9 Enero 2019,Despejado,3°,En calma,81%,1026 hPa
+Jueves 10 Enero 2019,Parcialmente cubierto,10°,En calma,66%,1027 hPa
+Viernes 11 Enero 2019,Parcialmente cubierto,13°,En calma,77%,1024 hPa
+Sábado 12 Enero 2019,Parcialmente cubierto,11°,En calma,87%,1023 hPa
+Domingo 13 Enero 2019,Parcialmente cubierto,11°,En calma,82%,1023 hPa
+Lunes 14 Enero 2019,Neblina,8°,En calma,87%,1026 hPa
+Martes 15 Enero 2019,Cielo cubierto,14°,9 km/h,82%,1026 hPa
+Miércoles 16 Enero 2019,Neblina,10°,En calma,93%,1025 hPa
+Jueves 17 Enero 2019,Cielo cubierto,15°,7 km/h,67%,1025 hPa
+Viernes 18 Enero 2019,Cielo cubierto,12°,En calma,82%,1025 hPa
+Sábado 19 Enero 2019,Despejado,10°,En calma,82%,1023 hPa
+Domingo 20 Enero 2019,Despejado,17°,17 km/h,29%,1024 hPa
+Lunes 21 Enero 2019,Despejado,8°,En calma,81%,1024 hPa
+Martes 22 Enero 2019,Despejado,9°,En calma,76%,1022 hPa
+Miércoles 23 Enero 2019,Niebla,11°,En calma,94%,1022 hPa
+Jueves 24 Enero 2019,Despejado,11°,En calma,62%,1021 hPa
+Viernes 25 Enero 2019,Despejado,11°,6 km/h,62%,1021 hPa
+Sábado 26 Enero 2019,Parcialmente cubierto,13°,11 km/h,62%,1022 hPa
+Domingo 27 Enero 2019,Despejado,6°,En calma,65%,1021 hPa
+Lunes 28 Enero 2019,Despejado,2°,En calma,69%,1020 hPa
+Martes 29 Enero 2019,Despejado,12°,6 km/h,54%,1021 hPa
+Miércoles 30 Enero 2019,Despejado,5°,En calma,75%,1020 hPa
+Jueves 31 Enero 2019,Despejado,9°,En calma,53%,1021 hPa
+Viernes 1 Febrero 2019,Neblina,7°,En calma,87%,1021 hPa
+Sábado 2 Febrero 2019,Mayormente cubierto,8°,En calma,76%,1022 hPa
+Domingo 3 Febrero 2019,Despejado,10°,En calma,50%,1021 hPa
+Lunes 4 Febrero 2019,Despejado,21°,7 km/h,25%,1020 hPa
+Martes 5 Febrero 2019,Despejado,13°,En calma,47%,1021 hPa
+Miércoles 6 Febrero 2019,Despejado,11°,En calma,71%,1021 hPa
+Jueves 7 Febrero 2019,Despejado,7°,En calma,76%,1021 hPa
+Viernes 8 Febrero 2019,Nubes dispersas,9°,En calma,66%,1022 hPa
+Sábado 9 Febrero 2019,Nubes dispersas,16°,9 km/h,55%,1022 hPa
+Domingo 10 Febrero 2019,Parcialmente cubierto,13°,15 km/h,77%,1023 hPa
+Lunes 11 Febrero 2019,Parcialmente cubierto,14°,En calma,58%,1022 hPa
+Martes 12 Febrero 2019,Despejado,10°,En calma,82%,1021 hPa
+Miércoles 13 Febrero 2019,Despejado,13°,6 km/h,62%,1022 hPa
+Jueves 14 Febrero 2019,Despejado,15°,6 km/h,72%,1023 hPa
+Viernes 15 Febrero 2019,Despejado,12°,En calma,71%,1022 hPa
+Sábado 16 Febrero 2019,Despejado,12°,En calma,71%,1020 hPa
+Domingo 17 Febrero 2019,Despejado,16°,En calma,59%,1020 hPa
+Lunes 18 Febrero 2019,Despejado,12°,En calma,62%,1021 hPa
+Martes 19 Febrero 2019,Despejado,9°,En calma,81%,1019 hPa
+Miércoles 20 Febrero 2019,Despejado,10°,En calma,82%,1018 hPa
+Jueves 21 Febrero 2019,Despejado,19°,6 km/h,28%,1017 hPa
+Viernes 22 Febrero 2019,Parcialmente cubierto,13°,En calma,67%,1020 hPa
+Sábado 23 Febrero 2019,Lluvia ligera,14°,7 km/h,88%,1025 hPa
+Domingo 24 Febrero 2019,Parcialmente cubierto,12°,En calma,67%,1023 hPa
+Lunes 25 Febrero 2019,Despejado,13°,En calma,51%,1023 hPa
+Martes 26 Febrero 2019,Parcialmente cubierto,15°,En calma,48%,1025 hPa
+Miércoles 27 Febrero 2019,Despejado,13°,En calma,58%,1023 hPa
+Jueves 28 Febrero 2019,Despejado,13°,En calma,58%,1021 hPa
+Viernes 1 Marzo 2019,Despejado,14°,En calma,55%,1020 hPa
+Sábado 2 Marzo 2019,Despejado,16°,11 km/h,63%,1022 hPa
+Domingo 3 Marzo 2019,Despejado,11°,6 km/h,66%,1021 hPa
+Lunes 4 Marzo 2019,Despejado,13°,6 km/h,77%,1020 hPa
+Martes 5 Marzo 2019,Despejado,14°,En calma,55%,1021 hPa
+Miércoles 6 Marzo 2019,Despejado,18°,7 km/h,37%,1023 hPa
+Jueves 7 Marzo 2019,Despejado,11°,En calma,50%,1024 hPa
+Viernes 8 Marzo 2019,Despejado,12°,En calma,44%,1023 hPa
+Sábado 9 Marzo 2019,Despejado,16°,En calma,31%,1021 hPa
+Domingo 10 Marzo 2019,Despejado,15°,En calma,27%,1021 hPa
+Lunes 11 Marzo 2019,Despejado,12°,En calma,54%,1020 hPa
+Martes 12 Marzo 2019,Despejado,13°,En calma,82%,1021 hPa
+Miércoles 13 Marzo 2019,Despejado,16°,En calma,63%,1020 hPa
+Jueves 14 Marzo 2019,Despejado,11°,En calma,82%,1020 hPa
+Viernes 15 Marzo 2019,Despejado,16°,En calma,48%,1020 hPa
+Sábado 16 Marzo 2019,Mayormente cubierto,16°,En calma,68%,1021 hPa
+Domingo 17 Marzo 2019,Mayormente cubierto,14°,En calma,72%,1021 hPa
+Lunes 18 Marzo 2019,Parcialmente cubierto,16°,En calma,72%,1021 hPa
+Martes 19 Marzo 2019,Despejado,13°,En calma,72%,1021 hPa
+Miércoles 20 Marzo 2019,Despejado,15°,En calma,51%,1021 hPa
+Jueves 21 Marzo 2019,Despejado,13°,En calma,62%,1022 hPa
+Viernes 22 Marzo 2019,Despejado,15°,6 km/h,55%,1023 hPa
+Sábado 23 Marzo 2019,Despejado,16°,13 km/h,55%,1023 hPa
+Domingo 24 Marzo 2019,Despejado,15°,En calma,59%,1023 hPa
+Lunes 25 Marzo 2019,Despejado,17°,7 km/h,45%,1023 hPa
+Martes 26 Marzo 2019,Despejado,15°,11 km/h,27%,1021 hPa
+Miércoles 27 Marzo 2019,Despejado,15°,En calma,39%,1023 hPa
+Jueves 28 Marzo 2019,Parcialmente cubierto,18°,7 km/h,37%,1024 hPa
+Viernes 29 Marzo 2019,Despejado,17°,En calma,32%,1021 hPa
+Sábado 30 Marzo 2019,Despejado,19°,15 km/h,16%,1020 hPa
+Domingo 31 Marzo 2019,Despejado,16°,En calma,31%,1019 hPa
+Lunes 1 Abril 2019,Despejado,20°,En calma,26%,1023 hPa
+Martes 2 Abril 2019,Despejado,16°,En calma,51%,1022 hPa
+Miércoles 3 Abril 2019,Parcialmente cubierto,13°,En calma,67%,1023 hPa
+Jueves 4 Abril 2019,Despejado,14°,6 km/h,51%,1025 hPa
+Viernes 5 Abril 2019,Parcialmente cubierto,15°,En calma,55%,1022 hPa
+Sábado 6 Abril 2019,Mayormente cubierto,13°,En calma,62%,1020 hPa
+Domingo 7 Abril 2019,Despejado,14°,En calma,51%,1021 hPa
+Lunes 8 Abril 2019,Despejado,13°,En calma,38%,1021 hPa
+Martes 9 Abril 2019,Despejado,20°,En calma,23%,1022 hPa
+Miércoles 10 Abril 2019,Despejado,21°,7 km/h,28%,1021 hPa
+Jueves 11 Abril 2019,Despejado,11°,En calma,43%,1019 hPa
+Viernes 12 Abril 2019,Despejado,18°,En calma,26%,1018 hPa
+Sábado 13 Abril 2019,Parcialmente cubierto,17°,11 km/h,39%,1018 hPa
+Domingo 14 Abril 2019,Despejado,15°,En calma,29%,1019 hPa
+Lunes 15 Abril 2019,Parcialmente cubierto,20°,11 km/h,28%,1020 hPa
+Martes 16 Abril 2019,Nubes dispersas,19°,7 km/h,43%,1022 hPa
+Miércoles 17 Abril 2019,Despejado,14°,En calma,41%,1022 hPa
+Jueves 18 Abril 2019,Despejado,20°,15 km/h,35%,1020 hPa
+Viernes 19 Abril 2019,Despejado,16°,En calma,23%,1020 hPa
+Sábado 20 Abril 2019,Despejado,16°,6 km/h,31%,1022 hPa
+Domingo 21 Abril 2019,Despejado,21°,11 km/h,35%,1023 hPa
+Lunes 22 Abril 2019,Despejado,20°,9 km/h,26%,1023 hPa
+Martes 23 Abril 2019,Parcialmente cubierto,22°,7 km/h,15%,1021 hPa
+Miércoles 24 Abril 2019,Parcialmente cubierto,18°,En calma,20%,1020 hPa
+Jueves 25 Abril 2019,Mayormente cubierto,19°,En calma,21%,1020 hPa
+Viernes 26 Abril 2019,Parcialmente cubierto,21°,6 km/h,25%,1022 hPa
+Sábado 27 Abril 2019,Parcialmente cubierto,20°,7 km/h,28%,1022 hPa
+Domingo 28 Abril 2019,Mayormente cubierto,20°,13 km/h,37%,1021 hPa
+Lunes 29 Abril 2019,Despejado,21°,15 km/h,35%,1021 hPa
+Martes 30 Abril 2019,Despejado,20°,En calma,30%,1021 hPa
+Miércoles 1 Mayo 2019,Despejado,22°,En calma,21%,1021 hPa
+Jueves 2 Mayo 2019,Despejado,23°,15 km/h,23%,1020 hPa
+Viernes 3 Mayo 2019,Despejado,21°,En calma,26%,1020 hPa
+Sábado 4 Mayo 2019,Cielo cubierto,16°,7 km/h,39%,1018 hPa
+Domingo 5 Mayo 2019,Nubes dispersas,20°,En calma,23%,1018 hPa
+Lunes 6 Mayo 2019,Mayormente cubierto,20°,6 km/h,35%,1019 hPa
+Martes 7 Mayo 2019,Parcialmente cubierto,17°,13 km/h,23%,1022 hPa
+Miércoles 8 Mayo 2019,Despejado,18°,17 km/h,18%,1021 hPa
+Jueves 9 Mayo 2019,Despejado,17°,6 km/h,16%,1018 hPa
+Viernes 10 Mayo 2019,Mayormente cubierto,18°,En calma,30%,1019 hPa
+Sábado 11 Mayo 2019,Despejado,20°,9 km/h,28%,1020 hPa
+Domingo 12 Mayo 2019,Parcialmente cubierto,20°,7 km/h,26%,1020 hPa
+Lunes 13 Mayo 2019,Despejado,15°,En calma,39%,1020 hPa
+Martes 14 Mayo 2019,Despejado,15°,En calma,44%,1019 hPa
+Miércoles 15 Mayo 2019,Despejado,21°,11 km/h,26%,1021 hPa
+Jueves 16 Mayo 2019,Parcialmente cubierto,21°,7 km/h,25%,1021 hPa
+Viernes 17 Mayo 2019,Despejado,14°,6 km/h,47%,1020 hPa
+Sábado 18 Mayo 2019,Despejado,22°,13 km/h,23%,1021 hPa
+Domingo 19 Mayo 2019,Despejado,12°,En calma,54%,1020 hPa
+Lunes 20 Mayo 2019,Despejado,17°,En calma,34%,1020 hPa
+Martes 21 Mayo 2019,Despejado,21°,9 km/h,26%,1021 hPa
+Miércoles 22 Mayo 2019,Despejado,20°,11 km/h,24%,1019 hPa
+Jueves 23 Mayo 2019,Despejado,21°,9 km/h,25%,1020 hPa
+Viernes 24 Mayo 2019,Despejado,21°,7 km/h,23%,1019 hPa
+Sábado 25 Mayo 2019,Despejado,20°,En calma,43%,1020 hPa
+Domingo 26 Mayo 2019,Nubes dispersas,23°,15 km/h,44%,1021 hPa
+Lunes 27 Mayo 2019,Neblina,20°,7 km/h,60%,1021 hPa
+Martes 28 Mayo 2019,Nubes dispersas,22°,9 km/h,50%,1020 hPa
+Miércoles 29 Mayo 2019,Parcialmente cubierto,22°,22 km/h,53%,1017 hPa
+Jueves 30 Mayo 2019,Parcialmente cubierto,20°,22 km/h,64%,1017 hPa
+Viernes 31 Mayo 2019,Nubes dispersas,23°,30 km/h,38%,1019 hPa
+Viernes 31 Mayo 2019,Mayormente cubierto,21°,6 km/h,60%,1020 hPa
+Domingo 2 Junio 2019,Mayormente cubierto,22°,9 km/h,46%,1020 hPa
+Lunes 3 Junio 2019,Lluvia,22°,13 km/h,73%,1020 hPa
+Martes 4 Junio 2019,Mayormente cubierto,22°,9 km/h,60%,1019 hPa
+Miércoles 5 Junio 2019,Parcialmente cubierto,21°,13 km/h,73%,1021 hPa
+Jueves 6 Junio 2019,Cielo cubierto,20°,9 km/h,73%,1021 hPa
+Viernes 7 Junio 2019,Parcialmente cubierto,22°,En calma,60%,1020 hPa
+Sábado 8 Junio 2019,Neblina,20°,En calma,78%,1021 hPa
+Domingo 9 Junio 2019,Mayormente cubierto,23°,En calma,65%,1021 hPa
+Lunes 10 Junio 2019,Nubes dispersas,23°,6 km/h,61%,1023 hPa
+Martes 11 Junio 2019,Nubes dispersas,25°,7 km/h,26%,1025 hPa
+Miércoles 12 Junio 2019,Cielo cubierto,22°,9 km/h,57%,1021 hPa
+Jueves 13 Junio 2019,Mayormente cubierto,21°,En calma,69%,1021 hPa
+Viernes 14 Junio 2019,Neblina,18°,En calma,77%,1025 hPa
+Sábado 15 Junio 2019,Mayormente cubierto,22°,7 km/h,60%,1022 hPa
+Domingo 16 Junio 2019,Mayormente cubierto,20°,6 km/h,64%,1021 hPa
+Lunes 17 Junio 2019,Lluvia ligera,18°,9 km/h,77%,1021 hPa
+Martes 18 Junio 2019,Tormenta,21°,33 km/h,69%,1023 hPa
+Miércoles 19 Junio 2019,Mayormente cubierto,21°,9 km/h,60%,1023 hPa
+Jueves 20 Junio 2019,Mayormente cubierto,20°,En calma,78%,1021 hPa
+Viernes 21 Junio 2019,Mayormente cubierto,20°,7 km/h,73%,1021 hPa
+Sábado 22 Junio 2019,Mayormente cubierto,22°,15 km/h,64%,1023 hPa
+Domingo 23 Junio 2019,Nubes dispersas,23°,9 km/h,38%,1023 hPa
+Lunes 24 Junio 2019,Despejado,22°,7 km/h,38%,1021 hPa
+Martes 25 Junio 2019,Nubes dispersas,22°,13 km/h,60%,1020 hPa
+Miércoles 26 Junio 2019,Lluvia ligera,20°,7 km/h,78%,1023 hPa
+Jueves 27 Junio 2019,Lluvia ligera,18°,6 km/h,88%,1025 hPa
+Viernes 28 Junio 2019,Tormenta,21°,11 km/h,64%,1023 hPa
+Sábado 29 Junio 2019,Parcialmente cubierto,24°,11 km/h,34%,1023 hPa
+Domingo 30 Junio 2019,Mayormente cubierto,22°,17 km/h,69%,1023 hPa
+Lunes 1 Julio 2019,Parcialmente cubierto,16°,En calma,77%,1025 hPa
+Martes 2 Julio 2019,Mayormente cubierto,18°,En calma,68%,1024 hPa
+Miércoles 3 Julio 2019,Lluvia ligera,17°,6 km/h,82%,1025 hPa
+Jueves 4 Julio 2019,Despejado,17°,En calma,82%,1023 hPa
+Viernes 5 Julio 2019,Mayormente cubierto,20°,6 km/h,64%,1025 hPa
+Sábado 6 Julio 2019,Despejado,19°,11 km/h,73%,1025 hPa
+Domingo 7 Julio 2019,Cielo cubierto,19°,9 km/h,64%,1025 hPa
+Lunes 8 Julio 2019,Mayormente cubierto,19°,7 km/h,78%,1023 hPa
+Martes 9 Julio 2019,Mayormente cubierto,20°,11 km/h,64%,1025 hPa
+Miércoles 10 Julio 2019,Cielo cubierto,20°,6 km/h,73%,1023 hPa
+Jueves 11 Julio 2019,Tormenta,15°,13 > 44 km/h,94%,1023 hPa
+Viernes 12 Julio 2019,Mayormente cubierto,21°,22 km/h,69%,1021 hPa
+Sábado 13 Julio 2019,Mayormente cubierto,19°,En calma,78%,1022 hPa
+Domingo 14 Julio 2019,Mayormente cubierto,20°,13 km/h,78%,1023 hPa
+Lunes 15 Julio 2019,Mayormente cubierto,20°,6 km/h,83%,1023 hPa
+Martes 16 Julio 2019,Mayormente cubierto,19°,6 km/h,78%,1025 hPa
+Miércoles 17 Julio 2019,Tormenta,17°,57 km/h,82%,1025 hPa
+Jueves 18 Julio 2019,Neblina,18°,En calma,88%,1023 hPa
+Viernes 19 Julio 2019,Mayormente cubierto,20°,En calma,78%,1023 hPa
+Sábado 20 Julio 2019,Mayormente cubierto,17°,En calma,88%,1023 hPa
+Domingo 21 Julio 2019,Lluvia ligera,18°,En calma,83%,1023 hPa
+Lunes 22 Julio 2019,Lluvia ligera,17°,En calma,88%,1025 hPa
+Martes 23 Julio 2019,Lluvia,18°,9 km/h,77%,1024 hPa
+Miércoles 24 Julio 2019,Lluvia ligera,20°,9 km/h,73%,1025 hPa
+Jueves 25 Julio 2019,Lluvia ligera,18°,En calma,77%,1025 hPa
+Viernes 26 Julio 2019,Parcialmente cubierto,18°,7 km/h,77%,1023 hPa
+Sábado 27 Julio 2019,Mayormente cubierto,19°,En calma,78%,1025 hPa
+Domingo 28 Julio 2019,Parcialmente cubierto,19°,En calma,88%,1025 hPa
+Lunes 29 Julio 2019,Tormenta,15°,17 km/h,88%,1024 hPa
+Martes 30 Julio 2019,Cielo cubierto,17°,9 km/h,88%,1025 hPa
+Miércoles 31 Julio 2019,Parcialmente cubierto,19°,En calma,78%,1024 hPa
+Jueves 1 Agosto 2019,Hielo cristalizado,20°,9 km/h,83%,1023 hPa
+Viernes 2 Agosto 2019,Mayormente cubierto,18°,En calma,77%,1023 hPa
+Sábado 3 Agosto 2019,Mayormente cubierto,19°,En calma,78%,1022 hPa
+Domingo 4 Agosto 2019,Mayormente cubierto,21°,6 km/h,73%,1023 hPa
+Lunes 5 Agosto 2019,Parcialmente cubierto,18°,6 km/h,77%,1023 hPa
+Martes 6 Agosto 2019,Parcialmente cubierto,20°,En calma,78%,1023 hPa
+Miércoles 7 Agosto 2019,Mayormente cubierto,20°,6 km/h,78%,1024 hPa
+Jueves 8 Agosto 2019,Mayormente cubierto,20°,9 km/h,78%,1023 hPa
+Viernes 9 Agosto 2019,Parcialmente cubierto,17°,En calma,88%,1023 hPa
+Sábado 10 Agosto 2019,Mayormente cubierto,20°,7 km/h,73%,1022 hPa
+Domingo 11 Agosto 2019,Cielo cubierto,20°,En calma,73%,1023 hPa
+Lunes 12 Agosto 2019,Mayormente cubierto,19°,6 km/h,83%,1024 hPa
+Martes 13 Agosto 2019,Tormenta,20°,7 km/h,83%,1022 hPa
+Miércoles 14 Agosto 2019,Parcialmente cubierto,18°,En calma,83%,1022 hPa
+Jueves 15 Agosto 2019,Parcialmente cubierto,19°,9 km/h,78%,1023 hPa
+Viernes 16 Agosto 2019,Nubes dispersas,21°,13 km/h,69%,1024 hPa
+Sábado 17 Agosto 2019,Parcialmente cubierto,20°,9 km/h,83%,1023 hPa
+Domingo 18 Agosto 2019,Mayormente cubierto,20°,En calma,83%,1021 hPa
+Lunes 19 Agosto 2019,Nubes dispersas,21°,7 km/h,83%,1021 hPa
+Martes 20 Agosto 2019,Mayormente cubierto,17°,7 km/h,82%,1020 hPa
+Miércoles 21 Agosto 2019,Mayormente cubierto,20°,En calma,73%,1021 hPa
+Jueves 22 Agosto 2019,Parcialmente cubierto,21°,6 km/h,64%,1022 hPa
+Viernes 23 Agosto 2019,Cielo cubierto,18°,En calma,83%,1023 hPa
+Sábado 24 Agosto 2019,Cielo cubierto,20°,9 km/h,78%,1025 hPa
+Domingo 25 Agosto 2019,Cielo cubierto,20°,7 km/h,83%,1023 hPa
+Lunes 26 Agosto 2019,Mayormente cubierto,19°,En calma,83%,1023 hPa
+Martes 27 Agosto 2019,Mayormente cubierto,19°,En calma,88%,1022 hPa
+Miércoles 28 Agosto 2019,Cielo cubierto,17°,13 km/h,82%,1024 hPa
+Jueves 29 Agosto 2019,Hielo cristalizado,18°,6 km/h,88%,1023 hPa
+Viernes 30 Agosto 2019,Mayormente cubierto,16°,En calma,88%,1023 hPa
+Sábado 31 Agosto 2019,Despejado,19°,6 km/h,78%,1023 hPa
+Sábado 31 Agosto 2019,Despejado,18°,6 km/h,77%,1022 hPa
+Lunes 2 Septiembre 2019,Despejado,18°,En calma,73%,1022 hPa
+Martes 3 Septiembre 2019,Cielo cubierto,19°,En calma,78%,1023 hPa
+Miércoles 4 Septiembre 2019,Mayormente cubierto,19°,En calma,78%,1020 hPa
+Jueves 5 Septiembre 2019,Mayormente cubierto,17°,En calma,82%,1023 hPa
+Viernes 6 Septiembre 2019,Lluvia ligera,18°,En calma,94%,1026 hPa
+Sábado 7 Septiembre 2019,Cielo cubierto,18°,6 km/h,83%,1025 hPa
+Domingo 8 Septiembre 2019,Cielo cubierto,16°,En calma,94%,1025 hPa
+Lunes 9 Septiembre 2019,Parcialmente cubierto,16°,En calma,94%,1023 hPa
+Martes 10 Septiembre 2019,Neblina,17°,En calma,88%,1023 hPa
+Miércoles 11 Septiembre 2019,Mayormente cubierto,18°,7 km/h,83%,1023 hPa
+Jueves 12 Septiembre 2019,Mayormente cubierto,18°,15 km/h,83%,1022 hPa
+Viernes 13 Septiembre 2019,Lluvia ligera,18°,7 km/h,94%,1021 hPa
+Sábado 14 Septiembre 2019,Tormenta,17°,9 km/h,88%,1024 hPa
+Domingo 15 Septiembre 2019,Parcialmente cubierto,18°,6 km/h,83%,1023 hPa
+Lunes 16 Septiembre 2019,Despejado,18°,7 km/h,77%,1022 hPa
+Martes 17 Septiembre 2019,Despejado,18°,En calma,83%,1021 hPa
+Miércoles 18 Septiembre 2019,Mayormente cubierto,19°,En calma,73%,1021 hPa
+Jueves 19 Septiembre 2019,Cielo cubierto,19°,9 km/h,73%,1021 hPa
+Viernes 20 Septiembre 2019,Cielo cubierto,17°,11 km/h,88%,1021 hPa
+Sábado 21 Septiembre 2019,Mayormente cubierto,19°,6 km/h,83%,1022 hPa
+Domingo 22 Septiembre 2019,Nubes dispersas,18°,En calma,83%,1022 hPa
+Lunes 23 Septiembre 2019,Parcialmente cubierto,19°,En calma,83%,1023 hPa
+Martes 24 Septiembre 2019,Mayormente cubierto,20°,15 km/h,78%,1022 hPa
+Miércoles 25 Septiembre 2019,Parcialmente cubierto,17°,En calma,82%,1021 hPa
+Jueves 26 Septiembre 2019,Despejado,18°,En calma,83%,1022 hPa
+Viernes 27 Septiembre 2019,Cielo cubierto,19°,En calma,78%,1020 hPa
+Sábado 28 Septiembre 2019,Mayormente cubierto,21°,7 km/h,83%,1017 hPa
+Domingo 29 Septiembre 2019,Lluvia ligera,21°,9 km/h,83%,1017 hPa
+Lunes 30 Septiembre 2019,Cielo cubierto,18°,15 km/h,83%,1018 hPa
+Lunes 30 Septiembre 2019,Cielo cubierto,18°,En calma,88%,1020 hPa
+Miércoles 2 Octubre 2019,Mayormente cubierto,20°,7 km/h,68%,1020 hPa
+Jueves 3 Octubre 2019,Cielo cubierto,18°,9 km/h,83%,1020 hPa
+Viernes 4 Octubre 2019,Mayormente cubierto,15°,En calma,88%,1022 hPa
+Sábado 5 Octubre 2019,Mayormente cubierto,17°,En calma,82%,1023 hPa
+Domingo 6 Octubre 2019,Despejado,18°,En calma,88%,1022 hPa
+Lunes 7 Octubre 2019,Parcialmente cubierto,19°,En calma,88%,1021 hPa
+Martes 8 Octubre 2019,Parcialmente cubierto,18°,En calma,64%,1022 hPa
+Miércoles 9 Octubre 2019,Despejado,15°,En calma,82%,1021 hPa
+Jueves 10 Octubre 2019,Neblina,16°,En calma,94%,1021 hPa
+Viernes 11 Octubre 2019,Mayormente cubierto,19°,En calma,78%,1020 hPa
+Sábado 12 Octubre 2019,Mayormente cubierto,19°,6 km/h,83%,1021 hPa
+Domingo 13 Octubre 2019,Nubes dispersas,17°,En calma,82%,1021 hPa
+Lunes 14 Octubre 2019,Mayormente cubierto,18°,En calma,83%,1021 hPa
+Martes 15 Octubre 2019,Despejado,18°,En calma,94%,1021 hPa
+Miércoles 16 Octubre 2019,Despejado,19°,En calma,88%,1020 hPa
+Jueves 17 Octubre 2019,Mayormente cubierto,20°,En calma,78%,1020 hPa
+Viernes 18 Octubre 2019,Mayormente cubierto,20°,En calma,73%,1020 hPa
+Sábado 19 Octubre 2019,Mayormente cubierto,18°,6 km/h,88%,1019 hPa
+Domingo 20 Octubre 2019,Cielo cubierto,19°,En calma,88%,1018 hPa
+Lunes 21 Octubre 2019,Cielo cubierto,18°,9 km/h,83%,1020 hPa
+Martes 22 Octubre 2019,Parches de niebla,15°,En calma,94%,1022 hPa
+Miércoles 23 Octubre 2019,Cielo cubierto,16°,En calma,94%,1023 hPa
+Jueves 24 Octubre 2019,Mayormente cubierto,18°,19 km/h,77%,1020 hPa
+Viernes 25 Octubre 2019,Despejado,16°,7 km/h,88%,1019 hPa
+Sábado 26 Octubre 2019,Mayormente cubierto,16°,En calma,88%,1020 hPa
+Domingo 27 Octubre 2019,Parcialmente cubierto,16°,En calma,82%,1021 hPa
+Lunes 28 Octubre 2019,Despejado,12°,En calma,82%,1021 hPa
+Martes 29 Octubre 2019,Despejado,12°,En calma,88%,1020 hPa
+Miércoles 30 Octubre 2019,Despejado,15°,6 km/h,88%,1020 hPa
+Jueves 31 Octubre 2019,Despejado,14°,En calma,94%,1021 hPa
+Viernes 1 Noviembre 2019,Cielo cubierto,15°,11 km/h,77%,1026 hPa
+Sábado 2 Noviembre 2019,Nubes dispersas,16°,En calma,88%,1025 hPa
+Domingo 3 Noviembre 2019,Lluvia,16°,6 km/h,94%,1026 hPa
+Lunes 4 Noviembre 2019,Parcialmente cubierto,18°,En calma,83%,1023 hPa
+Martes 5 Noviembre 2019,Despejado,14°,En calma,88%,1021 hPa
+Miércoles 6 Noviembre 2019,Mayormente cubierto,17°,En calma,82%,1023 hPa
+Jueves 7 Noviembre 2019,Despejado,18°,En calma,77%,1023 hPa
+Viernes 8 Noviembre 2019,Despejado,16°,En calma,88%,1022 hPa
+Sábado 9 Noviembre 2019,Despejado,16°,9 km/h,72%,1025 hPa
+Domingo 10 Noviembre 2019,Neblina,18°,En calma,68%,1026 hPa
+Lunes 11 Noviembre 2019,Despejado,14°,En calma,72%,1022 hPa
+Martes 12 Noviembre 2019,Parcialmente cubierto,14°,En calma,82%,1021 hPa
+Miércoles 13 Noviembre 2019,Cielo cubierto,14°,En calma,88%,1021 hPa
+Jueves 14 Noviembre 2019,Cielo cubierto,14°,En calma,94%,1022 hPa
+Viernes 15 Noviembre 2019,Mayormente cubierto,15°,En calma,82%,1023 hPa
+Sábado 16 Noviembre 2019,Mayormente cubierto,17°,En calma,82%,1023 hPa
+Domingo 17 Noviembre 2019,Mayormente cubierto,15°,En calma,88%,1021 hPa
+Lunes 18 Noviembre 2019,Cielo cubierto,17°,7 km/h,88%,1023 hPa
+Martes 19 Noviembre 2019,Nubes dispersas,16°,6 km/h,82%,1022 hPa
+Miércoles 20 Noviembre 2019,Parcialmente cubierto,15°,En calma,88%,1021 hPa
+Jueves 21 Noviembre 2019,Despejado,14°,En calma,88%,1023 hPa
+Viernes 22 Noviembre 2019,Nubes dispersas,14°,En calma,94%,1022 hPa
+Sábado 23 Noviembre 2019,Parcialmente cubierto,15°,En calma,88%,1022 hPa
+Domingo 24 Noviembre 2019,Mayormente cubierto,13°,En calma,88%,1021 hPa
+Lunes 25 Noviembre 2019,Despejado,12°,6 km/h,76%,1020 hPa
+Martes 26 Noviembre 2019,Parcialmente cubierto,13°,En calma,77%,1019 hPa
+Miércoles 27 Noviembre 2019,Despejado,14°,En calma,88%,1020 hPa
+Jueves 28 Noviembre 2019,Neblina,10°,6 km/h,93%,1024 hPa
+Viernes 29 Noviembre 2019,Despejado,13°,En calma,82%,1026 hPa
+Sábado 30 Noviembre 2019,Despejado,12°,En calma,88%,1023 hPa
+Domingo 1 Diciembre 2019,Despejado,11°,En calma,87%,1021 hPa
+Lunes 2 Diciembre 2019,Despejado,12°,En calma,82%,1023 hPa
+Martes 3 Diciembre 2019,Despejado,13°,En calma,82%,1024 hPa
+Miércoles 4 Diciembre 2019,Despejado,11°,En calma,87%,1023 hPa
+Jueves 5 Diciembre 2019,Despejado,12°,7 km/h,76%,1022 hPa
+Viernes 6 Diciembre 2019,Despejado,12°,En calma,82%,1023 hPa
+Sábado 7 Diciembre 2019,Despejado,12°,6 km/h,71%,1026 hPa
+Domingo 8 Diciembre 2019,Despejado,6°,En calma,87%,1025 hPa
+Lunes 9 Diciembre 2019,Despejado,10°,En calma,76%,1022 hPa
+Martes 10 Diciembre 2019,Despejado,10°,En calma,76%,1023 hPa
+Miércoles 11 Diciembre 2019,Despejado,7°,En calma,87%,1023 hPa
+Jueves 12 Diciembre 2019,Despejado,10°,En calma,71%,1026 hPa
+Viernes 13 Diciembre 2019,Despejado,9°,En calma,76%,1025 hPa
+Sábado 14 Diciembre 2019,Despejado,8°,En calma,76%,1022 hPa
+Domingo 15 Diciembre 2019,Despejado,7°,En calma,81%,1021 hPa
+Lunes 16 Diciembre 2019,Despejado,8°,En calma,76%,1021 hPa
+Martes 17 Diciembre 2019,Despejado,10°,En calma,71%,1021 hPa
+Miércoles 18 Diciembre 2019,Parcialmente cubierto,12°,En calma,76%,1020 hPa
+Jueves 19 Diciembre 2019,Neblina,11°,9 km/h,62%,1025 hPa
+Viernes 20 Diciembre 2019,Mayormente cubierto,12°,En calma,82%,1022 hPa
+Sábado 21 Diciembre 2019,Cielo cubierto,13°,6 km/h,88%,1023 hPa
+Domingo 22 Diciembre 2019,Mayormente cubierto,9°,En calma,87%,1026 hPa
+Lunes 23 Diciembre 2019,Parcialmente cubierto,9°,En calma,87%,1025 hPa
+Martes 24 Diciembre 2019,Mayormente cubierto,15°,En calma,67%,1022 hPa
+Miércoles 25 Diciembre 2019,Despejado,8°,En calma,93%,1021 hPa
+Jueves 26 Diciembre 2019,Nubes dispersas,7°,En calma,81%,1020 hPa
+Viernes 27 Diciembre 2019,Despejado,9°,En calma,76%,1021 hPa
+Sábado 28 Diciembre 2019,Parcialmente cubierto,14°,En calma,72%,1021 hPa
+Domingo 29 Diciembre 2019,Mayormente cubierto,12°,En calma,76%,1022 hPa
+Lunes 30 Diciembre 2019,Despejado,6°,En calma,93%,1020 hPa
+Martes 31 Diciembre 2019,Despejado,9°,En calma,81%,1021 hPa
+Miércoles 1 Enero 2020,Mayormente cubierto,18°,En calma,59%,1019 hPa
+Jueves 2 Enero 2020,Cielo cubierto,14°,26 km/h,77%,1017 hPa
+Viernes 3 Enero 2020,Despejado,4°,En calma,93%,1020 hPa
+Sábado 4 Enero 2020,Despejado,8°,17 km/h,61%,1028 hPa
+Domingo 5 Enero 2020,Despejado,1°,En calma,69%,1030 hPa
+Lunes 6 Enero 2020,Despejado,3°,En calma,81%,1026 hPa
+Martes 7 Enero 2020,Mayormente cubierto,11°,En calma,54%,1026 hPa
+Miércoles 8 Enero 2020,Parcialmente cubierto,11°,En calma,43%,1026 hPa
+Jueves 9 Enero 2020,Despejado,9°,En calma,76%,1024 hPa
+Viernes 10 Enero 2020,Despejado,12°,En calma,71%,1023 hPa
+Sábado 11 Enero 2020,Mayormente cubierto,8°,6 km/h,76%,1022 hPa
+Domingo 12 Enero 2020,Parcialmente cubierto,8°,En calma,61%,1021 hPa
+Lunes 13 Enero 2020,Mayormente cubierto,11°,En calma,62%,1023 hPa
+Martes 14 Enero 2020,Despejado,10°,En calma,66%,1023 hPa
+Miércoles 15 Enero 2020,Parcialmente cubierto,11°,En calma,71%,1023 hPa
+Jueves 16 Enero 2020,Despejado,14°,En calma,67%,1022 hPa
+Viernes 17 Enero 2020,Cielo cubierto,17°,13 km/h,63%,1023 hPa
+Sábado 18 Enero 2020,Mayormente cubierto,15°,En calma,67%,1023 hPa
+Domingo 19 Enero 2020,Mayormente cubierto,17°,6 km/h,63%,1023 hPa
+Lunes 20 Enero 2020,Parcialmente cubierto,12°,En calma,82%,1027 hPa
+Martes 21 Enero 2020,Despejado,15°,7 km/h,59%,1026 hPa
+Miércoles 22 Enero 2020,Mayormente cubierto,18°,6 km/h,59%,1024 hPa
+Jueves 23 Enero 2020,Parcialmente cubierto,14°,En calma,63%,1020 hPa
+Viernes 24 Enero 2020,Mayormente cubierto,10°,En calma,82%,1021 hPa
+Sábado 25 Enero 2020,Parcialmente cubierto,14°,7 km/h,77%,1022 hPa
+Domingo 26 Enero 2020,Mayormente cubierto,14°,En calma,77%,1023 hPa
+Lunes 27 Enero 2020,Despejado,9°,En calma,81%,1023 hPa
+Martes 28 Enero 2020,Despejado,10°,En calma,57%,1021 hPa
+Miércoles 29 Enero 2020,Despejado,8°,En calma,61%,1020 hPa
+Jueves 30 Enero 2020,Nubes dispersas,12°,En calma,71%,1018 hPa
+Viernes 31 Enero 2020,Mayormente cubierto,10°,7 km/h,82%,1020 hPa
+Sábado 1 Febrero 2020,Mayormente cubierto,12°,En calma,54%,1023 hPa
+Domingo 2 Febrero 2020,Cielo cubierto,13°,En calma,47%,1026 hPa
+Lunes 3 Febrero 2020,Mayormente cubierto,14°,En calma,63%,1022 hPa
+Martes 4 Febrero 2020,Lluvia ligera,13°,En calma,88%,1025 hPa
+Miércoles 5 Febrero 2020,Mayormente cubierto,14°,En calma,82%,1020 hPa
+Jueves 6 Febrero 2020,Mayormente cubierto,11°,15 km/h,76%,1020 hPa
+Viernes 7 Febrero 2020,Parcialmente cubierto,3°,En calma,81%,1019 hPa
+Sábado 8 Febrero 2020,Despejado,9°,En calma,81%,1022 hPa
+Domingo 9 Febrero 2020,Despejado,11°,En calma,76%,1023 hPa
+Lunes 10 Febrero 2020,Despejado,10°,En calma,87%,1022 hPa
+Martes 11 Febrero 2020,Neblina,10°,En calma,93%,1021 hPa
+Miércoles 12 Febrero 2020,Despejado,15°,7 km/h,63%,1022 hPa
+Jueves 13 Febrero 2020,Parcialmente cubierto,10°,En calma,76%,1020 hPa
+Viernes 14 Febrero 2020,Despejado,13°,En calma,62%,1022 hPa
+Sábado 15 Febrero 2020,Parcialmente cubierto,12°,En calma,76%,1023 hPa
+Domingo 16 Febrero 2020,Nubes dispersas,14°,En calma,67%,1023 hPa
+Lunes 17 Febrero 2020,Parcialmente cubierto,11°,En calma,71%,1020 hPa
+Martes 18 Febrero 2020,Despejado,13°,7 km/h,77%,1019 hPa
+Miércoles 19 Febrero 2020,Despejado,17°,En calma,68%,1021 hPa
+Jueves 20 Febrero 2020,Despejado,12°,En calma,82%,1022 hPa
+Viernes 21 Febrero 2020,Despejado,16°,11 km/h,55%,1024 hPa
+Sábado 22 Febrero 2020,Mayormente cubierto,13°,6 km/h,72%,1026 hPa
+Domingo 23 Febrero 2020,Despejado,15°,En calma,72%,1025 hPa
+Lunes 24 Febrero 2020,Despejado,9°,En calma,76%,1021 hPa
+Martes 25 Febrero 2020,Despejado,13°,En calma,72%,1018 hPa
+Miércoles 26 Febrero 2020,Despejado,8°,En calma,66%,1019 hPa
+Jueves 27 Febrero 2020,Despejado,13°,7 km/h,54%,1023 hPa
+Viernes 28 Febrero 2020,Nubes dispersas,14°,En calma,67%,1025 hPa
+Sábado 29 Febrero 2020,Despejado,12°,En calma,71%,1026 hPa
+Domingo 1 Marzo 2020,Despejado,14°,6 km/h,67%,1025 hPa
+Lunes 2 Marzo 2020,Nubes dispersas,13°,En calma,72%,1023 hPa
+Martes 3 Marzo 2020,Despejado,13°,6 km/h,62%,1019 hPa
+Miércoles 4 Marzo 2020,Nubes dispersas,10°,En calma,82%,1020 hPa
+Jueves 5 Marzo 2020,Mayormente cubierto,13°,En calma,67%,1021 hPa
+Viernes 6 Marzo 2020,Mayormente cubierto,16°,13 km/h,48%,1024 hPa
+Sábado 7 Marzo 2020,Mayormente cubierto,17°,En calma,48%,1026 hPa
+Domingo 8 Marzo 2020,Mayormente cubierto,16°,6 km/h,72%,1023 hPa
+Lunes 9 Marzo 2020,Mayormente cubierto,18°,7 km/h,68%,1023 hPa
+Martes 10 Marzo 2020,Mayormente cubierto,15°,En calma,72%,1026 hPa
+Miércoles 11 Marzo 2020,Mayormente cubierto,19°,En calma,56%,1025 hPa
+Jueves 12 Marzo 2020,Mayormente cubierto,18°,7 km/h,37%,1020 hPa
+Viernes 13 Marzo 2020,Parcialmente cubierto,18°,9 km/h,52%,1021 hPa
+Sábado 14 Marzo 2020,Despejado,16°,En calma,63%,1023 hPa
+Domingo 15 Marzo 2020,Parcialmente cubierto,18°,9 km/h,64%,1024 hPa
+Lunes 16 Marzo 2020,Parcialmente cubierto,18°,6 km/h,59%,1025 hPa
+Martes 17 Marzo 2020,Parcialmente cubierto,18°,En calma,64%,1023 hPa
+Miércoles 18 Marzo 2020,Despejado,15°,En calma,72%,1023 hPa
+Jueves 19 Marzo 2020,Despejado,17°,7 km/h,48%,1024 hPa
+Viernes 20 Marzo 2020,Despejado,14°,En calma,63%,1025 hPa
+Sábado 21 Marzo 2020,Despejado,19°,En calma,60%,1023 hPa
+Domingo 22 Marzo 2020,Despejado,14°,6 km/h,72%,1022 hPa
+Lunes 23 Marzo 2020,Despejado,19°,6 km/h,49%,1023 hPa
+Martes 24 Marzo 2020,Despejado,18°,En calma,56%,1023 hPa
+Miércoles 25 Marzo 2020,Despejado,18°,6 km/h,39%,1021 hPa
+Jueves 26 Marzo 2020,Despejado,17°,En calma,42%,1021 hPa
+Viernes 27 Marzo 2020,Parcialmente cubierto,19°,En calma,52%,1020 hPa
+Sábado 28 Marzo 2020,Despejado,15°,En calma,48%,1020 hPa
+Domingo 29 Marzo 2020,Despejado,16°,6 km/h,39%,1019 hPa
+Lunes 30 Marzo 2020,Despejado,17°,7 km/h,42%,1021 hPa
+Martes 31 Marzo 2020,Despejado,18°,7 km/h,45%,1021 hPa
+Miércoles 1 Abril 2020,Parcialmente cubierto,18°,En calma,45%,1020 hPa
+Jueves 2 Abril 2020,Despejado,17°,En calma,55%,1021 hPa
+Viernes 3 Abril 2020,Despejado,15°,En calma,51%,1018 hPa
+Sábado 4 Abril 2020,Despejado,19°,7 km/h,43%,1020 hPa
+Sábado 4 Abril 2020,Despejado,18°,En calma,39%,1020 hPa
+Lunes 6 Abril 2020,Despejado,19°,7 km/h,40%,1021 hPa
+Martes 7 Abril 2020,Parcialmente cubierto,18°,En calma,34%,1023 hPa
+Miércoles 8 Abril 2020,Despejado,19°,En calma,37%,1024 hPa
+Jueves 9 Abril 2020,Despejado,17°,En calma,36%,1023 hPa
+Viernes 10 Abril 2020,Despejado,20°,En calma,32%,1023 hPa
+Sábado 11 Abril 2020,Despejado,18°,6 km/h,49%,1021 hPa
+Domingo 12 Abril 2020,Despejado,19°,7 km/h,34%,1021 hPa
+Lunes 13 Abril 2020,Despejado,14°,En calma,51%,1023 hPa
+Martes 14 Abril 2020,Despejado,14°,En calma,33%,1023 hPa
+Miércoles 15 Abril 2020,Despejado,19°,6 km/h,26%,1022 hPa
+Jueves 16 Abril 2020,Despejado,22°,9 km/h,20%,1022 hPa
+Viernes 17 Abril 2020,Despejado,20°,6 km/h,28%,1024 hPa
+Sábado 18 Abril 2020,Parcialmente cubierto,21°,11 km/h,33%,1025 hPa
+Domingo 19 Abril 2020,Despejado,20°,11 km/h,53%,1023 hPa
+Lunes 20 Abril 2020,Despejado,20°,6 km/h,49%,1021 hPa
+Martes 21 Abril 2020,Despejado,21°,7 km/h,28%,1021 hPa
+Miércoles 22 Abril 2020,Parcialmente cubierto,23°,19 km/h,25%,1022 hPa
+Jueves 23 Abril 2020,Despejado,22°,6 km/h,31%,1021 hPa
+Viernes 24 Abril 2020,Parcialmente cubierto,21°,7 km/h,13%,1020 hPa
+Sábado 25 Abril 2020,Despejado,19°,En calma,28%,1020 hPa
+Domingo 26 Abril 2020,Niebla espesa,22°,7 km/h,21%,1021 hPa
+Lunes 27 Abril 2020,Mayormente cubierto,21°,7 km/h,33%,1025 hPa
+Martes 28 Abril 2020,Despejado,21°,11 km/h,28%,1024 hPa
+Miércoles 29 Abril 2020,Parcialmente cubierto,22°,6 km/h,14%,1022 hPa
+Jueves 30 Abril 2020,Despejado,19°,En calma,19%,1022 hPa
+Viernes 1 Mayo 2020,Cielo cubierto,20°,7 km/h,35%,1025 hPa
+Sábado 2 Mayo 2020,Despejado,20°,13 km/h,49%,1024 hPa
+Domingo 3 Mayo 2020,Mayormente cubierto,22°,17 km/h,21%,1023 hPa
+Lunes 4 Mayo 2020,Parcialmente cubierto,22°,11 km/h,35%,1021 hPa
+Martes 5 Mayo 2020,Mayormente cubierto,21°,6 > 24 km/h,49%,1023 hPa
+Miércoles 6 Mayo 2020,Tormenta,17°,13 km/h,82%,1025 hPa
+Jueves 7 Mayo 2020,Lluvia ligera,16°,En calma,82%,1025 hPa
+Viernes 8 Mayo 2020,Mayormente cubierto,17°,7 km/h,82%,1025 hPa
+Sábado 9 Mayo 2020,Mayormente cubierto,21°,9 km/h,49%,1023 hPa
+Domingo 10 Mayo 2020,Despejado,20°,15 km/h,40%,1023 hPa
+Lunes 11 Mayo 2020,Despejado,15°,En calma,39%,1024 hPa
+Martes 12 Mayo 2020,Despejado,19°,9 km/h,28%,1023 hPa
+Miércoles 13 Mayo 2020,Despejado,15°,En calma,48%,1021 hPa
+Jueves 14 Mayo 2020,Despejado,20°,9 km/h,28%,1021 hPa
+Viernes 15 Mayo 2020,Despejado,20°,6 km/h,24%,1021 hPa
+Sábado 16 Mayo 2020,Despejado,20°,11 km/h,26%,1019 hPa
+Domingo 17 Mayo 2020,Despejado,16°,En calma,29%,1020 hPa
+Lunes 18 Mayo 2020,Despejado,22°,9 km/h,23%,1021 hPa
+Martes 19 Mayo 2020,Despejado,23°,13 km/h,25%,1021 hPa
+Miércoles 20 Mayo 2020,Despejado,22°,7 km/h,31%,1021 hPa
+Jueves 21 Mayo 2020,Despejado,21°,11 km/h,40%,1020 hPa
+Viernes 22 Mayo 2020,Despejado,20°,9 km/h,32%,1020 hPa
+Sábado 23 Mayo 2020,Despejado,21°,13 km/h,35%,1020 hPa
+Domingo 24 Mayo 2020,Despejado,20°,En calma,26%,1020 hPa
+Lunes 25 Mayo 2020,Despejado,14°,6 km/h,41%,1018 hPa
+Martes 26 Mayo 2020,Despejado,19°,6 km/h,34%,1019 hPa
+Miércoles 27 Mayo 2020,Despejado,20°,En calma,35%,1020 hPa
+Jueves 28 Mayo 2020,Despejado,23°,7 km/h,27%,1021 hPa
+Viernes 29 Mayo 2020,Despejado,22°,11 km/h,35%,1022 hPa
+Sábado 30 Mayo 2020,Mayormente cubierto,23°,En calma,33%,1021 hPa
+Domingo 31 Mayo 2020,Mayormente cubierto,21°,En calma,43%,1021 hPa
+Domingo 31 Mayo 2020,Mayormente cubierto,23°,En calma,41%,1020 hPa
+Martes 2 Junio 2020,Cielo cubierto,21°,13 km/h,56%,1021 hPa
+Miércoles 3 Junio 2020,Mayormente cubierto,22°,6 km/h,57%,1021 hPa
+Jueves 4 Junio 2020,Mayormente cubierto,25°,7 km/h,54%,1018 hPa
+Viernes 5 Junio 2020,Parcialmente cubierto,28°,11 km/h,32%,1017 hPa
+Sábado 6 Junio 2020,Nubes dispersas,23°,17 km/h,57%,1018 hPa
+Domingo 7 Junio 2020,Mayormente cubierto,21°,28 km/h,53%,1019 hPa
+Lunes 8 Junio 2020,Parcialmente cubierto,21°,11 km/h,69%,1020 hPa
+Martes 9 Junio 2020,Parcialmente cubierto,20°,17 km/h,49%,1021 hPa
+Miércoles 10 Junio 2020,Mayormente cubierto,18°,En calma,77%,1022 hPa
+Jueves 11 Junio 2020,Cielo cubierto,23°,6 km/h,41%,1025 hPa
+Viernes 12 Junio 2020,Mayormente cubierto,20°,En calma,56%,1026 hPa
+Sábado 13 Junio 2020,Despejado,18°,En calma,42%,1024 hPa
+Domingo 14 Junio 2020,Parcialmente cubierto,21°,6 > 26 km/h,64%,1021 hPa
+Lunes 15 Junio 2020,Parcialmente cubierto,18°,En calma,73%,1022 hPa
+Martes 16 Junio 2020,Mayormente cubierto,21°,En calma,64%,1023 hPa
+Miércoles 17 Junio 2020,Parcialmente cubierto,22°,6 km/h,50%,1023 hPa
+Jueves 18 Junio 2020,Cielo cubierto,21°,6 km/h,73%,1023 hPa
+Viernes 19 Junio 2020,Mayormente cubierto,21°,En calma,56%,1021 hPa
+Sábado 20 Junio 2020,Lluvia ligera,20°,6 km/h,78%,1021 hPa
+Domingo 21 Junio 2020,Lluvia ligera,18°,17 km/h,73%,1023 hPa
+Lunes 22 Junio 2020,Cielo cubierto,19°,En calma,83%,1023 hPa
+Martes 23 Junio 2020,Mayormente cubierto,17°,6 km/h,82%,1023 hPa
+Miércoles 24 Junio 2020,Lluvia ligera,15°,11 km/h,94%,1021 hPa
+Jueves 25 Junio 2020,Lluvia ligera,18°,6 km/h,64%,1021 hPa
+Viernes 26 Junio 2020,Mayormente cubierto,19°,En calma,78%,1022 hPa
+Sábado 27 Junio 2020,Mayormente cubierto,19°,En calma,64%,1023 hPa
+Domingo 28 Junio 2020,Parcialmente cubierto,20°,13 km/h,78%,1022 hPa
+Lunes 29 Junio 2020,Lluvia ligera,20°,20 km/h,60%,1023 hPa
+Martes 30 Junio 2020,Mayormente cubierto,21°,9 km/h,69%,1022 hPa
+Miércoles 1 Julio 2020,Mayormente cubierto,20°,En calma,78%,1020 hPa
+Jueves 2 Julio 2020,Parcialmente cubierto,20°,En calma,78%,1022 hPa
+Viernes 3 Julio 2020,Mayormente cubierto,21°,7 km/h,78%,1021 hPa
+Sábado 4 Julio 2020,Hielo cristalizado,20°,22 km/h,64%,1023 hPa
+Domingo 5 Julio 2020,Parcialmente cubierto,19°,19 km/h,64%,1022 hPa
+Lunes 6 Julio 2020,Mayormente cubierto,20°,6 km/h,78%,1021 hPa
+Martes 7 Julio 2020,Mayormente cubierto,21°,En calma,69%,1021 hPa
+Miércoles 8 Julio 2020,Hielo cristalizado,21°,7 km/h,73%,1022 hPa
+Jueves 9 Julio 2020,Cielo cubierto,19°,En calma,73%,1023 hPa
+Viernes 10 Julio 2020,Lluvia ligera,17°,6 km/h,82%,1025 hPa
+Sábado 11 Julio 2020,Mayormente cubierto,20°,7 km/h,73%,1023 hPa
+Domingo 12 Julio 2020,Mayormente cubierto,18°,En calma,88%,1023 hPa
+Lunes 13 Julio 2020,Parcialmente cubierto,18°,En calma,88%,1023 hPa
+Martes 14 Julio 2020,Mayormente cubierto,19°,En calma,78%,1023 hPa
+Miércoles 15 Julio 2020,Mayormente cubierto,19°,6 km/h,68%,1022 hPa
+Jueves 16 Julio 2020,Parcialmente cubierto,20°,6 km/h,83%,1022 hPa
+Viernes 17 Julio 2020,Mayormente cubierto,21°,13 km/h,73%,1025 hPa
+Sábado 18 Julio 2020,Mayormente cubierto,20°,9 km/h,53%,1023 hPa
+Domingo 19 Julio 2020,Mayormente cubierto,18°,En calma,83%,1024 hPa
+Lunes 20 Julio 2020,Mayormente cubierto,18°,7 km/h,77%,1023 hPa
+Martes 21 Julio 2020,Mayormente cubierto,19°,6 km/h,78%,1022 hPa
+Miércoles 22 Julio 2020,Mayormente cubierto,20°,En calma,78%,1021 hPa
+Jueves 23 Julio 2020,Mayormente cubierto,20°,En calma,78%,1022 hPa
+Viernes 24 Julio 2020,Parcialmente cubierto,17°,En calma,88%,1021 hPa
+Sábado 25 Julio 2020,Cielo cubierto,18°,En calma,88%,1021 hPa
+Domingo 26 Julio 2020,Cielo cubierto,18°,7 km/h,83%,1022 hPa
+Lunes 27 Julio 2020,Mayormente cubierto,20°,9 km/h,78%,1020 hPa
+Martes 28 Julio 2020,Mayormente cubierto,19°,En calma,88%,1021 hPa
+Miércoles 29 Julio 2020,Cielo cubierto,19°,En calma,88%,1021 hPa
+Jueves 30 Julio 2020,Mayormente cubierto,19°,En calma,83%,1023 hPa
+Viernes 31 Julio 2020,Cielo cubierto,20°,7 km/h,78%,1023 hPa
+Sábado 1 Agosto 2020,Lluvia ligera,17°,6 km/h,88%,1023 hPa
+Domingo 2 Agosto 2020,Cielo cubierto,17°,9 km/h,77%,1025 hPa
+Lunes 3 Agosto 2020,Mayormente cubierto,18°,7 km/h,83%,1024 hPa
+Martes 4 Agosto 2020,Mayormente cubierto,19°,En calma,83%,1025 hPa
+Miércoles 5 Agosto 2020,Mayormente cubierto,21°,En calma,73%,1023 hPa
+Jueves 6 Agosto 2020,Mayormente cubierto,19°,6 km/h,83%,1022 hPa
+Viernes 7 Agosto 2020,Cielo cubierto,19°,9 km/h,78%,1022 hPa
+Sábado 8 Agosto 2020,Despejado,20°,En calma,78%,1022 hPa
+Domingo 9 Agosto 2020,Mayormente cubierto,18°,En calma,77%,1023 hPa
+Lunes 10 Agosto 2020,Mayormente cubierto,18°,En calma,88%,1025 hPa
+Martes 11 Agosto 2020,Cielo cubierto,18°,6 km/h,88%,1024 hPa
+Miércoles 12 Agosto 2020,Lluvia ligera,17°,7 km/h,94%,1023 hPa
+Jueves 13 Agosto 2020,Lluvia ligera,17°,6 km/h,94%,1022 hPa
+Viernes 14 Agosto 2020,Cielo cubierto,18°,En calma,83%,1023 hPa
+Sábado 15 Agosto 2020,Parcialmente cubierto,18°,En calma,88%,1022 hPa
+Domingo 16 Agosto 2020,Lluvia ligera,16°,11 km/h,82%,1023 hPa
+Lunes 17 Agosto 2020,Mayormente cubierto,18°,En calma,77%,1023 hPa
+Martes 18 Agosto 2020,Cielo cubierto,19°,9 km/h,78%,1025 hPa
+Miércoles 19 Agosto 2020,Cielo cubierto,18°,En calma,83%,1024 hPa
+Jueves 20 Agosto 2020,Lluvia ligera,17°,6 km/h,94%,1024 hPa
+Viernes 21 Agosto 2020,Despejado,18°,En calma,88%,1020 hPa
+Sábado 22 Agosto 2020,Parcialmente cubierto,19°,En calma,83%,1020 hPa
+Domingo 23 Agosto 2020,Parcialmente cubierto,19°,En calma,78%,1020 hPa
+Lunes 24 Agosto 2020,Lluvia,17°,11 km/h,94%,1022 hPa
+Martes 25 Agosto 2020,Mayormente cubierto,21°,En calma,78%,1019 hPa
+Miércoles 26 Agosto 2020,Mayormente cubierto,21°,6 km/h,73%,1018 hPa
+Jueves 27 Agosto 2020,Mayormente cubierto,18°,9 km/h,94%,1018 hPa
+Viernes 28 Agosto 2020,Cielo cubierto,18°,7 km/h,83%,1022 hPa
+Sábado 29 Agosto 2020,Tormenta,18°,22 km/h,88%,1022 hPa
+Domingo 30 Agosto 2020,Mayormente cubierto,19°,7 km/h,83%,1022 hPa
+Lunes 31 Agosto 2020,Mayormente cubierto,20°,9 km/h,83%,1021 hPa
+Lunes 31 Agosto 2020,Mayormente cubierto,18°,6 km/h,83%,1023 hPa
+Miércoles 2 Septiembre 2020,Despejado,19°,6 km/h,88%,1023 hPa
+Jueves 3 Septiembre 2020,Mayormente cubierto,20°,6 km/h,83%,1021 hPa
+Viernes 4 Septiembre 2020,Despejado,18°,En calma,83%,1020 hPa
+Sábado 5 Septiembre 2020,Parcialmente cubierto,19°,En calma,73%,1022 hPa
+Domingo 6 Septiembre 2020,Cielo cubierto,19°,9 > 28 km/h,78%,1023 hPa
+Lunes 7 Septiembre 2020,Mayormente cubierto,17°,En calma,88%,1023 hPa
+Martes 8 Septiembre 2020,Mayormente cubierto,17°,En calma,88%,1018 hPa
+Miércoles 9 Septiembre 2020,Parcialmente cubierto,19°,En calma,83%,1019 hPa
+Jueves 10 Septiembre 2020,Mayormente cubierto,19°,7 km/h,83%,1022 hPa
+Viernes 11 Septiembre 2020,Mayormente cubierto,20°,En calma,83%,1023 hPa
+Sábado 12 Septiembre 2020,Parcialmente cubierto,17°,En calma,88%,1021 hPa
+Domingo 13 Septiembre 2020,Cielo cubierto,17°,En calma,88%,1021 hPa
+Lunes 14 Septiembre 2020,Cielo cubierto,20°,6 km/h,78%,1022 hPa
+Martes 15 Septiembre 2020,Parcialmente cubierto,18°,En calma,77%,1023 hPa
+Miércoles 16 Septiembre 2020,Mayormente cubierto,20°,En calma,78%,1022 hPa
+Jueves 17 Septiembre 2020,Mayormente cubierto,18°,6 km/h,88%,1022 hPa
+Viernes 18 Septiembre 2020,Mayormente cubierto,20°,15 km/h,83%,1021 hPa
+Sábado 19 Septiembre 2020,Mayormente cubierto,18°,En calma,88%,1021 hPa
+Domingo 20 Septiembre 2020,Parcialmente cubierto,19°,7 km/h,78%,1021 hPa
+Lunes 21 Septiembre 2020,Parcialmente cubierto,20°,7 km/h,73%,1023 hPa
+Martes 22 Septiembre 2020,Cielo cubierto,18°,4 km/h,88%,1025 hPa
+Miércoles 23 Septiembre 2020,Parcialmente cubierto,18°,En calma,83%,1023 hPa
+Jueves 24 Septiembre 2020,Despejado,18°,En calma,83%,1021 hPa
+Viernes 25 Septiembre 2020,Mayormente cubierto,17°,En calma,82%,1022 hPa
+Sábado 26 Septiembre 2020,Parcialmente cubierto,16°,4 km/h,82%,1023 hPa
+Domingo 27 Septiembre 2020,Mayormente cubierto,19°,En calma,83%,1021 hPa
+Lunes 28 Septiembre 2020,Mayormente cubierto,20°,En calma,78%,1020 hPa
+Martes 29 Septiembre 2020,Mayormente cubierto,18°,En calma,83%,1021 hPa
+Miércoles 30 Septiembre 2020,Mayormente cubierto,13°,6 km/h,77%,1023 hPa
+Miércoles 30 Septiembre 2020,Despejado,14°,En calma,77%,1023 hPa
+Viernes 2 Octubre 2020,Despejado,8°,En calma,71%,1025 hPa
+Sábado 3 Octubre 2020,Despejado,13°,11 km/h,54%,1023 hPa
+Domingo 4 Octubre 2020,Despejado,13°,En calma,77%,1021 hPa
+Lunes 5 Octubre 2020,Despejado,17°,15 km/h,32%,1026 hPa
+Martes 6 Octubre 2020,Despejado,12°,En calma,76%,1023 hPa
+Miércoles 7 Octubre 2020,Mayormente cubierto,15°,9 km/h,63%,1021 hPa
+Jueves 8 Octubre 2020,Despejado,13°,6 km/h,67%,1021 hPa
+Viernes 9 Octubre 2020,Despejado,14°,En calma,67%,1021 hPa
+Sábado 10 Octubre 2020,Despejado,18°,En calma,77%,1021 hPa
+Domingo 11 Octubre 2020,Parcialmente cubierto,21°,En calma,69%,1022 hPa
+Lunes 12 Octubre 2020,Despejado,17°,6 km/h,82%,1021 hPa
+Martes 13 Octubre 2020,Mayormente cubierto,20°,En calma,60%,1023 hPa
+Jueves 15 Octubre 2020,Neblina,17°,En calma,94%,1021 hPa
+Viernes 16 Octubre 2020,Cielo cubierto,22°,19 km/h,69%,1020 hPa
+Sábado 17 Octubre 2020,Nubes dispersas,17°,11 km/h,68%,1025 hPa
+Domingo 18 Octubre 2020,Despejado,16°,En calma,77%,1023 hPa
+Lunes 19 Octubre 2020,Mayormente cubierto,19°,6 km/h,83%,1021 hPa
+Martes 20 Octubre 2020,Parcialmente cubierto,17°,7 km/h,72%,1021 hPa
+Miércoles 21 Octubre 2020,Polvareda,16°,En calma,88%,1020 hPa
+Jueves 22 Octubre 2020,Mayormente cubierto,20°,13 km/h,73%,1020 hPa
+Viernes 23 Octubre 2020,Despejado,17°,En calma,94%,1022 hPa
+Sábado 24 Octubre 2020,Parcialmente cubierto,17°,En calma,82%,1023 hPa
+Domingo 25 Octubre 2020,Despejado,13°,7 km/h,77%,1022 hPa
+Lunes 26 Octubre 2020,Parcialmente cubierto,16°,En calma,82%,1020 hPa
+Martes 27 Octubre 2020,Parcialmente cubierto,17°,En calma,88%,1018 hPa
+Miércoles 28 Octubre 2020,Despejado,16°,En calma,88%,1019 hPa
+Jueves 29 Octubre 2020,Despejado,14°,En calma,88%,1021 hPa
+Viernes 30 Octubre 2020,Parcialmente cubierto,17°,En calma,72%,1022 hPa
+Sábado 31 Octubre 2020,Despejado,11°,En calma,87%,1025 hPa
+Domingo 1 Noviembre 2020,Despejado,15°,En calma,72%,1025 hPa
+Lunes 2 Noviembre 2020,Despejado,16°,11 km/h,39%,1028 hPa
+Martes 3 Noviembre 2020,Despejado,10°,9 km/h,53%,1028 hPa
+Miércoles 4 Noviembre 2020,Despejado,12°,6 km/h,62%,1026 hPa
+Jueves 5 Noviembre 2020,Despejado,15°,7 km/h,31%,1024 hPa
+Viernes 6 Noviembre 2020,Despejado,14°,En calma,38%,1022 hPa
+Sábado 7 Noviembre 2020,Despejado,10°,En calma,82%,1020 hPa
+Domingo 8 Noviembre 2020,Despejado,13°,En calma,72%,1020 hPa
+Lunes 9 Noviembre 2020,Despejado,12°,En calma,76%,1022 hPa
+Martes 10 Noviembre 2020,Despejado,16°,En calma,72%,1022 hPa
+Miércoles 11 Noviembre 2020,Despejado,11°,En calma,82%,1019 hPa
+Jueves 12 Noviembre 2020,Despejado,13°,En calma,72%,1021 hPa
+Viernes 13 Noviembre 2020,Despejado,11°,En calma,82%,1022 hPa
+Sábado 14 Noviembre 2020,Neblina,17°,En calma,63%,1023 hPa
+Domingo 15 Noviembre 2020,Despejado,13°,En calma,77%,1021 hPa
+Lunes 16 Noviembre 2020,Despejado,18°,7 km/h,45%,1025 hPa
+Martes 17 Noviembre 2020,Despejado,16°,11 km/h,48%,1027 hPa
+Miércoles 18 Noviembre 2020,Parcialmente cubierto,16°,11 km/h,59%,1028 hPa
+Jueves 19 Noviembre 2020,Despejado,16°,11 km/h,55%,1027 hPa
+Viernes 20 Noviembre 2020,Despejado,11°,En calma,66%,1025 hPa
+Sábado 21 Noviembre 2020,Despejado,10°,En calma,82%,1026 hPa
+Domingo 22 Noviembre 2020,Despejado,13°,7 km/h,67%,1024 hPa
+Lunes 23 Noviembre 2020,Despejado,12°,6 km/h,67%,1023 hPa
+Martes 24 Noviembre 2020,Despejado,13°,En calma,72%,1023 hPa
+Miércoles 25 Noviembre 2020,Despejado,15°,En calma,63%,1023 hPa
+Jueves 26 Noviembre 2020,Despejado,10°,6 km/h,76%,1022 hPa
+Viernes 27 Noviembre 2020,Mayormente cubierto,14°,En calma,72%,1022 hPa
+Sábado 28 Noviembre 2020,Despejado,13°,En calma,72%,1021 hPa
+Domingo 29 Noviembre 2020,Despejado,13°,En calma,72%,1021 hPa
+Lunes 30 Noviembre 2020,Despejado,11°,En calma,71%,1022 hPa
+Martes 1 Diciembre 2020,Despejado,14°,En calma,72%,1023 hPa
+Miércoles 2 Diciembre 2020,Despejado,11°,6 km/h,76%,1022 hPa
+Jueves 3 Diciembre 2020,Parcialmente cubierto,8°,En calma,87%,1021 hPa
+Viernes 4 Diciembre 2020,Mayormente cubierto,14°,En calma,77%,1021 hPa
+Sábado 5 Diciembre 2020,Mayormente cubierto,15°,4 km/h,77%,1023 hPa
+Domingo 6 Diciembre 2020,Parcialmente cubierto,12°,En calma,88%,1023 hPa
+Lunes 7 Diciembre 2020,Mayormente cubierto,13°,En calma,77%,1023 hPa
+Martes 8 Diciembre 2020,Mayormente cubierto,13°,En calma,77%,1025 hPa
+Miércoles 9 Diciembre 2020,Mayormente cubierto,16°,En calma,68%,1026 hPa
+Jueves 10 Diciembre 2020,Mayormente cubierto,15°,En calma,72%,1023 hPa
+Viernes 11 Diciembre 2020,Despejado,10°,En calma,87%,1026 hPa
+Sábado 12 Diciembre 2020,Despejado,10°,En calma,82%,1020 hPa
+Domingo 13 Diciembre 2020,Neblina,10°,En calma,87%,1022 hPa
+Lunes 14 Diciembre 2020,Parcialmente cubierto,14°,6 km/h,63%,1023 hPa
+Martes 15 Diciembre 2020,Despejado,12°,En calma,67%,1023 hPa
+Miércoles 16 Diciembre 2020,Despejado,11°,En calma,66%,1021 hPa
+Jueves 17 Diciembre 2020,Despejado,12°,En calma,54%,1021 hPa
+Viernes 18 Diciembre 2020,Parcialmente cubierto,11°,En calma,71%,1024 hPa
+Sábado 19 Diciembre 2020,Despejado,9°,En calma,76%,1025 hPa
+Domingo 20 Diciembre 2020,Neblina,6°,En calma,81%,1023 hPa
+Lunes 21 Diciembre 2020,Parcialmente cubierto,12°,En calma,58%,1021 hPa
+Martes 22 Diciembre 2020,Despejado,10°,En calma,66%,1025 hPa
+Miércoles 23 Diciembre 2020,Despejado,10°,En calma,62%,1025 hPa
+Jueves 24 Diciembre 2020,Despejado,11°,En calma,47%,1023 hPa
+Viernes 25 Diciembre 2020,Neblina,6°,En calma,42%,1025 hPa
+Sábado 26 Diciembre 2020,Despejado,10°,En calma,66%,1025 hPa
+Domingo 27 Diciembre 2020,Parcialmente cubierto,8°,7 km/h,46%,1021 hPa
+Lunes 28 Diciembre 2020,Despejado,7°,En calma,57%,1022 hPa
+Martes 29 Diciembre 2020,Despejado,10°,En calma,50%,1021 hPa
+Miércoles 30 Diciembre 2020,Despejado,10°,7 km/h,53%,1021 hPa
+Jueves 31 Diciembre 2020,Parcialmente cubierto,9°,13 km/h,76%,1017 hPa
+Viernes 1 Enero 2021,Despejado,6°,En calma,70%,1018 hPa
+Sábado 2 Enero 2021,Despejado,1°,En calma,75%,1022 hPa
+Domingo 3 Enero 2021,Despejado,6°,En calma,52%,1023 hPa
+Lunes 4 Enero 2021,Despejado,3°,En calma,75%,1025 hPa
+Martes 5 Enero 2021,Despejado,5°,En calma,81%,1024 hPa
+Miércoles 6 Enero 2021,Despejado,11°,En calma,62%,1021 hPa
+Jueves 7 Enero 2021,Neblina,10°,En calma,62%,1023 hPa
+Viernes 8 Enero 2021,Mayormente cubierto,11°,En calma,50%,1023 hPa
+Sábado 9 Enero 2021,Parcialmente cubierto,14°,6 km/h,58%,1023 hPa
+Domingo 10 Enero 2021,Nubes dispersas,14°,En calma,72%,1022 hPa
+Lunes 11 Enero 2021,Despejado,9°,En calma,76%,1022 hPa
+Martes 12 Enero 2021,Despejado,8°,En calma,66%,1023 hPa
+Miércoles 13 Enero 2021,Mayormente cubierto,8°,7 km/h,71%,1025 hPa
+Jueves 14 Enero 2021,Neblina,13°,En calma,47%,1023 hPa
+Viernes 15 Enero 2021,Despejado,9°,En calma,66%,1022 hPa
+Sábado 16 Enero 2021,Mayormente cubierto,8°,En calma,53%,1021 hPa
+Domingo 17 Enero 2021,Parcialmente cubierto,16°,7 km/h,39%,1021 hPa
+Lunes 18 Enero 2021,Nubes dispersas,10°,En calma,43%,1021 hPa
+Martes 19 Enero 2021,Parcialmente cubierto,11°,En calma,76%,1021 hPa
+Miércoles 20 Enero 2021,Mayormente cubierto,14°,En calma,58%,1023 hPa
+Jueves 21 Enero 2021,Parcialmente cubierto,12°,En calma,88%,1025 hPa
+Viernes 22 Enero 2021,Despejado,13°,En calma,72%,1024 hPa
+Sábado 23 Enero 2021,Despejado,11°,En calma,66%,1022 hPa
+Domingo 24 Enero 2021,Parcialmente cubierto,10°,En calma,57%,1021 hPa
+Lunes 25 Enero 2021,Despejado,15°,En calma,44%,1021 hPa
+Martes 26 Enero 2021,Despejado,6°,En calma,81%,1020 hPa
+Miércoles 27 Enero 2021,Despejado,29°,6 km/h,11%,1018 hPa
+Jueves 28 Enero 2021,Parcialmente cubierto,15°,En calma,44%,1023 hPa
+Viernes 29 Enero 2021,Despejado,14°,En calma,67%,1025 hPa
+Sábado 30 Enero 2021,Despejado,16°,7 km/h,55%,1023 hPa
+Domingo 31 Enero 2021,Despejado,13°,En calma,47%,1021 hPa
+Lunes 1 Febrero 2021,Despejado,17°,9 km/h,36%,1023 hPa
+Martes 2 Febrero 2021,Despejado,16°,En calma,42%,1023 hPa
+Miércoles 3 Febrero 2021,Despejado,13°,En calma,44%,1022 hPa
+Jueves 4 Febrero 2021,Despejado,17°,7 km/h,39%,1021 hPa
+Viernes 5 Febrero 2021,Despejado,13°,En calma,33%,1020 hPa
+Sábado 6 Febrero 2021,Despejado,14°,En calma,31%,1019 hPa
+Domingo 7 Febrero 2021,Despejado,10°,En calma,43%,1019 hPa
+Lunes 8 Febrero 2021,Despejado,13°,En calma,54%,1020 hPa
+Martes 9 Febrero 2021,Despejado,15°,En calma,41%,1021 hPa
+Miércoles 10 Febrero 2021,Despejado,14°,En calma,31%,1021 hPa
+Jueves 11 Febrero 2021,Despejado,14°,11 km/h,44%,1020 hPa
+Viernes 12 Febrero 2021,Despejado,6°,En calma,56%,1016 hPa
+Sábado 13 Febrero 2021,Despejado,6°,En calma,52%,1016 hPa
+Domingo 14 Febrero 2021,Despejado,9°,En calma,57%,1017 hPa
+Lunes 15 Febrero 2021,Despejado,6°,En calma,65%,1019 hPa
+Martes 16 Febrero 2021,Despejado,9°,En calma,57%,1020 hPa
+Miércoles 17 Febrero 2021,Despejado,9°,En calma,57%,1020 hPa
+Jueves 18 Febrero 2021,Despejado,13°,7 km/h,47%,1020 hPa
+Viernes 19 Febrero 2021,Despejado,9°,En calma,46%,1021 hPa
+Sábado 20 Febrero 2021,Despejado,9°,En calma,43%,1024 hPa
+Domingo 21 Febrero 2021,Despejado,14°,En calma,58%,1023 hPa
+Lunes 22 Febrero 2021,Despejado,15°,En calma,51%,1023 hPa
+Martes 23 Febrero 2021,Despejado,16°,En calma,42%,1022 hPa
+Miércoles 24 Febrero 2021,Despejado,19°,En calma,34%,1023 hPa
+Jueves 25 Febrero 2021,Despejado,17°,7 km/h,39%,1021 hPa
+Viernes 26 Febrero 2021,Despejado,16°,9 km/h,39%,1021 hPa
+Sábado 27 Febrero 2021,Despejado,13°,En calma,51%,1018 hPa
+Domingo 28 Febrero 2021,Despejado,15°,En calma,51%,1020 hPa
+Lunes 1 Marzo 2021,Despejado,16°,En calma,42%,1021 hPa
+Martes 2 Marzo 2021,Despejado,18°,En calma,37%,1019 hPa
+Miércoles 3 Marzo 2021,Despejado,18°,9 km/h,37%,1022 hPa
+Jueves 4 Marzo 2021,Despejado,14°,7 km/h,55%,1023 hPa
+Viernes 5 Marzo 2021,Despejado,12°,En calma,50%,1021 hPa
+Sábado 6 Marzo 2021,Despejado,12°,En calma,40%,1019 hPa
+Domingo 7 Marzo 2021,Despejado,15°,En calma,44%,1021 hPa
+Lunes 8 Marzo 2021,Despejado,17°,En calma,52%,1025 hPa
+Martes 9 Marzo 2021,Despejado,15°,En calma,51%,1026 hPa
+Miércoles 10 Marzo 2021,Parcialmente cubierto,14°,En calma,51%,1023 hPa
+Jueves 11 Marzo 2021,Despejado,16°,6 km/h,36%,1023 hPa
+Viernes 12 Marzo 2021,Despejado,17°,6 km/h,39%,1024 hPa
+Sábado 13 Marzo 2021,Despejado,13°,En calma,44%,1025 hPa
+Domingo 14 Marzo 2021,Despejado,15°,En calma,39%,1023 hPa
+Lunes 15 Marzo 2021,Despejado,14°,6 km/h,38%,1021 hPa
+Martes 16 Marzo 2021,Despejado,11°,En calma,40%,1020 hPa
+Miércoles 17 Marzo 2021,Despejado,13°,En calma,26%,1020 hPa
+Jueves 18 Marzo 2021,Despejado,12°,En calma,26%,1020 hPa
+Viernes 19 Marzo 2021,Despejado,18°,9 km/h,26%,1022 hPa
+Sábado 20 Marzo 2021,Despejado,17°,En calma,32%,1023 hPa
+Domingo 21 Marzo 2021,Despejado,13°,En calma,35%,1021 hPa
+Lunes 22 Marzo 2021,Despejado,17°,6 km/h,22%,1022 hPa
+Martes 23 Marzo 2021,Despejado,11°,En calma,35%,1020 hPa
+Miércoles 24 Marzo 2021,Parcialmente cubierto,12°,9 km/h,30%,1018 hPa
+Jueves 25 Marzo 2021,Despejado,10°,6 km/h,34%,1018 hPa
+Viernes 26 Marzo 2021,Despejado,16°,9 km/h,27%,1020 hPa
+Sábado 27 Marzo 2021,Despejado,11°,En calma,30%,1021 hPa
+Domingo 28 Marzo 2021,Parcialmente cubierto,16°,7 km/h,27%,1021 hPa
+Lunes 29 Marzo 2021,Despejado,18°,6 km/h,32%,1020 hPa
+Martes 30 Marzo 2021,Despejado,18°,7 km/h,37%,1020 hPa
+Miércoles 31 Marzo 2021,Despejado,19°,6 km/h,28%,1021 hPa
+Jueves 1 Abril 2021,Nubes dispersas,18°,7 km/h,30%,1021 hPa
+Viernes 2 Abril 2021,Despejado,18°,19 km/h,42%,1025 hPa
+Sábado 3 Abril 2021,Despejado,19°,En calma,43%,1023 hPa
+Sábado 3 Abril 2021,Mayormente cubierto,20°,7 km/h,49%,1023 hPa
+Lunes 5 Abril 2021,Nubes dispersas,19°,9 km/h,30%,1020 hPa
+Martes 6 Abril 2021,Parcialmente cubierto,17°,9 km/h,32%,1021 hPa
+Miércoles 7 Abril 2021,Despejado,15°,En calma,59%,1021 hPa
+Jueves 8 Abril 2021,Mayormente cubierto,21°,7 km/h,28%,1019 hPa
+Viernes 9 Abril 2021,Parcialmente cubierto,21°,13 km/h,38%,1020 hPa
+Sábado 10 Abril 2021,Despejado,20°,6 km/h,32%,1020 hPa
+Domingo 11 Abril 2021,Parcialmente cubierto,20°,13 km/h,37%,1018 hPa
+Lunes 12 Abril 2021,Despejado,20°,7 km/h,24%,1018 hPa
+Martes 13 Abril 2021,Despejado,20°,11 km/h,32%,1020 hPa
+Miércoles 14 Abril 2021,Niebla espesa,19°,En calma,22%,1021 hPa
+Jueves 15 Abril 2021,Despejado,19°,En calma,21%,1021 hPa
+Viernes 16 Abril 2021,Despejado,20°,9 km/h,24%,1020 hPa
+Sábado 17 Abril 2021,Niebla espesa,12°,6 km/h,50%,1018 hPa
+Domingo 18 Abril 2021,Parcialmente cubierto,15°,En calma,31%,1019 hPa
+Lunes 19 Abril 2021,Despejado,14°,En calma,44%,1019 hPa
+Martes 20 Abril 2021,Despejado,19°,17 km/h,32%,1021 hPa
+Miércoles 21 Abril 2021,Despejado,19°,11 km/h,34%,1022 hPa
+Jueves 22 Abril 2021,Despejado,19°,En calma,30%,1021 hPa
+Viernes 23 Abril 2021,Nubes dispersas,18°,En calma,34%,1022 hPa
+Sábado 24 Abril 2021,Despejado,20°,9 km/h,32%,1021 hPa
+Domingo 25 Abril 2021,Parcialmente cubierto,19°,En calma,37%,1020 hPa
+Lunes 26 Abril 2021,Parcialmente cubierto,21°,7 km/h,38%,1022 hPa
+Martes 27 Abril 2021,Mayormente cubierto,20°,En calma,43%,1021 hPa
+Miércoles 28 Abril 2021,Parcialmente cubierto,19°,En calma,49%,1020 hPa
+Jueves 29 Abril 2021,Despejado,14°,7 km/h,77%,1020 hPa
+Viernes 30 Abril 2021,Nubes dispersas,20°,9 km/h,49%,1021 hPa
+Sábado 1 Mayo 2021,Parcialmente cubierto,22°,13 km/h,33%,1021 hPa
+Domingo 2 Mayo 2021,Despejado,17°,En calma,36%,1021 hPa
+Lunes 3 Mayo 2021,Despejado,18°,En calma,22%,1018 hPa
+Martes 4 Mayo 2021,Despejado,17°,En calma,27%,1019 hPa
+Miércoles 5 Mayo 2021,Despejado,20°,9 km/h,28%,1021 hPa
+Jueves 6 Mayo 2021,Despejado,23°,7 km/h,31%,1024 hPa
+Viernes 7 Mayo 2021,Mayormente cubierto,20°,7 km/h,53%,1023 hPa
+Sábado 8 Mayo 2021,Parcialmente cubierto,22°,11 km/h,46%,1023 hPa
+Domingo 9 Mayo 2021,Mayormente cubierto,19°,9 km/h,64%,1021 hPa
+Lunes 10 Mayo 2021,Cielo cubierto,21°,15 km/h,60%,1022 hPa
+Martes 11 Mayo 2021,Cielo cubierto,17°,4 km/h,77%,1021 hPa
+Miércoles 12 Mayo 2021,Mayormente cubierto,21°,9 km/h,56%,1022 hPa
+Jueves 13 Mayo 2021,Mayormente cubierto,20°,20 km/h,64%,1025 hPa
+Viernes 14 Mayo 2021,Mayormente cubierto,24°,11 km/h,41%,1023 hPa
+Sábado 15 Mayo 2021,Mayormente cubierto,21°,En calma,56%,1022 hPa
+Domingo 16 Mayo 2021,Nubes dispersas,21°,20 km/h,56%,1022 hPa
+Lunes 17 Mayo 2021,Despejado,22°,13 km/h,35%,1021 hPa
+Martes 18 Mayo 2021,Despejado,19°,7 km/h,43%,1021 hPa
+Miércoles 19 Mayo 2021,Despejado,22°,11 km/h,17%,1019 hPa
+Jueves 20 Mayo 2021,Despejado,18°,En calma,20%,1019 hPa
+Viernes 21 Mayo 2021,Despejado,22°,7 km/h,27%,1020 hPa
+Sábado 22 Mayo 2021,Despejado,21°,7 km/h,30%,1021 hPa
+Domingo 23 Mayo 2021,Despejado,21°,En calma,28%,1022 hPa
+Lunes 24 Mayo 2021,Despejado,21°,11 km/h,25%,1022 hPa
+Martes 25 Mayo 2021,Despejado,17°,En calma,29%,1021 hPa
+Miércoles 26 Mayo 2021,Despejado,23°,11 km/h,31%,1023 hPa
+Jueves 27 Mayo 2021,Parcialmente cubierto,24°,6 km/h,36%,1024 hPa
+Viernes 28 Mayo 2021,Mayormente cubierto,23°,22 km/h,38%,1022 hPa
+Sábado 29 Mayo 2021,Parcialmente cubierto,21°,11 km/h,46%,1021 hPa
+Domingo 30 Mayo 2021,Despejado,22°,En calma,38%,1021 hPa
+Lunes 31 Mayo 2021,Despejado,21°,20 km/h,38%,1023 hPa
+Lunes 31 Mayo 2021,Mayormente cubierto,22°,7 km/h,46%,1024 hPa
+Miércoles 2 Junio 2021,Cielo cubierto,22°,13 km/h,50%,1023 hPa
+Jueves 3 Junio 2021,Mayormente cubierto,17°,En calma,88%,1021 hPa
+Viernes 4 Junio 2021,Cielo cubierto,18°,En calma,83%,1022 hPa
+Sábado 5 Junio 2021,Mayormente cubierto,19°,En calma,68%,1021 hPa
+Domingo 6 Junio 2021,Mayormente cubierto,20°,9 km/h,64%,1023 hPa
+Lunes 7 Junio 2021,Mayormente cubierto,21°,7 km/h,69%,1021 hPa
+Martes 8 Junio 2021,Parcialmente cubierto,23°,15 km/h,53%,1021 hPa
+Miércoles 9 Junio 2021,Parcialmente cubierto,22°,6 km/h,64%,1023 hPa
+Jueves 10 Junio 2021,Parcialmente cubierto,24°,17 km/h,54%,1023 hPa
+Viernes 11 Junio 2021,Parcialmente cubierto,22°,En calma,60%,1021 hPa
+Sábado 12 Junio 2021,Parcialmente cubierto,22°,7 km/h,64%,1020 hPa
+Domingo 13 Junio 2021,Cielo cubierto,17°,6 km/h,82%,1021 hPa
+Lunes 14 Junio 2021,Lluvia ligera,18°,7 km/h,88%,1022 hPa
+Martes 15 Junio 2021,Cielo cubierto,18°,En calma,88%,1022 hPa
+Miércoles 16 Junio 2021,Parcialmente cubierto,22°,7 km/h,57%,1021 hPa
+Jueves 17 Junio 2021,Mayormente cubierto,22°,En calma,33%,1020 hPa
+Viernes 18 Junio 2021,Mayormente cubierto,24°,6 km/h,47%,1019 hPa
+Sábado 19 Junio 2021,Mayormente cubierto,20°,22 km/h,64%,1019 hPa
+Domingo 20 Junio 2021,Lluvia ligera,19°,9 km/h,73%,1022 hPa
+Lunes 21 Junio 2021,Parcialmente cubierto,19°,En calma,78%,1023 hPa
+Martes 22 Junio 2021,Parcialmente cubierto,21°,En calma,69%,1022 hPa
+Miércoles 23 Junio 2021,Mayormente cubierto,20°,6 km/h,78%,1023 hPa
+Jueves 24 Junio 2021,Mayormente cubierto,18°,En calma,83%,1025 hPa
+Viernes 25 Junio 2021,Mayormente cubierto,18°,En calma,88%,1023 hPa
+Sábado 26 Junio 2021,Mayormente cubierto,17°,6 km/h,82%,1020 hPa
+Domingo 27 Junio 2021,Cielo cubierto,18°,20 km/h,77%,1020 hPa
+Lunes 28 Junio 2021,Lluvia ligera,18°,15 km/h,77%,1018 hPa
+Martes 29 Junio 2021,Cielo cubierto,18°,En calma,77%,1020 hPa
+Miércoles 30 Junio 2021,Mayormente cubierto,18°,7 km/h,73%,1022 hPa
+Jueves 1 Julio 2021,Cielo cubierto,19°,En calma,83%,1020 hPa
+Viernes 2 Julio 2021,Mayormente cubierto,18°,En calma,88%,1022 hPa
+Sábado 3 Julio 2021,Cielo cubierto,17°,En calma,88%,1022 hPa
+Domingo 4 Julio 2021,Parcialmente cubierto,20°,En calma,68%,1023 hPa
+Lunes 5 Julio 2021,Parcialmente cubierto,19°,6 km/h,78%,1023 hPa
+Martes 6 Julio 2021,Mayormente cubierto,21°,17 km/h,73%,1023 hPa
+Miércoles 7 Julio 2021,Parcialmente cubierto,20°,6 km/h,73%,1022 hPa
+Jueves 8 Julio 2021,Mayormente cubierto,20°,7 km/h,73%,1019 hPa
+Jueves 9 Julio 2020,Cielo cubierto,19°,En calma,73%,1023 hPa
+Viernes 10 Julio 2020,Lluvia ligera,17°,6 km/h,82%,1025 hPa
+Sábado 11 Julio 2020,Mayormente cubierto,20°,7 km/h,73%,1023 hPa
+Domingo 12 Julio 2020,Mayormente cubierto,18°,En calma,88%,1023 hPa
+Lunes 13 Julio 2020,Parcialmente cubierto,18°,En calma,88%,1023 hPa
+Martes 14 Julio 2020,Mayormente cubierto,19°,En calma,78%,1023 hPa
+Miércoles 15 Julio 2020,Mayormente cubierto,19°,6 km/h,68%,1022 hPa
+Jueves 16 Julio 2020,Parcialmente cubierto,20°,6 km/h,83%,1022 hPa
+Viernes 17 Julio 2020,Mayormente cubierto,21°,13 km/h,73%,1025 hPa
+Sábado 18 Julio 2020,Mayormente cubierto,20°,9 km/h,53%,1023 hPa
+Domingo 19 Julio 2020,Mayormente cubierto,18°,En calma,83%,1024 hPa
+Lunes 20 Julio 2020,Mayormente cubierto,18°,7 km/h,77%,1023 hPa
+Martes 21 Julio 2020,Mayormente cubierto,19°,6 km/h,78%,1022 hPa
+Miércoles 22 Julio 2020,Mayormente cubierto,20°,En calma,78%,1021 hPa
+Jueves 23 Julio 2020,Mayormente cubierto,20°,En calma,78%,1022 hPa
+Viernes 24 Julio 2020,Parcialmente cubierto,17°,En calma,88%,1021 hPa
+Sábado 25 Julio 2020,Cielo cubierto,18°,En calma,88%,1021 hPa
+Domingo 26 Julio 2020,Cielo cubierto,18°,7 km/h,83%,1022 hPa
+Lunes 27 Julio 2020,Mayormente cubierto,20°,9 km/h,78%,1020 hPa
+Martes 28 Julio 2020,Mayormente cubierto,19°,En calma,88%,1021 hPa
+Miércoles 29 Julio 2020,Cielo cubierto,19°,En calma,88%,1021 hPa
+Jueves 30 Julio 2020,Mayormente cubierto,19°,En calma,83%,1023 hPa
+Viernes 31 Julio 2020,Cielo cubierto,20°,7 km/h,78%,1023 hPa
+Sábado 1 Agosto 2020,Lluvia ligera,17°,6 km/h,88%,1023 hPa
+Domingo 2 Agosto 2020,Cielo cubierto,17°,9 km/h,77%,1025 hPa
+Lunes 3 Agosto 2020,Mayormente cubierto,18°,7 km/h,83%,1024 hPa
+Martes 4 Agosto 2020,Mayormente cubierto,19°,En calma,83%,1025 hPa
+Miércoles 5 Agosto 2020,Mayormente cubierto,21°,En calma,73%,1023 hPa
+Jueves 6 Agosto 2020,Mayormente cubierto,19°,6 km/h,83%,1022 hPa
+Viernes 7 Agosto 2020,Cielo cubierto,19°,9 km/h,78%,1022 hPa
+Sábado 8 Agosto 2020,Despejado,20°,En calma,78%,1022 hPa
+Domingo 9 Agosto 2020,Mayormente cubierto,18°,En calma,77%,1023 hPa
+Lunes 10 Agosto 2020,Mayormente cubierto,18°,En calma,88%,1025 hPa
+Martes 11 Agosto 2020,Cielo cubierto,18°,6 km/h,88%,1024 hPa
+Miércoles 12 Agosto 2020,Lluvia ligera,17°,7 km/h,94%,1023 hPa
+Jueves 13 Agosto 2020,Lluvia ligera,17°,6 km/h,94%,1022 hPa
+Viernes 14 Agosto 2020,Cielo cubierto,18°,En calma,83%,1023 hPa
+Sábado 15 Agosto 2020,Parcialmente cubierto,18°,En calma,88%,1022 hPa
+Domingo 16 Agosto 2020,Lluvia ligera,16°,11 km/h,82%,1023 hPa
+Lunes 17 Agosto 2020,Mayormente cubierto,18°,En calma,77%,1023 hPa
+Martes 18 Agosto 2020,Cielo cubierto,19°,9 km/h,78%,1025 hPa
+Miércoles 19 Agosto 2020,Cielo cubierto,18°,En calma,83%,1024 hPa
+Jueves 20 Agosto 2020,Lluvia ligera,17°,6 km/h,94%,1024 hPa
+Viernes 21 Agosto 2020,Despejado,18°,En calma,88%,1020 hPa
+Sábado 22 Agosto 2020,Parcialmente cubierto,19°,En calma,83%,1020 hPa
+Domingo 23 Agosto 2020,Parcialmente cubierto,19°,En calma,78%,1020 hPa
+Lunes 24 Agosto 2020,Lluvia,17°,11 km/h,94%,1022 hPa
+Martes 25 Agosto 2020,Mayormente cubierto,21°,En calma,78%,1019 hPa
+Miércoles 26 Agosto 2020,Mayormente cubierto,21°,6 km/h,73%,1018 hPa
+Jueves 27 Agosto 2020,Mayormente cubierto,18°,9 km/h,94%,1018 hPa
+Viernes 28 Agosto 2020,Cielo cubierto,18°,7 km/h,83%,1022 hPa
+Sábado 29 Agosto 2020,Tormenta,18°,22 km/h,88%,1022 hPa
+Domingo 30 Agosto 2020,Mayormente cubierto,19°,7 km/h,83%,1022 hPa
+Lunes 31 Agosto 2020,Mayormente cubierto,20°,9 km/h,83%,1021 hPa
+Lunes 31 Agosto 2020,Mayormente cubierto,18°,6 km/h,83%,1023 hPa
+Miércoles 2 Septiembre 2020,Despejado,19°,6 km/h,88%,1023 hPa
+Jueves 3 Septiembre 2020,Mayormente cubierto,20°,6 km/h,83%,1021 hPa
+Viernes 4 Septiembre 2020,Despejado,18°,En calma,83%,1020 hPa
+Sábado 5 Septiembre 2020,Parcialmente cubierto,19°,En calma,73%,1022 hPa
+Domingo 6 Septiembre 2020,Cielo cubierto,19°,9 > 28 km/h,78%,1023 hPa
+Lunes 7 Septiembre 2020,Mayormente cubierto,17°,En calma,88%,1023 hPa
+Martes 8 Septiembre 2020,Mayormente cubierto,17°,En calma,88%,1018 hPa
+Miércoles 9 Septiembre 2020,Parcialmente cubierto,19°,En calma,83%,1019 hPa
+Jueves 10 Septiembre 2020,Mayormente cubierto,19°,7 km/h,83%,1022 hPa
+Viernes 11 Septiembre 2020,Mayormente cubierto,20°,En calma,83%,1023 hPa
+Sábado 12 Septiembre 2020,Parcialmente cubierto,17°,En calma,88%,1021 hPa
+Domingo 13 Septiembre 2020,Cielo cubierto,17°,En calma,88%,1021 hPa
+Lunes 14 Septiembre 2020,Cielo cubierto,20°,6 km/h,78%,1022 hPa
+Martes 15 Septiembre 2020,Parcialmente cubierto,18°,En calma,77%,1023 hPa
+Miércoles 16 Septiembre 2020,Mayormente cubierto,20°,En calma,78%,1022 hPa
+Jueves 17 Septiembre 2020,Mayormente cubierto,18°,6 km/h,88%,1022 hPa
+Viernes 18 Septiembre 2020,Mayormente cubierto,20°,15 km/h,83%,1021 hPa
+Sábado 19 Septiembre 2020,Mayormente cubierto,18°,En calma,88%,1021 hPa
+Domingo 20 Septiembre 2020,Parcialmente cubierto,19°,7 km/h,78%,1021 hPa
+Lunes 21 Septiembre 2020,Parcialmente cubierto,20°,7 km/h,73%,1023 hPa
+Martes 22 Septiembre 2020,Cielo cubierto,18°,4 km/h,88%,1025 hPa
+Miércoles 23 Septiembre 2020,Parcialmente cubierto,18°,En calma,83%,1023 hPa
+Jueves 24 Septiembre 2020,Despejado,18°,En calma,83%,1021 hPa
+Viernes 25 Septiembre 2020,Mayormente cubierto,17°,En calma,82%,1022 hPa
+Sábado 26 Septiembre 2020,Parcialmente cubierto,16°,4 km/h,82%,1023 hPa
+Domingo 27 Septiembre 2020,Mayormente cubierto,19°,En calma,83%,1021 hPa
+Lunes 28 Septiembre 2020,Mayormente cubierto,20°,En calma,78%,1020 hPa
+Martes 29 Septiembre 2020,Mayormente cubierto,18°,En calma,83%,1021 hPa
+Miércoles 30 Septiembre 2020,Mayormente cubierto,13°,6 km/h,77%,1023 hPa
+Miércoles 30 Septiembre 2020,Despejado,14°,En calma,77%,1023 hPa
+Viernes 2 Octubre 2020,Despejado,8°,En calma,71%,1025 hPa
+Sábado 3 Octubre 2020,Despejado,13°,11 km/h,54%,1023 hPa
+Domingo 4 Octubre 2020,Despejado,13°,En calma,77%,1021 hPa
+Lunes 5 Octubre 2020,Despejado,17°,15 km/h,32%,1026 hPa
+Martes 6 Octubre 2020,Despejado,12°,En calma,76%,1023 hPa
+Miércoles 7 Octubre 2020,Mayormente cubierto,15°,9 km/h,63%,1021 hPa
+Jueves 8 Octubre 2020,Despejado,13°,6 km/h,67%,1021 hPa
+Viernes 9 Octubre 2020,Despejado,14°,En calma,67%,1021 hPa
+Sábado 10 Octubre 2020,Despejado,18°,En calma,77%,1021 hPa
+Domingo 11 Octubre 2020,Parcialmente cubierto,21°,En calma,69%,1022 hPa
+Lunes 12 Octubre 2020,Despejado,17°,6 km/h,82%,1021 hPa
+Martes 13 Octubre 2020,Mayormente cubierto,20°,En calma,60%,1023 hPa
+Jueves 15 Octubre 2020,Neblina,17°,En calma,94%,1021 hPa
+Viernes 16 Octubre 2020,Cielo cubierto,22°,19 km/h,69%,1020 hPa
+Sábado 17 Octubre 2020,Nubes dispersas,17°,11 km/h,68%,1025 hPa
+Domingo 18 Octubre 2020,Despejado,16°,En calma,77%,1023 hPa
+Lunes 19 Octubre 2020,Mayormente cubierto,19°,6 km/h,83%,1021 hPa
+Martes 20 Octubre 2020,Parcialmente cubierto,17°,7 km/h,72%,1021 hPa
+Miércoles 21 Octubre 2020,Polvareda,16°,En calma,88%,1020 hPa
+Jueves 22 Octubre 2020,Mayormente cubierto,20°,13 km/h,73%,1020 hPa
+Viernes 23 Octubre 2020,Despejado,17°,En calma,94%,1022 hPa
+Sábado 24 Octubre 2020,Parcialmente cubierto,17°,En calma,82%,1023 hPa
+Domingo 25 Octubre 2020,Despejado,13°,7 km/h,77%,1022 hPa
+Lunes 26 Octubre 2020,Parcialmente cubierto,16°,En calma,82%,1020 hPa
+Martes 27 Octubre 2020,Parcialmente cubierto,17°,En calma,88%,1018 hPa
+Miércoles 28 Octubre 2020,Despejado,16°,En calma,88%,1019 hPa
+Jueves 29 Octubre 2020,Despejado,14°,En calma,88%,1021 hPa
+Viernes 30 Octubre 2020,Parcialmente cubierto,17°,En calma,72%,1022 hPa
+Sábado 31 Octubre 2020,Despejado,11°,En calma,87%,1025 hPa
+Domingo 1 Noviembre 2020,Despejado,15°,En calma,72%,1025 hPa
+Lunes 2 Noviembre 2020,Despejado,16°,11 km/h,39%,1028 hPa
+Martes 3 Noviembre 2020,Despejado,10°,9 km/h,53%,1028 hPa
+Miércoles 4 Noviembre 2020,Despejado,12°,6 km/h,62%,1026 hPa
+Jueves 5 Noviembre 2020,Despejado,15°,7 km/h,31%,1024 hPa
+Viernes 6 Noviembre 2020,Despejado,14°,En calma,38%,1022 hPa
+Sábado 7 Noviembre 2020,Despejado,10°,En calma,82%,1020 hPa
+Domingo 8 Noviembre 2020,Despejado,13°,En calma,72%,1020 hPa
+Lunes 9 Noviembre 2020,Despejado,12°,En calma,76%,1022 hPa
+Martes 10 Noviembre 2020,Despejado,16°,En calma,72%,1022 hPa
+Miércoles 11 Noviembre 2020,Despejado,11°,En calma,82%,1019 hPa
+Jueves 12 Noviembre 2020,Despejado,13°,En calma,72%,1021 hPa
+Viernes 13 Noviembre 2020,Despejado,11°,En calma,82%,1022 hPa
+Sábado 14 Noviembre 2020,Neblina,17°,En calma,63%,1023 hPa
+Domingo 15 Noviembre 2020,Despejado,13°,En calma,77%,1021 hPa
+Lunes 16 Noviembre 2020,Despejado,18°,7 km/h,45%,1025 hPa
+Martes 17 Noviembre 2020,Despejado,16°,11 km/h,48%,1027 hPa
+Miércoles 18 Noviembre 2020,Parcialmente cubierto,16°,11 km/h,59%,1028 hPa
+Jueves 19 Noviembre 2020,Despejado,16°,11 km/h,55%,1027 hPa
+Viernes 20 Noviembre 2020,Despejado,11°,En calma,66%,1025 hPa
+Sábado 21 Noviembre 2020,Despejado,10°,En calma,82%,1026 hPa
+Domingo 22 Noviembre 2020,Despejado,13°,7 km/h,67%,1024 hPa
+Lunes 23 Noviembre 2020,Despejado,12°,6 km/h,67%,1023 hPa
+Martes 24 Noviembre 2020,Despejado,13°,En calma,72%,1023 hPa
+Miércoles 25 Noviembre 2020,Despejado,15°,En calma,63%,1023 hPa
+Jueves 26 Noviembre 2020,Despejado,10°,6 km/h,76%,1022 hPa
+Viernes 27 Noviembre 2020,Mayormente cubierto,14°,En calma,72%,1022 hPa
+Sábado 28 Noviembre 2020,Despejado,13°,En calma,72%,1021 hPa
+Domingo 29 Noviembre 2020,Despejado,13°,En calma,72%,1021 hPa
+Lunes 30 Noviembre 2020,Despejado,11°,En calma,71%,1022 hPa
+Martes 1 Diciembre 2020,Despejado,14°,En calma,72%,1023 hPa
+Miércoles 2 Diciembre 2020,Despejado,11°,6 km/h,76%,1022 hPa
+Jueves 3 Diciembre 2020,Parcialmente cubierto,8°,En calma,87%,1021 hPa
+Viernes 4 Diciembre 2020,Mayormente cubierto,14°,En calma,77%,1021 hPa
+Sábado 5 Diciembre 2020,Mayormente cubierto,15°,4 km/h,77%,1023 hPa
+Domingo 6 Diciembre 2020,Parcialmente cubierto,12°,En calma,88%,1023 hPa
+Lunes 7 Diciembre 2020,Mayormente cubierto,13°,En calma,77%,1023 hPa
+Martes 8 Diciembre 2020,Mayormente cubierto,13°,En calma,77%,1025 hPa
+Miércoles 9 Diciembre 2020,Mayormente cubierto,16°,En calma,68%,1026 hPa
+Jueves 10 Diciembre 2020,Mayormente cubierto,15°,En calma,72%,1023 hPa
+Viernes 11 Diciembre 2020,Despejado,10°,En calma,87%,1026 hPa
+Sábado 12 Diciembre 2020,Despejado,10°,En calma,82%,1020 hPa
+Domingo 13 Diciembre 2020,Neblina,10°,En calma,87%,1022 hPa
+Lunes 14 Diciembre 2020,Parcialmente cubierto,14°,6 km/h,63%,1023 hPa
+Martes 15 Diciembre 2020,Despejado,12°,En calma,67%,1023 hPa
+Miércoles 16 Diciembre 2020,Despejado,11°,En calma,66%,1021 hPa
+Jueves 17 Diciembre 2020,Despejado,12°,En calma,54%,1021 hPa
+Viernes 18 Diciembre 2020,Parcialmente cubierto,11°,En calma,71%,1024 hPa
+Sábado 19 Diciembre 2020,Despejado,9°,En calma,76%,1025 hPa
+Domingo 20 Diciembre 2020,Neblina,6°,En calma,81%,1023 hPa
+Lunes 21 Diciembre 2020,Parcialmente cubierto,12°,En calma,58%,1021 hPa
+Martes 22 Diciembre 2020,Despejado,10°,En calma,66%,1025 hPa
+Miércoles 23 Diciembre 2020,Despejado,10°,En calma,62%,1025 hPa
+Jueves 24 Diciembre 2020,Despejado,11°,En calma,47%,1023 hPa
+Viernes 25 Diciembre 2020,Neblina,6°,En calma,42%,1025 hPa
+Sábado 26 Diciembre 2020,Despejado,10°,En calma,66%,1025 hPa
+Domingo 27 Diciembre 2020,Parcialmente cubierto,8°,7 km/h,46%,1021 hPa
+Lunes 28 Diciembre 2020,Despejado,7°,En calma,57%,1022 hPa
+Martes 29 Diciembre 2020,Despejado,10°,En calma,50%,1021 hPa
+Miércoles 30 Diciembre 2020,Despejado,10°,7 km/h,53%,1021 hPa
+Jueves 31 Diciembre 2020,Parcialmente cubierto,9°,13 km/h,76%,1017 hPa
+Viernes 1 Enero 2021,Despejado,6°,En calma,70%,1018 hPa
+Sábado 2 Enero 2021,Despejado,1°,En calma,75%,1022 hPa
+Domingo 3 Enero 2021,Despejado,6°,En calma,52%,1023 hPa
+Lunes 4 Enero 2021,Despejado,3°,En calma,75%,1025 hPa
+Martes 5 Enero 2021,Despejado,5°,En calma,81%,1024 hPa
+Miércoles 6 Enero 2021,Despejado,11°,En calma,62%,1021 hPa
+Jueves 7 Enero 2021,Neblina,10°,En calma,62%,1023 hPa
+Viernes 8 Enero 2021,Mayormente cubierto,11°,En calma,50%,1023 hPa
+Sábado 9 Enero 2021,Parcialmente cubierto,14°,6 km/h,58%,1023 hPa
+Domingo 10 Enero 2021,Nubes dispersas,14°,En calma,72%,1022 hPa
+Lunes 11 Enero 2021,Despejado,9°,En calma,76%,1022 hPa
+Martes 12 Enero 2021,Despejado,8°,En calma,66%,1023 hPa
+Miércoles 13 Enero 2021,Mayormente cubierto,8°,7 km/h,71%,1025 hPa
+Jueves 14 Enero 2021,Neblina,13°,En calma,47%,1023 hPa
+Viernes 15 Enero 2021,Despejado,9°,En calma,66%,1022 hPa
+Sábado 16 Enero 2021,Mayormente cubierto,8°,En calma,53%,1021 hPa
+Domingo 17 Enero 2021,Parcialmente cubierto,16°,7 km/h,39%,1021 hPa
+Lunes 18 Enero 2021,Nubes dispersas,10°,En calma,43%,1021 hPa
+Martes 19 Enero 2021,Parcialmente cubierto,11°,En calma,76%,1021 hPa
+Miércoles 20 Enero 2021,Mayormente cubierto,14°,En calma,58%,1023 hPa
+Jueves 21 Enero 2021,Parcialmente cubierto,12°,En calma,88%,1025 hPa
+Viernes 22 Enero 2021,Despejado,13°,En calma,72%,1024 hPa
+Sábado 23 Enero 2021,Despejado,11°,En calma,66%,1022 hPa
+Domingo 24 Enero 2021,Parcialmente cubierto,10°,En calma,57%,1021 hPa
+Lunes 25 Enero 2021,Despejado,15°,En calma,44%,1021 hPa
+Martes 26 Enero 2021,Despejado,6°,En calma,81%,1020 hPa
+Miércoles 27 Enero 2021,Despejado,29°,6 km/h,11%,1018 hPa
+Jueves 28 Enero 2021,Parcialmente cubierto,15°,En calma,44%,1023 hPa
+Viernes 29 Enero 2021,Despejado,14°,En calma,67%,1025 hPa
+Sábado 30 Enero 2021,Despejado,16°,7 km/h,55%,1023 hPa
+Domingo 31 Enero 2021,Despejado,13°,En calma,47%,1021 hPa
+Lunes 1 Febrero 2021,Despejado,17°,9 km/h,36%,1023 hPa
+Martes 2 Febrero 2021,Despejado,16°,En calma,42%,1023 hPa
+Miércoles 3 Febrero 2021,Despejado,13°,En calma,44%,1022 hPa
+Jueves 4 Febrero 2021,Despejado,17°,7 km/h,39%,1021 hPa
+Viernes 5 Febrero 2021,Despejado,13°,En calma,33%,1020 hPa
+Sábado 6 Febrero 2021,Despejado,14°,En calma,31%,1019 hPa
+Domingo 7 Febrero 2021,Despejado,10°,En calma,43%,1019 hPa
+Lunes 8 Febrero 2021,Despejado,13°,En calma,54%,1020 hPa
+Martes 9 Febrero 2021,Despejado,15°,En calma,41%,1021 hPa
+Miércoles 10 Febrero 2021,Despejado,14°,En calma,31%,1021 hPa
+Jueves 11 Febrero 2021,Despejado,14°,11 km/h,44%,1020 hPa
+Viernes 12 Febrero 2021,Despejado,6°,En calma,56%,1016 hPa
+Sábado 13 Febrero 2021,Despejado,6°,En calma,52%,1016 hPa
+Domingo 14 Febrero 2021,Despejado,9°,En calma,57%,1017 hPa
+Lunes 15 Febrero 2021,Despejado,6°,En calma,65%,1019 hPa
+Martes 16 Febrero 2021,Despejado,9°,En calma,57%,1020 hPa
+Miércoles 17 Febrero 2021,Despejado,9°,En calma,57%,1020 hPa
+Jueves 18 Febrero 2021,Despejado,13°,7 km/h,47%,1020 hPa
+Viernes 19 Febrero 2021,Despejado,9°,En calma,46%,1021 hPa
+Sábado 20 Febrero 2021,Despejado,9°,En calma,43%,1024 hPa
+Domingo 21 Febrero 2021,Despejado,14°,En calma,58%,1023 hPa
+Lunes 22 Febrero 2021,Despejado,15°,En calma,51%,1023 hPa
+Domingo 23 Febrero 2020,Despejado,15°,En calma,72%,1025 hPa
+Lunes 24 Febrero 2020,Despejado,9°,En calma,76%,1021 hPa
+Martes 25 Febrero 2020,Despejado,13°,En calma,72%,1018 hPa
+Miércoles 26 Febrero 2020,Despejado,8°,En calma,66%,1019 hPa
+Jueves 27 Febrero 2020,Despejado,13°,7 km/h,54%,1023 hPa
+Viernes 28 Febrero 2020,Nubes dispersas,14°,En calma,67%,1025 hPa
+Sábado 29 Febrero 2020,Despejado,12°,En calma,71%,1026 hPa
+Domingo 1 Marzo 2020,Despejado,14°,6 km/h,67%,1025 hPa
+Lunes 2 Marzo 2020,Nubes dispersas,13°,En calma,72%,1023 hPa
+Martes 3 Marzo 2020,Despejado,13°,6 km/h,62%,1019 hPa
+Miércoles 4 Marzo 2020,Nubes dispersas,10°,En calma,82%,1020 hPa
+Jueves 5 Marzo 2020,Mayormente cubierto,13°,En calma,67%,1021 hPa
+Viernes 6 Marzo 2020,Mayormente cubierto,16°,13 km/h,48%,1024 hPa
+Sábado 7 Marzo 2020,Mayormente cubierto,17°,En calma,48%,1026 hPa
+Domingo 8 Marzo 2020,Mayormente cubierto,16°,6 km/h,72%,1023 hPa
+Lunes 9 Marzo 2020,Mayormente cubierto,18°,7 km/h,68%,1023 hPa
+Martes 10 Marzo 2020,Mayormente cubierto,15°,En calma,72%,1026 hPa
+Miércoles 11 Marzo 2020,Mayormente cubierto,19°,En calma,56%,1025 hPa
+Jueves 12 Marzo 2020,Mayormente cubierto,18°,7 km/h,37%,1020 hPa
+Viernes 13 Marzo 2020,Parcialmente cubierto,18°,9 km/h,52%,1021 hPa
+Sábado 14 Marzo 2020,Despejado,16°,En calma,63%,1023 hPa
+Domingo 15 Marzo 2020,Parcialmente cubierto,18°,9 km/h,64%,1024 hPa
+Lunes 16 Marzo 2020,Parcialmente cubierto,18°,6 km/h,59%,1025 hPa
+Martes 17 Marzo 2020,Parcialmente cubierto,18°,En calma,64%,1023 hPa
+Miércoles 18 Marzo 2020,Despejado,15°,En calma,72%,1023 hPa
+Jueves 19 Marzo 2020,Despejado,17°,7 km/h,48%,1024 hPa
+Viernes 20 Marzo 2020,Despejado,14°,En calma,63%,1025 hPa
+Sábado 21 Marzo 2020,Despejado,19°,En calma,60%,1023 hPa
+Domingo 22 Marzo 2020,Despejado,14°,6 km/h,72%,1022 hPa
+Lunes 23 Marzo 2020,Despejado,19°,6 km/h,49%,1023 hPa
+Martes 24 Marzo 2020,Despejado,18°,En calma,56%,1023 hPa
+Miércoles 25 Marzo 2020,Despejado,18°,6 km/h,39%,1021 hPa
+Jueves 26 Marzo 2020,Despejado,17°,En calma,42%,1021 hPa
+Viernes 27 Marzo 2020,Parcialmente cubierto,19°,En calma,52%,1020 hPa
+Sábado 28 Marzo 2020,Despejado,15°,En calma,48%,1020 hPa
+Domingo 29 Marzo 2020,Despejado,16°,6 km/h,39%,1019 hPa
+Lunes 30 Marzo 2020,Despejado,17°,7 km/h,42%,1021 hPa
+Martes 31 Marzo 2020,Despejado,18°,7 km/h,45%,1021 hPa
+Miércoles 1 Abril 2020,Parcialmente cubierto,18°,En calma,45%,1020 hPa
+Jueves 2 Abril 2020,Despejado,17°,En calma,55%,1021 hPa
+Viernes 3 Abril 2020,Despejado,15°,En calma,51%,1018 hPa
+Sábado 4 Abril 2020,Despejado,19°,7 km/h,43%,1020 hPa
+Sábado 4 Abril 2020,Despejado,18°,En calma,39%,1020 hPa
+Lunes 6 Abril 2020,Despejado,19°,7 km/h,40%,1021 hPa
+Martes 7 Abril 2020,Parcialmente cubierto,18°,En calma,34%,1023 hPa
+Miércoles 8 Abril 2020,Despejado,19°,En calma,37%,1024 hPa
+Jueves 9 Abril 2020,Despejado,17°,En calma,36%,1023 hPa
+Viernes 10 Abril 2020,Despejado,20°,En calma,32%,1023 hPa
+Sábado 11 Abril 2020,Despejado,18°,6 km/h,49%,1021 hPa
+Domingo 12 Abril 2020,Despejado,19°,7 km/h,34%,1021 hPa
+Lunes 13 Abril 2020,Despejado,14°,En calma,51%,1023 hPa
+Martes 14 Abril 2020,Despejado,14°,En calma,33%,1023 hPa
+Miércoles 15 Abril 2020,Despejado,19°,6 km/h,26%,1022 hPa
+Jueves 16 Abril 2020,Despejado,22°,9 km/h,20%,1022 hPa
+Viernes 17 Abril 2020,Despejado,20°,6 km/h,28%,1024 hPa
+Sábado 18 Abril 2020,Parcialmente cubierto,21°,11 km/h,33%,1025 hPa
+Domingo 19 Abril 2020,Despejado,20°,11 km/h,53%,1023 hPa
+Lunes 20 Abril 2020,Despejado,20°,6 km/h,49%,1021 hPa
+Martes 21 Abril 2020,Despejado,21°,7 km/h,28%,1021 hPa
+Miércoles 22 Abril 2020,Parcialmente cubierto,23°,19 km/h,25%,1022 hPa
+Jueves 23 Abril 2020,Despejado,22°,6 km/h,31%,1021 hPa
+Viernes 24 Abril 2020,Parcialmente cubierto,21°,7 km/h,13%,1020 hPa
+Sábado 25 Abril 2020,Despejado,19°,En calma,28%,1020 hPa
+Domingo 26 Abril 2020,Niebla espesa,22°,7 km/h,21%,1021 hPa
+Lunes 27 Abril 2020,Mayormente cubierto,21°,7 km/h,33%,1025 hPa
+Martes 28 Abril 2020,Despejado,21°,11 km/h,28%,1024 hPa
+Miércoles 29 Abril 2020,Parcialmente cubierto,22°,6 km/h,14%,1022 hPa
+Jueves 30 Abril 2020,Despejado,19°,En calma,19%,1022 hPa
+Viernes 1 Mayo 2020,Cielo cubierto,20°,7 km/h,35%,1025 hPa
+Sábado 2 Mayo 2020,Despejado,20°,13 km/h,49%,1024 hPa
+Domingo 3 Mayo 2020,Mayormente cubierto,22°,17 km/h,21%,1023 hPa
+Lunes 4 Mayo 2020,Parcialmente cubierto,22°,11 km/h,35%,1021 hPa
+Martes 5 Mayo 2020,Mayormente cubierto,21°,6 > 24 km/h,49%,1023 hPa
+Miércoles 6 Mayo 2020,Tormenta,17°,13 km/h,82%,1025 hPa
+Jueves 7 Mayo 2020,Lluvia ligera,16°,En calma,82%,1025 hPa
+Viernes 8 Mayo 2020,Mayormente cubierto,17°,7 km/h,82%,1025 hPa
+Sábado 9 Mayo 2020,Mayormente cubierto,21°,9 km/h,49%,1023 hPa
+Domingo 10 Mayo 2020,Despejado,20°,15 km/h,40%,1023 hPa
+Lunes 11 Mayo 2020,Despejado,15°,En calma,39%,1024 hPa
+Martes 12 Mayo 2020,Despejado,19°,9 km/h,28%,1023 hPa
+Miércoles 13 Mayo 2020,Despejado,15°,En calma,48%,1021 hPa
+Jueves 14 Mayo 2020,Despejado,20°,9 km/h,28%,1021 hPa
+Viernes 15 Mayo 2020,Despejado,20°,6 km/h,24%,1021 hPa
+Sábado 16 Mayo 2020,Despejado,20°,11 km/h,26%,1019 hPa
+Domingo 17 Mayo 2020,Despejado,16°,En calma,29%,1020 hPa
+Lunes 18 Mayo 2020,Despejado,22°,9 km/h,23%,1021 hPa
+Martes 19 Mayo 2020,Despejado,23°,13 km/h,25%,1021 hPa
+Miércoles 20 Mayo 2020,Despejado,22°,7 km/h,31%,1021 hPa
+Jueves 21 Mayo 2020,Despejado,21°,11 km/h,40%,1020 hPa
+Viernes 22 Mayo 2020,Despejado,20°,9 km/h,32%,1020 hPa
+Sábado 23 Mayo 2020,Despejado,21°,13 km/h,35%,1020 hPa
+Domingo 24 Mayo 2020,Despejado,20°,En calma,26%,1020 hPa
+Lunes 25 Mayo 2020,Despejado,14°,6 km/h,41%,1018 hPa
+Martes 26 Mayo 2020,Despejado,19°,6 km/h,34%,1019 hPa
+Miércoles 27 Mayo 2020,Despejado,20°,En calma,35%,1020 hPa
+Jueves 28 Mayo 2020,Despejado,23°,7 km/h,27%,1021 hPa
+Viernes 29 Mayo 2020,Despejado,22°,11 km/h,35%,1022 hPa
+Sábado 30 Mayo 2020,Mayormente cubierto,23°,En calma,33%,1021 hPa
+Domingo 31 Mayo 2020,Mayormente cubierto,21°,En calma,43%,1021 hPa
+Domingo 31 Mayo 2020,Mayormente cubierto,23°,En calma,41%,1020 hPa
+Martes 2 Junio 2020,Cielo cubierto,21°,13 km/h,56%,1021 hPa
+Miércoles 3 Junio 2020,Mayormente cubierto,22°,6 km/h,57%,1021 hPa
+Jueves 4 Junio 2020,Mayormente cubierto,25°,7 km/h,54%,1018 hPa
+Viernes 5 Junio 2020,Parcialmente cubierto,28°,11 km/h,32%,1017 hPa
+Sábado 6 Junio 2020,Nubes dispersas,23°,17 km/h,57%,1018 hPa
+Domingo 7 Junio 2020,Mayormente cubierto,21°,28 km/h,53%,1019 hPa
+Lunes 8 Junio 2020,Parcialmente cubierto,21°,11 km/h,69%,1020 hPa
+Martes 9 Junio 2020,Parcialmente cubierto,20°,17 km/h,49%,1021 hPa
+Miércoles 10 Junio 2020,Mayormente cubierto,18°,En calma,77%,1022 hPa
+Jueves 11 Junio 2020,Cielo cubierto,23°,6 km/h,41%,1025 hPa
+Viernes 12 Junio 2020,Mayormente cubierto,20°,En calma,56%,1026 hPa
+Sábado 13 Junio 2020,Despejado,18°,En calma,42%,1024 hPa
+Domingo 14 Junio 2020,Parcialmente cubierto,21°,6 > 26 km/h,64%,1021 hPa
+Lunes 15 Junio 2020,Parcialmente cubierto,18°,En calma,73%,1022 hPa
+Martes 16 Junio 2020,Mayormente cubierto,21°,En calma,64%,1023 hPa
+Miércoles 17 Junio 2020,Parcialmente cubierto,22°,6 km/h,50%,1023 hPa
+Jueves 18 Junio 2020,Cielo cubierto,21°,6 km/h,73%,1023 hPa
+Viernes 19 Junio 2020,Mayormente cubierto,21°,En calma,56%,1021 hPa
+Sábado 20 Junio 2020,Lluvia ligera,20°,6 km/h,78%,1021 hPa
+Domingo 21 Junio 2020,Lluvia ligera,18°,17 km/h,73%,1023 hPa
+Lunes 22 Junio 2020,Cielo cubierto,19°,En calma,83%,1023 hPa
+Martes 23 Junio 2020,Mayormente cubierto,17°,6 km/h,82%,1023 hPa
+Miércoles 24 Junio 2020,Lluvia ligera,15°,11 km/h,94%,1021 hPa
+Jueves 25 Junio 2020,Lluvia ligera,18°,6 km/h,64%,1021 hPa
+Viernes 26 Junio 2020,Mayormente cubierto,19°,En calma,78%,1022 hPa
+Sábado 27 Junio 2020,Mayormente cubierto,19°,En calma,64%,1023 hPa
+Domingo 28 Junio 2020,Parcialmente cubierto,20°,13 km/h,78%,1022 hPa
+Lunes 29 Junio 2020,Lluvia ligera,20°,20 km/h,60%,1023 hPa
+Martes 30 Junio 2020,Mayormente cubierto,21°,9 km/h,69%,1022 hPa
+Miércoles 1 Julio 2020,Mayormente cubierto,20°,En calma,78%,1020 hPa
+Jueves 2 Julio 2020,Parcialmente cubierto,20°,En calma,78%,1022 hPa
+Viernes 3 Julio 2020,Mayormente cubierto,21°,7 km/h,78%,1021 hPa
+Sábado 4 Julio 2020,Hielo cristalizado,20°,22 km/h,64%,1023 hPa
+Domingo 5 Julio 2020,Parcialmente cubierto,19°,19 km/h,64%,1022 hPa
+Lunes 6 Julio 2020,Mayormente cubierto,20°,6 km/h,78%,1021 hPa
+Martes 7 Julio 2020,Mayormente cubierto,21°,En calma,69%,1021 hPa
+Miércoles 8 Julio 2020,Hielo cristalizado,21°,7 km/h,73%,1022 hPa
+Jueves 9 Julio 2020,Cielo cubierto,19°,En calma,73%,1023 hPa
+Viernes 10 Julio 2020,Lluvia ligera,17°,6 km/h,82%,1025 hPa
+Sábado 11 Julio 2020,Mayormente cubierto,20°,7 km/h,73%,1023 hPa
+Domingo 12 Julio 2020,Mayormente cubierto,18°,En calma,88%,1023 hPa
+Lunes 13 Julio 2020,Parcialmente cubierto,18°,En calma,88%,1023 hPa
+Martes 14 Julio 2020,Mayormente cubierto,19°,En calma,78%,1023 hPa
+Miércoles 15 Julio 2020,Mayormente cubierto,19°,6 km/h,68%,1022 hPa
+Jueves 16 Julio 2020,Parcialmente cubierto,20°,6 km/h,83%,1022 hPa
+Viernes 17 Julio 2020,Mayormente cubierto,21°,13 km/h,73%,1025 hPa
+Sábado 18 Julio 2020,Mayormente cubierto,20°,9 km/h,53%,1023 hPa
+Domingo 19 Julio 2020,Mayormente cubierto,18°,En calma,83%,1024 hPa
+Lunes 20 Julio 2020,Mayormente cubierto,18°,7 km/h,77%,1023 hPa
+Martes 21 Julio 2020,Mayormente cubierto,19°,6 km/h,78%,1022 hPa
+Miércoles 22 Julio 2020,Mayormente cubierto,20°,En calma,78%,1021 hPa
+Jueves 23 Julio 2020,Mayormente cubierto,20°,En calma,78%,1022 hPa
+Viernes 24 Julio 2020,Parcialmente cubierto,17°,En calma,88%,1021 hPa
+Sábado 25 Julio 2020,Cielo cubierto,18°,En calma,88%,1021 hPa
+Domingo 26 Julio 2020,Cielo cubierto,18°,7 km/h,83%,1022 hPa
+Lunes 27 Julio 2020,Mayormente cubierto,20°,9 km/h,78%,1020 hPa
+Martes 28 Julio 2020,Mayormente cubierto,19°,En calma,88%,1021 hPa
+Miércoles 29 Julio 2020,Cielo cubierto,19°,En calma,88%,1021 hPa
+Jueves 30 Julio 2020,Mayormente cubierto,19°,En calma,83%,1023 hPa
+Viernes 31 Julio 2020,Cielo cubierto,20°,7 km/h,78%,1023 hPa
+Sábado 1 Agosto 2020,Lluvia ligera,17°,6 km/h,88%,1023 hPa
+Domingo 2 Agosto 2020,Cielo cubierto,17°,9 km/h,77%,1025 hPa
+Lunes 3 Agosto 2020,Mayormente cubierto,18°,7 km/h,83%,1024 hPa
+Martes 4 Agosto 2020,Mayormente cubierto,19°,En calma,83%,1025 hPa
+Miércoles 5 Agosto 2020,Mayormente cubierto,21°,En calma,73%,1023 hPa
+Jueves 6 Agosto 2020,Mayormente cubierto,19°,6 km/h,83%,1022 hPa
+Viernes 7 Agosto 2020,Cielo cubierto,19°,9 km/h,78%,1022 hPa
+Sábado 8 Agosto 2020,Despejado,20°,En calma,78%,1022 hPa
+Domingo 9 Agosto 2020,Mayormente cubierto,18°,En calma,77%,1023 hPa
+Lunes 10 Agosto 2020,Mayormente cubierto,18°,En calma,88%,1025 hPa
+Martes 11 Agosto 2020,Cielo cubierto,18°,6 km/h,88%,1024 hPa
+Miércoles 12 Agosto 2020,Lluvia ligera,17°,7 km/h,94%,1023 hPa
+Jueves 13 Agosto 2020,Lluvia ligera,17°,6 km/h,94%,1022 hPa
+Viernes 14 Agosto 2020,Cielo cubierto,18°,En calma,83%,1023 hPa
+Sábado 15 Agosto 2020,Parcialmente cubierto,18°,En calma,88%,1022 hPa
+Domingo 16 Agosto 2020,Lluvia ligera,16°,11 km/h,82%,1023 hPa
+Lunes 17 Agosto 2020,Mayormente cubierto,18°,En calma,77%,1023 hPa
+Martes 18 Agosto 2020,Cielo cubierto,19°,9 km/h,78%,1025 hPa
+Miércoles 19 Agosto 2020,Cielo cubierto,18°,En calma,83%,1024 hPa
+Jueves 20 Agosto 2020,Lluvia ligera,17°,6 km/h,94%,1024 hPa
+Viernes 21 Agosto 2020,Despejado,18°,En calma,88%,1020 hPa
+Sábado 22 Agosto 2020,Parcialmente cubierto,19°,En calma,83%,1020 hPa
+Domingo 23 Agosto 2020,Parcialmente cubierto,19°,En calma,78%,1020 hPa
+Lunes 24 Agosto 2020,Lluvia,17°,11 km/h,94%,1022 hPa
+Martes 25 Agosto 2020,Mayormente cubierto,21°,En calma,78%,1019 hPa
+Miércoles 26 Agosto 2020,Mayormente cubierto,21°,6 km/h,73%,1018 hPa
+Jueves 27 Agosto 2020,Mayormente cubierto,18°,9 km/h,94%,1018 hPa
+Viernes 28 Agosto 2020,Cielo cubierto,18°,7 km/h,83%,1022 hPa
+Sábado 29 Agosto 2020,Tormenta,18°,22 km/h,88%,1022 hPa
+Domingo 30 Agosto 2020,Mayormente cubierto,19°,7 km/h,83%,1022 hPa
+Lunes 31 Agosto 2020,Mayormente cubierto,20°,9 km/h,83%,1021 hPa
+Lunes 31 Agosto 2020,Mayormente cubierto,18°,6 km/h,83%,1023 hPa
+Miércoles 2 Septiembre 2020,Despejado,19°,6 km/h,88%,1023 hPa
+Jueves 3 Septiembre 2020,Mayormente cubierto,20°,6 km/h,83%,1021 hPa
+Viernes 4 Septiembre 2020,Despejado,18°,En calma,83%,1020 hPa
+Sábado 5 Septiembre 2020,Parcialmente cubierto,19°,En calma,73%,1022 hPa
+Domingo 6 Septiembre 2020,Cielo cubierto,19°,9 > 28 km/h,78%,1023 hPa
+Lunes 7 Septiembre 2020,Mayormente cubierto,17°,En calma,88%,1023 hPa
+Martes 8 Septiembre 2020,Mayormente cubierto,17°,En calma,88%,1018 hPa
+Miércoles 9 Septiembre 2020,Parcialmente cubierto,19°,En calma,83%,1019 hPa
+Jueves 10 Septiembre 2020,Mayormente cubierto,19°,7 km/h,83%,1022 hPa
+Viernes 11 Septiembre 2020,Mayormente cubierto,20°,En calma,83%,1023 hPa
+Sábado 12 Septiembre 2020,Parcialmente cubierto,17°,En calma,88%,1021 hPa
+Domingo 13 Septiembre 2020,Cielo cubierto,17°,En calma,88%,1021 hPa
+Lunes 14 Septiembre 2020,Cielo cubierto,20°,6 km/h,78%,1022 hPa
+Martes 15 Septiembre 2020,Parcialmente cubierto,18°,En calma,77%,1023 hPa
+Miércoles 16 Septiembre 2020,Mayormente cubierto,20°,En calma,78%,1022 hPa
+Jueves 17 Septiembre 2020,Mayormente cubierto,18°,6 km/h,88%,1022 hPa
+Viernes 18 Septiembre 2020,Mayormente cubierto,20°,15 km/h,83%,1021 hPa
+Sábado 19 Septiembre 2020,Mayormente cubierto,18°,En calma,88%,1021 hPa
+Domingo 20 Septiembre 2020,Parcialmente cubierto,19°,7 km/h,78%,1021 hPa
+Lunes 21 Septiembre 2020,Parcialmente cubierto,20°,7 km/h,73%,1023 hPa
+Martes 22 Septiembre 2020,Cielo cubierto,18°,4 km/h,88%,1025 hPa
+Miércoles 23 Septiembre 2020,Parcialmente cubierto,18°,En calma,83%,1023 hPa
+Jueves 24 Septiembre 2020,Despejado,18°,En calma,83%,1021 hPa
+Viernes 25 Septiembre 2020,Mayormente cubierto,17°,En calma,82%,1022 hPa
+Sábado 26 Septiembre 2020,Parcialmente cubierto,16°,4 km/h,82%,1023 hPa
+Domingo 27 Septiembre 2020,Mayormente cubierto,19°,En calma,83%,1021 hPa
+Lunes 28 Septiembre 2020,Mayormente cubierto,20°,En calma,78%,1020 hPa
+Martes 29 Septiembre 2020,Mayormente cubierto,18°,En calma,83%,1021 hPa
+Miércoles 30 Septiembre 2020,Mayormente cubierto,13°,6 km/h,77%,1023 hPa
+Miércoles 30 Septiembre 2020,Despejado,14°,En calma,77%,1023 hPa
+Viernes 2 Octubre 2020,Despejado,8°,En calma,71%,1025 hPa
+Sábado 3 Octubre 2020,Despejado,13°,11 km/h,54%,1023 hPa
+Domingo 4 Octubre 2020,Despejado,13°,En calma,77%,1021 hPa
+Lunes 5 Octubre 2020,Despejado,17°,15 km/h,32%,1026 hPa
+Martes 6 Octubre 2020,Despejado,12°,En calma,76%,1023 hPa
+Miércoles 7 Octubre 2020,Mayormente cubierto,15°,9 km/h,63%,1021 hPa
+Jueves 8 Octubre 2020,Despejado,13°,6 km/h,67%,1021 hPa
+Viernes 9 Octubre 2020,Despejado,14°,En calma,67%,1021 hPa
+Sábado 10 Octubre 2020,Despejado,18°,En calma,77%,1021 hPa
+Domingo 11 Octubre 2020,Parcialmente cubierto,21°,En calma,69%,1022 hPa
+Lunes 12 Octubre 2020,Despejado,17°,6 km/h,82%,1021 hPa
+Martes 13 Octubre 2020,Mayormente cubierto,20°,En calma,60%,1023 hPa
+Domingo 15 Noviembre 2020,Despejado,13°,En calma,77%,1021 hPa
+Lunes 16 Noviembre 2020,Despejado,18°,7 km/h,45%,1025 hPa
+Martes 17 Noviembre 2020,Despejado,16°,11 km/h,48%,1027 hPa
+Miércoles 18 Noviembre 2020,Parcialmente cubierto,16°,11 km/h,59%,1028 hPa
+Jueves 19 Noviembre 2020,Despejado,16°,11 km/h,55%,1027 hPa
+Viernes 20 Noviembre 2020,Despejado,11°,En calma,66%,1025 hPa
+Sábado 21 Noviembre 2020,Despejado,10°,En calma,82%,1026 hPa
+Domingo 22 Noviembre 2020,Despejado,13°,7 km/h,67%,1024 hPa
+Lunes 23 Noviembre 2020,Despejado,12°,6 km/h,67%,1023 hPa
+Martes 24 Noviembre 2020,Despejado,13°,En calma,72%,1023 hPa
+Miércoles 25 Noviembre 2020,Despejado,15°,En calma,63%,1023 hPa
+Jueves 26 Noviembre 2020,Despejado,10°,6 km/h,76%,1022 hPa
+Viernes 27 Noviembre 2020,Mayormente cubierto,14°,En calma,72%,1022 hPa
+Sábado 28 Noviembre 2020,Despejado,13°,En calma,72%,1021 hPa
+Domingo 29 Noviembre 2020,Despejado,13°,En calma,72%,1021 hPa
+Lunes 30 Noviembre 2020,Despejado,11°,En calma,71%,1022 hPa
+Martes 1 Diciembre 2020,Despejado,14°,En calma,72%,1023 hPa
+Miércoles 2 Diciembre 2020,Despejado,11°,6 km/h,76%,1022 hPa
+Jueves 3 Diciembre 2020,Parcialmente cubierto,8°,En calma,87%,1021 hPa
+Viernes 4 Diciembre 2020,Mayormente cubierto,14°,En calma,77%,1021 hPa
+Sábado 5 Diciembre 2020,Mayormente cubierto,15°,4 km/h,77%,1023 hPa
+Domingo 6 Diciembre 2020,Parcialmente cubierto,12°,En calma,88%,1023 hPa
+Lunes 7 Diciembre 2020,Mayormente cubierto,13°,En calma,77%,1023 hPa
+Martes 8 Diciembre 2020,Mayormente cubierto,13°,En calma,77%,1025 hPa
+Miércoles 9 Diciembre 2020,Mayormente cubierto,16°,En calma,68%,1026 hPa
+Jueves 10 Diciembre 2020,Mayormente cubierto,15°,En calma,72%,1023 hPa
+Viernes 11 Diciembre 2020,Despejado,10°,En calma,87%,1026 hPa
+Sábado 12 Diciembre 2020,Despejado,10°,En calma,82%,1020 hPa
+Domingo 13 Diciembre 2020,Neblina,10°,En calma,87%,1022 hPa
+Lunes 14 Diciembre 2020,Parcialmente cubierto,14°,6 km/h,63%,1023 hPa
+Martes 15 Diciembre 2020,Despejado,12°,En calma,67%,1023 hPa
+Miércoles 16 Diciembre 2020,Despejado,11°,En calma,66%,1021 hPa
+Jueves 17 Diciembre 2020,Despejado,12°,En calma,54%,1021 hPa
+Viernes 18 Diciembre 2020,Parcialmente cubierto,11°,En calma,71%,1024 hPa
+Sábado 19 Diciembre 2020,Despejado,9°,En calma,76%,1025 hPa
+Domingo 20 Diciembre 2020,Neblina,6°,En calma,81%,1023 hPa
+Lunes 21 Diciembre 2020,Parcialmente cubierto,12°,En calma,58%,1021 hPa
+Martes 22 Diciembre 2020,Despejado,10°,En calma,66%,1025 hPa
+Miércoles 23 Diciembre 2020,Despejado,10°,En calma,62%,1025 hPa
+Jueves 24 Diciembre 2020,Despejado,11°,En calma,47%,1023 hPa
+Viernes 25 Diciembre 2020,Neblina,6°,En calma,42%,1025 hPa
+Sábado 26 Diciembre 2020,Despejado,10°,En calma,66%,1025 hPa
+Domingo 27 Diciembre 2020,Parcialmente cubierto,8°,7 km/h,46%,1021 hPa
+Lunes 28 Diciembre 2020,Despejado,7°,En calma,57%,1022 hPa
+Martes 29 Diciembre 2020,Despejado,10°,En calma,50%,1021 hPa
+Miércoles 30 Diciembre 2020,Despejado,10°,7 km/h,53%,1021 hPa
+Jueves 31 Diciembre 2020,Parcialmente cubierto,9°,13 km/h,76%,1017 hPa
+Viernes 1 Enero 2021,Despejado,6°,En calma,70%,1018 hPa
+Sábado 2 Enero 2021,Despejado,1°,En calma,75%,1022 hPa
+Domingo 3 Enero 2021,Despejado,6°,En calma,52%,1023 hPa
+Lunes 4 Enero 2021,Despejado,3°,En calma,75%,1025 hPa
+Martes 5 Enero 2021,Despejado,5°,En calma,81%,1024 hPa
+Miércoles 6 Enero 2021,Despejado,11°,En calma,62%,1021 hPa
+Jueves 7 Enero 2021,Neblina,10°,En calma,62%,1023 hPa
+Viernes 8 Enero 2021,Mayormente cubierto,11°,En calma,50%,1023 hPa
+Sábado 9 Enero 2021,Parcialmente cubierto,14°,6 km/h,58%,1023 hPa
+Domingo 10 Enero 2021,Nubes dispersas,14°,En calma,72%,1022 hPa
+Lunes 11 Enero 2021,Despejado,9°,En calma,76%,1022 hPa
+Martes 12 Enero 2021,Despejado,8°,En calma,66%,1023 hPa
+Miércoles 13 Enero 2021,Mayormente cubierto,8°,7 km/h,71%,1025 hPa
+Jueves 14 Enero 2021,Neblina,13°,En calma,47%,1023 hPa
+Viernes 15 Enero 2021,Despejado,9°,En calma,66%,1022 hPa
+Sábado 16 Enero 2021,Mayormente cubierto,8°,En calma,53%,1021 hPa
+Domingo 17 Enero 2021,Parcialmente cubierto,16°,7 km/h,39%,1021 hPa
+Lunes 18 Enero 2021,Nubes dispersas,10°,En calma,43%,1021 hPa
+Martes 19 Enero 2021,Parcialmente cubierto,11°,En calma,76%,1021 hPa
+Miércoles 20 Enero 2021,Mayormente cubierto,14°,En calma,58%,1023 hPa
+Jueves 21 Enero 2021,Parcialmente cubierto,12°,En calma,88%,1025 hPa
+Viernes 22 Enero 2021,Despejado,13°,En calma,72%,1024 hPa
+Sábado 23 Enero 2021,Despejado,11°,En calma,66%,1022 hPa
+Domingo 24 Enero 2021,Parcialmente cubierto,10°,En calma,57%,1021 hPa
+Lunes 25 Enero 2021,Despejado,15°,En calma,44%,1021 hPa
+Martes 26 Enero 2021,Despejado,6°,En calma,81%,1020 hPa
+Miércoles 27 Enero 2021,Despejado,29°,6 km/h,11%,1018 hPa
+Jueves 28 Enero 2021,Parcialmente cubierto,15°,En calma,44%,1023 hPa
+Viernes 29 Enero 2021,Despejado,14°,En calma,67%,1025 hPa
+Sábado 30 Enero 2021,Despejado,16°,7 km/h,55%,1023 hPa
+Domingo 31 Enero 2021,Despejado,13°,En calma,47%,1021 hPa
+Lunes 1 Febrero 2021,Despejado,17°,9 km/h,36%,1023 hPa
+Martes 2 Febrero 2021,Despejado,16°,En calma,42%,1023 hPa
+Miércoles 3 Febrero 2021,Despejado,13°,En calma,44%,1022 hPa
+Jueves 4 Febrero 2021,Despejado,17°,7 km/h,39%,1021 hPa
+Viernes 5 Febrero 2021,Despejado,13°,En calma,33%,1020 hPa
+Sábado 6 Febrero 2021,Despejado,14°,En calma,31%,1019 hPa
+Domingo 7 Febrero 2021,Despejado,10°,En calma,43%,1019 hPa
+Lunes 8 Febrero 2021,Despejado,13°,En calma,54%,1020 hPa
+Martes 9 Febrero 2021,Despejado,15°,En calma,41%,1021 hPa
+Miércoles 10 Febrero 2021,Despejado,14°,En calma,31%,1021 hPa
+Jueves 11 Febrero 2021,Despejado,14°,11 km/h,44%,1020 hPa
+Viernes 12 Febrero 2021,Despejado,6°,En calma,56%,1016 hPa
+Sábado 13 Febrero 2021,Despejado,6°,En calma,52%,1016 hPa
+Domingo 14 Febrero 2021,Despejado,9°,En calma,57%,1017 hPa
+Lunes 15 Febrero 2021,Despejado,6°,En calma,65%,1019 hPa
+Martes 16 Febrero 2021,Despejado,9°,En calma,57%,1020 hPa
+Miércoles 17 Febrero 2021,Despejado,9°,En calma,57%,1020 hPa
+Jueves 18 Febrero 2021,Despejado,13°,7 km/h,47%,1020 hPa
+Viernes 19 Febrero 2021,Despejado,9°,En calma,46%,1021 hPa
+Sábado 20 Febrero 2021,Despejado,9°,En calma,43%,1024 hPa
+Domingo 21 Febrero 2021,Despejado,14°,En calma,58%,1023 hPa
