@@ -5,13 +5,13 @@ import csv
 client = pymongo.MongoClient("mongodb+srv://POE:Manu7190@cluster0.avhhgxe.mongodb.net/?retryWrites=true&w=majority")
 
 # Selecciona la base de datos que deseas utilizar
-db = client["Clima_Test"]
+db = client["Historico"]
 
 # Selecciona la colección de la que deseas exportar los datos
 collection = db["Datos"]
 
 # Campos a exportar
-fields = ["ciudad", "current", "real_feal", "air_quality", "pollen", "uv_index", "precipitation", "timestamp"]
+fields = ["fecha", "nubosidad", "temperatura", "viento", "humedad", "presion"]
 
 # Nombre del archivo CSV de salida
 csv_file = "datos_exportados.csv"

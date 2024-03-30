@@ -10,77 +10,71 @@ client = pymongo.MongoClient("mongodb+srv://POE:Manu7190@cluster0.avhhgxe.mongod
 #mongodb+srv://Ara:<cEGeCjYRsWoluKg5>@clustertest.p1rrutb.mongodb.net/
 
 # Selecciona la base de datos que deseas utilizar
-db = client["Clima_Test"]
+db = client["Historico"]
 
 # Selecciona la colección en la que deseas guardar los datos
 collection = db["Datos"]
 
-start_urls = ['https://www.wunderground.com/weather/mx/guadalajara/KJAGUADA1',
-              'https://www.wunderground.com/weather/mx/zapopan/IZAPOP11',
-              'https://www.wunderground.com/weather/mx/tlaquepaque/ITLAQU4',
-              'https://www.wunderground.com/weather/mx/tonalá',
-              'https://www.wunderground.com/weather/mx/tlajomulco-de-zúñiga/ITLAJO3'
-              ]
+def generar_urls_desde_2018():
+    meses = {
+        "January": "enero",
+        "February": "febrero",
+        "March": "marzo",
+        "April": "abril",
+        "May": "mayo",
+        "June": "junio",
+        "July": "julio",
+        "August": "agosto",
+        "September": "septiembre",
+        "October": "octubre",
+        "November": "noviembre",
+        "December": "diciembre"
+    }
+    
+    urls = []
+    fecha_actual = datetime.date.today()
+    fecha_inicial = datetime.date(2018, 1, 1)
+    
+    while fecha_inicial <= fecha_actual:
+        mes_esp = meses[fecha_inicial.strftime("%B")]
+        url = f"https://www.tutiempo.net/registros/mmgl/{fecha_inicial.day}-{mes_esp}-{fecha_inicial.year}.html"
+        urls.append(url)
+        fecha_inicial += datetime.timedelta(days=1)
+    
+    return urls
 
-second_urls = ['https://www.wunderground.com/health/mx/guadalajara/KJAGUADA1?cm_ven=localwx_modaq',
-               'https://www.wunderground.com/health/mx/zapopan/IZAPOP11?cm_ven=localwx_modaq',
-               'https://www.wunderground.com/health/mx/tlaquepaque/ITLAQU4?cm_ven=localwx_modaq',
-               'https://www.wunderground.com/health/mx/tonalá?cm_ven=localwx_modaq',
-               'https://www.wunderground.com/health/mx/tlajomulco-de-zúñiga/ITLAJO3?cm_ven=localwx_modaq']
-
-third_url = ['https://www.wunderground.com/precipitation/mx/guadalajara/KJAGUADA1?cm_ven=localwx_modprecip',
-             'https://www.wunderground.com/precipitation/mx/zapopan/IZAPOP11?cm_ven=localwx_modprecip',
-             'https://www.wunderground.com/precipitation/mx/tlaquepaque/ITLAQU4?cm_ven=localwx_modprecip',
-             'https://www.wunderground.com/precipitation/mx/tonalá?cm_ven=localwx_modprecip',
-             'https://www.wunderground.com/precipitation/mx/tlajomulco-de-zúñiga/ITLAJO3?cm_ven=localwx_modprecip']
-
-
-def insertarDatos (ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime):
+def insertarDatos(fecha, nubosidad, temperatura, viento, humedad, presion):
     collection.insert_one({
-                    "ciudad": ciudad,
-                    "current": current,
-                    "real_feal": real_feal,
-                    "air_quality": air_quality,
-                    "pollen": pollen,
-                    "uv_index": uv_index,
-                    "precipitation": precipitation,
-                    "timestamp": current_datetime
+                    "nubosidad": nubosidad,
+                    "fecha": fecha,
+                    "temperatura": temperatura,
+                    "viento": viento,
+                    "humedad": humedad,
+                    "presion": presion
+                    
                 })
 
 def extraer_clima():
-
-
     driver = webdriver.Edge()
     
-    for i, url in enumerate (start_urls):
+    for url in generar_urls_desde_2018():
         driver.get(url)
         time.sleep(2)
     
-        ciudad = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[2]/lib-city-header/div[1]/div/h1/span[1]').text
-        current = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[2]/lib-display-unit/span').text
-        real_feal = driver.find_element(By.XPATH, '//*[@id="inner-content"]/div[3]/div[1]/div/div[1]/div[1]/lib-city-current-conditions/div/div[2]/div/div/div[3]/span').text
-        ciudad= ciudad.replace(', Mexico Weather Conditions', '')
+        fecha = driver.find_element(By.XPATH, '//*[@id="HistoricosData"]/div/table/tbody/tr[1]/th').text
+        nubosidad = driver.find_element(By.XPATH, '//*[@id="HistoricosData"]/div/table/tbody/tr[17]/td[2]/span').text 
+        temperatura = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[21]/td[3]').text
+        viento = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[17]/td[4]').text
+        humedad = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[15]/td[5]').text
+        presion = driver.find_element(By.XPATH,'//*[@id="HistoricosData"]/div/table/tbody/tr[15]/td[6]').text
         
-        
-        second_url = second_urls[i]
-        driver.get(second_url)
-        time.sleep(2)
-        air_quality = driver.find_element(By.XPATH, '//*[@id="airqualityindex_section"]/div/div/div/div[2]/div[2]/div[1]/div[2]').text
-        pollen = driver.find_element(By.XPATH, '//*[@id="pollen_section"]/div/div[2]').text
-        uv_index = driver.find_element(By.XPATH, '//*[@id="uv_section"]/div/div[3]/div[2]').text
-        
-        third_urlv = third_url[i]
-        driver.get(third_urlv)
-        time.sleep(2)
-        precipitation = driver.find_element(By.XPATH, '//*[@id="precip-graph"]/div/lib-precipitation-graph-alert/div/h2/span').text
-        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
 
-        insertarDatos(ciudad, current, real_feal, air_quality, pollen, uv_index, precipitation, current_datetime)
+        insertarDatos(fecha, nubosidad, temperatura, viento, humedad, presion)
     
     driver.close()
 
-schedule.every(3).minutes.do(extraer_clima)
+#schedule.every(3).minutes.do(extraer_clima)
 
 extraer_clima()
 
