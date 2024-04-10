@@ -33,7 +33,7 @@ def generar_urls_desde_2018():
     
     urls = []
     fecha_actual = datetime.date.today()
-    fecha_inicial = datetime.date(2020, 11, 15)
+    fecha_inicial = datetime.date(2021, 11, 24)
     
     while fecha_inicial <= fecha_actual:
         mes_esp = meses[fecha_inicial.strftime("%B")]
