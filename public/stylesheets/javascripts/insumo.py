@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Cargar datos desde el archivo CSV
-data = pd.read_csv("/public/stylesheets/datos_tonala_2.csv")
+data = pd.read_csv("datos_tonala_2.csv")
 
 # Visualizar los primeros 5 registros
 print("Primeros 5 registros:")
