@@ -1,7 +1,6 @@
 import json
 import datetime
 import os
-
 import pandas as pd
 
 # Leer los datos del archivo CSV
@@ -23,34 +22,40 @@ data['fecha'] = data['fecha'].apply(custom_date_parser)
 # Generar datos de la gráfica en el formato requerido por LightweightCharts
 chartData = [{'time': date.strftime('%Y-%m-%d'), 'value': temp} for date, temp in zip(data['fecha'], data['temperatura'])]
 
-# Verificar si el archivo JavaScript existe y contiene datos en charData
-if os.path.exists('grafica4.js'):
-    with open('grafica4.js', 'r') as f:
+# LIT ES LA RUTA ACTUAL DEL ARCHIVO ACTUAL 
+current_directory = os.path.dirname(os.path.abspath(__file__))
+
+# RUTA DE JS CONSIDERANDO EN ESTE CASO EL ARCHIVO JS
+js_file_path = os.path.join(current_directory, 'grafica4.js')
+
+# VERIFICAMOS SI YA EXISTE EL ARCHIVO 
+if os.path.exists(js_file_path):
+    with open(js_file_path, 'r') as f:
         lines = f.readlines()
     
-    # Buscar la línea donde comienza la definición de charData
+    # BUSCAMOS LA LINEA DEL var charData
     start_index = None
     for i, line in enumerate(lines):
         if 'var chartData =' in line:
             start_index = i
             break
 
-    # Si se encontró la línea, eliminar todas las líneas de charData
+    #SI SE ENCUENTRA REEMPLAZMOS POR LOS DATOS GENERADOS
     if start_index is not None:
         end_index = start_index
         while end_index < len(lines) and '];' not in lines[end_index]:
             end_index += 1
         del lines[start_index:end_index+1]
 
-    # Escribir el archivo JavaScript con los datos actualizados
-    with open('grafica4.js', 'w') as f:
+    # AQUI SE ESCRIBEN LOS DATO NUEVOS
+    with open(js_file_path, 'w') as f:
         f.write("var chartData = ")
         json.dump(chartData, f)
         f.write(";\n")
         f.writelines(lines)
 else:
-    # Si el archivo no existe, escribir los datos en un nuevo archivo JavaScript
-    with open('grafica4.js', 'w') as f:
+    # SI NO  EXISTE EL ARCHIVO ACTUAL SE GENERA UN ARCHIVO NUEVO
+    with open(js_file_path, 'w') as f:
         f.write("var chartData = ")
         json.dump(chartData, f)
         f.write(";\n")
