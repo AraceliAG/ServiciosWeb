@@ -12,15 +12,30 @@ data['humedad'] = data['humedad'].str.replace('%', '').astype(int)
 # Función para parsear las fechas
 def custom_date_parser(date_string):
     parts = date_string.split(' ')
-    months_es = {'Enero': 1, 'Febrero': 2, 'Marzo': 3, 'Abril': 4, 'Mayo': 5, 'Junio': 6, 'Julio': 7, 'Agosto': 8, 'Septiembre': 9, 'Octubre': 10, 'Noviembre': 11, 'Diciembre': 12}
-    date = datetime.datetime(int(parts[3]), months_es[parts[2]], int(parts[1]))
-    return date
+    month = parts[2]
+    # Verificar si el mes es enero, julio o si es un múltiplo de 6 meses
+    if month in ['Enero', 'Julio'] or (int(parts[1]) % 6 == 1 and month in ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']):
+        months_es = {'Enero': 1, 'Febrero': 2, 'Marzo': 3, 'Abril': 4, 'Mayo': 5, 'Junio': 6, 'Julio': 7, 'Agosto': 8, 'Septiembre': 9, 'Octubre': 10, 'Noviembre': 11, 'Diciembre': 12}
+        date = datetime.datetime(int(parts[3]), months_es[month], int(parts[1]))
+        return date
+    else:
+        return None
 
 # Aplicar la función de parsing a la columna 'fecha'
 data['fecha'] = data['fecha'].apply(custom_date_parser)
 
-# Generar datos de la gráfica en el formato requerido por LightweightCharts
-chartData = [{'time': date.strftime('%Y-%m-%d'), 'value': temp} for date, temp in zip(data['fecha'], data['humedad'])]
+# Eliminar filas con fechas faltantes (NaT)
+data = data.dropna(subset=['fecha'])
+
+# Calcular los intervalos de 6 meses y asignarlos a cada fila
+data['semestre'] = (data['fecha'].dt.year - data['fecha'].dt.year.min()) * 2 + (data['fecha'].dt.month // 6) + 1
+
+# Calcular la humedad promedio por semestre
+datos_semestrales = data.groupby('semestre').agg({'humedad': 'mean'}).reset_index()
+
+# Generar datos de la gráfica en el formato requerido
+chartData = [{'time': f'Semestre {semestre}', 'value': humedad} for semestre, humedad in zip(datos_semestrales['semestre'], datos_semestrales['humedad'])]
+
 
 # LIT ES LA RUTA ACTUAL DEL ARCHIVO ACTUAL 
 current_directory = os.path.dirname(os.path.abspath(__file__))
