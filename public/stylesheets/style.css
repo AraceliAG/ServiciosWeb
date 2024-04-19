@@ -19,3 +19,6 @@ a {
 height: 800px;
 }
 
+img{
+  border-radius: 25%;
+}
