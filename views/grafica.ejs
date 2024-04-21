@@ -11,17 +11,22 @@
 </head>
 <body>
 
-  <!-- Contenedor div para la gráfica -->
-  <div id="chartContainer">
-    <canvas id="myChart"></canvas>
-</div>
+    <div class="containerPadre">
 
-<!-- Botones de selección -->
-<div id="seleccion"> 
-    <button type="button" class="btn btn-info" onclick="mostrarGrafica('temperatura')">Temperatura</button>
-    <button type="button" class="btn btn-info" onclick="mostrarGrafica('humedad')">Humedad</button>
-    <button type="button" class="btn btn-info" onclick="mostrarGrafica('presion')">Presion Atmosferica</button>
-</div>
+        <!-- Contenedor div para la gráfica -->
+    <div id="chartContainer">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <!-- Botones de selección -->
+    <div id="seleccion"> 
+        <button type="button" class="btn btn-info" onclick="mostrarGrafica('temperatura')">Temperatura</button>
+        <button type="button" class="btn btn-info" onclick="mostrarGrafica('humedad')">Humedad</button>
+        <button type="button" class="btn btn-info" onclick="mostrarGrafica('presion')">Presion Atmosferica</button>
+    </div>
+
+    </div>
+  
 <!-- Script para cargar Chart.js y el código JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="/stylesheets/javascripts/grafica4.js"></script>
