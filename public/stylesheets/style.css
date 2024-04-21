@@ -34,8 +34,6 @@ body {
  
 }
 
-
-
 #seleccion {
   display: flex;
   flex-direction: column; /* Alinear los elementos verticalmente */
@@ -68,6 +66,8 @@ body {
 
 
 
- 
-
+.section {
+  padding: 50px 0; /* Añade más espacio alrededor del contenido */
+  min-height: 1000px; /* Establece una altura mínima para la sección */
+}
 

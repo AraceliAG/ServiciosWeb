@@ -301,47 +301,47 @@ https://templatemo.com/tm-543-breezed
 
     <!-- ***** Projects Area Starts ***** -->
     <section class="section" id="projects">
-       <!-- AQUI AGREGO GRAFICA DE TEMPERATURA -->
-       <H2>TEMPERATURAS EN EL TRANSCURSO DE LOS ÚLTIMOS 5 AÑOS</H2>
-       <div class="col-lg-9">
-        
-        <div id="chartContainer" >
-
-        <canvas id="myChart"></canvas>
-       </div>
-
-   <script src="/stylesheets/javascripts/grafica4.js"></script>
-
-   <br>
-   <br>
-   <br>
-   
-
-    </section>
-
-
-
-
-     <!-- ***** Projects Area Starts ***** -->
-     <section class="section" id="projects2">
-        <!-- AQUI AGREGO GRAFICA DE TEMPERATURA -->
-        <H2>HUMEDAD EN EL TRANSCURSO DE LOS ÚLTIMOS 5 AÑOS</H2>
-        <div class="col-lg-9">
-         
-         <div id="chartContainer2" >
- 
-         <canvas id="myChart2"></canvas>
-        </div>
- 
-    <script src="/stylesheets/javascripts/graficaH.js"></script>
- 
-    <br>
-    <br>
-    <br>
+        <div class="containerPadre">
     
- 
-     </section>
-    <!-- ***** Projects Area Ends ***** -->
+            <!-- Contenedor div para la gráfica -->
+            <div id="chartContainer">
+                <canvas id="myChart"></canvas>
+            </div>
+    
+            <!-- Botones de selección -->
+            <div id="seleccion" class="botonesE"> 
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccionar Año</option>
+                    <option value="1">2018</option>
+                    <option value="2">2019</option>
+                    <option value="3">2020</option>
+                    <option value="4">2021</option>
+                    <option value="5">2022</option>
+                    <option value="6">2023</option>
+                    <option value="7">2024</option>
+                </select>
+    
+                <br>
+                
+                <button type="button" class="btn btn-info" onclick="mostrarGrafica('temperatura')">Temperatura</button> <br>
+                <button type="button" class="btn btn-info" onclick="mostrarGrafica('humedad')">Humedad</button> <br>
+                <button type="button" class="btn btn-info" onclick="mostrarGrafica('presion')">Presion</button> <br>
+            </div>
+    
+        </div>
+    
+        <!-- Script para las gráficas -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="/stylesheets/javascripts/grafica4.js"></script>
+        <script src="/stylesheets/javascripts/graficoP.js"></script>
+        <script src="/stylesheets/javascripts/graficaH.js"></script>
+    </section>
+    
+
+   <br>
+   <br>
+   <br>
+
 
     <!-- ***** Testimonials Starts ***** -->
     <section class="section" id="testimonials">
