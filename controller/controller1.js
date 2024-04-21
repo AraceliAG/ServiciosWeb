@@ -18,6 +18,9 @@ module.exports={
         console.log('anio', anio)
         console.log('mes', mes)
         
-        res.render('grafica');
+        //res.redirect('grafica');
+        // Enviar datos mediante redirección con parámetros de consulta
+        res.redirect(`/grafica?anio=${anio}&mes=${mes}`);
+
     }
 }

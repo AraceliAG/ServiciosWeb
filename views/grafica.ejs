@@ -124,6 +124,18 @@
 </script>
 
 
+<script>
+    function enviarDatosSeleccionados() {
+        // Obtener los valores seleccionados de año y mes
+        var anioSeleccionado = document.getElementById("dropdownMenuButtonAnio").textContent;
+        var mesSeleccionado = document.getElementById("dropdownMenuButtonMes").textContent;
+
+        // Enviar los datos al archivo JavaScript
+        mostrarDatosSeleccionados(anioSeleccionado, mesSeleccionado);
+    }
+</script>
+
+
 
     <!-- Script para cargar Chart.js y el código JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
