@@ -3,35 +3,57 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
-}
+
 
 
 #chartContainer {
   height: 500px;
-    width: 800px; ;
+    width: 800px; 
+    
 	  
 }
 
 
-#chartContainer2 {
-  width: 135%; ;
-height: 800px;
-}
-
 .containerPadre{
+  height: 500px;
+  width: 1000px;
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
-  background-color: rgb(20, 21, 52)
+  background-color: rgb(20, 21, 52);
+  border: 5px solid rgb(228, 133, 10); /* Añade color al borde */
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Añade una sombra */
+
  
 }
 
-#seleccion button {
-  margin-bottom: 10px; /* Agrega un espacio abajo de cada botón */
+#seleccion {
+  display: flex;
+  flex-direction: column; /* Alinear los elementos verticalmente */
+  align-items: center; /* Centrar horizontalmente */
 }
 
-.botonesE{
-  background-color: aquamarine;
+#seleccion button {
+  margin-bottom: 8px; /* Agrega un espacio abajo de cada botón */
+  font-size: 20px;
+  width: 150px; /* Establece el ancho de todos los botones */
+  background-color: rgb(228, 133, 10);
+  border-color: rgb(228, 133, 10);
 }
+
+
+
+ .botonesE {
+  height: 260px;
+  width: 200px;
+  background-color:transparent;
+  border: 5px solid rgb(237, 234, 232);
+  border-radius: 10px;
+  padding-top: 20px; /* Añade espacio en la parte superior del contenedor */
+}
+
+ 
+
+
