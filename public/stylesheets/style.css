@@ -24,7 +24,7 @@ height: 800px;
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
-  background-color: bisque;
+  background-color: rgb(20, 21, 52)
  
 }
 

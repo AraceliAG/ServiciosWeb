@@ -69,7 +69,7 @@ function mostrarGrafica(tipo) {
             datasets: [{
                 label: tipo === 'temperatura' ? 'Promedio de Temperatura por Semestre' : tipo === 'humedad' ? 'Promedio de Humedad por Semestre' : 'Promedio de Presión por Semestre',
                 data: data,
-                backgroundColor: tipo === 'temperatura' ? 'rgba(255, 99, 132, 0.2)' : tipo === 'humedad' ? 'rgba(54, 162, 235, 0.2)' : 'rgba(255, 159, 64, 0.2)',
+                backgroundColor: tipo === 'temperatura' ? 'rgb(254, 105, 199)' : tipo === 'humedad' ? 'rgba(54, 162, 235, 0.2)' : 'rgba(255, 159, 64, 0.2)',
                 borderColor: tipo === 'temperatura' ? 'rgba(255, 99, 132, 1)' : tipo === 'humedad' ? 'rgba(54, 162, 235, 1)' : 'rgba(255, 159, 64, 1)',
                 borderWidth: 1,
                 fill: true
@@ -84,6 +84,7 @@ function mostrarGrafica(tipo) {
             maintainAspectRatio: false,
             width: '100%',
             height: '100%'
+            
         }
     });
 }
