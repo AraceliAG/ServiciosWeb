@@ -26,6 +26,11 @@ body {
   padding: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Añade una sombra */
 
+  background-image: url('/stylesheets/assets/images/planeta.png'); /* Ruta de la imagen */
+  background-size: 150px; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+
  
 }
 
