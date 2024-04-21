@@ -15,8 +15,8 @@ body {
 
 
 .containerPadre{
-  height: 500px;
-  width: 1000px;
+  height: 600px;
+  width: 1050px;
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
@@ -28,6 +28,8 @@ body {
 
  
 }
+
+
 
 #seleccion {
   display: flex;
@@ -47,12 +49,19 @@ body {
 
  .botonesE {
   height: 260px;
-  width: 200px;
+  width: 250px;
   background-color:transparent;
-  border: 5px solid rgb(237, 234, 232);
+  border: 5px solid transparent;
   border-radius: 10px;
   padding-top: 20px; /* Añade espacio en la parte superior del contenedor */
 }
+
+
+.form-select{
+  width: auto;
+}
+
+
 
  
 

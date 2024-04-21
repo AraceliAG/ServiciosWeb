@@ -13,15 +13,29 @@
 
     <div class="containerPadre">
 
-        
-
         <!-- Contenedor div para la gráfica -->
     <div id="chartContainer">
         <canvas id="myChart"></canvas>
     </div>
 
+    
+
     <!-- Botones de selección -->
     <div id="seleccion" class="botonesE"> 
+        <select class="form-select" aria-label="Default select example">
+        
+            <option selected>Seleccionar Año</option>
+            <option value="1">2018</option>
+            <option value="2">2019</option>
+            <option value="3">2020</option>
+            <option value="3">2021</option>
+            <option value="3">2022</option>
+            <option value="3">2023</option>
+            <option value="3">2024</option>
+          </select>
+
+          <br>
+        
         <button type="button" class="btn btn-info" onclick="mostrarGrafica('temperatura')">Temperatura</button> <br>
         <button type="button" class="btn btn-info" onclick="mostrarGrafica('humedad')">Humedad</button> <br>
         <button type="button" class="btn btn-info" onclick="mostrarGrafica('presion')">Presion </button> <br>
