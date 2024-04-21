@@ -15,7 +15,7 @@ body {
 
 
 .containerPadre{
-  height: 600px;
+  height: 650px;
   width: 1050px;
   display: flex;
   justify-content: center; /* Centra horizontalmente */
@@ -47,7 +47,13 @@ body {
   background-color: rgb(228, 133, 10);
   border-color: rgb(228, 133, 10);
 }
-
+#seleccion2 button {
+  margin-bottom: 8px; /* Agrega un espacio abajo de cada botón */
+  font-size: 20px;
+  width: 150px; /* Establece el ancho de todos los botones */
+  background-color: rgb(249, 249, 249);
+  border-color: rgb(255, 255, 255);
+}
 
 
  .botonesE {
@@ -70,4 +76,13 @@ body {
   padding: 50px 0; /* Añade más espacio alrededor del contenido */
   min-height: 1000px; /* Establece una altura mínima para la sección */
 }
+
+#titu {
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center; /* Alineación horizontal */
+  margin: 0 auto; /* Alineación vertical */
+}
+
+
 

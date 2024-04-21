@@ -12,9 +12,13 @@
 <body>
 
     <div class="containerPadre">
-
+        
         <!-- Contenedor div para la gráfica -->
     <div id="chartContainer">
+        <div id="titu">
+            <h2 >Historicos a lo largo de cinco años</h2>
+        </div>
+        
         <canvas id="myChart"></canvas>
     </div>
 
@@ -28,8 +32,12 @@
         <button type="button" class="btn btn-info" onclick="mostrarGrafica('temperatura')">Temperatura</button> <br>
         <button type="button" class="btn btn-info" onclick="mostrarGrafica('humedad')">Humedad</button> <br>
         <button type="button" class="btn btn-info" onclick="mostrarGrafica('presion')">Presion </button> <br>
+        <div id="seleccion2">
+            <button type="button" class="btn btn-light">Avanzado</button>
+        </div>
        
     </div>
+    
 
     
 </div>
