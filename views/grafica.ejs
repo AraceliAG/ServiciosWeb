@@ -42,7 +42,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Filtro Avanzada</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Filtro Avanzado</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -86,23 +86,35 @@
                 </div>
             </div>
 
+
+
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Guardar cambios</button>
+                <form id="parametros" method="post" action="/grafica" onsubmit="mostrarDatosSeleccionados()">
+                    <input type="hidden" name="anioSeleccionado" id="anioSeleccionado">
+                    <input type="hidden" name="mesSeleccionado" id="mesSeleccionado">
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </form>
+               
             </div>
         </div>
     </div>
 </div>
 
+
 <script>
     function seleccionarAnio(anio) {
         var botonAnio = document.getElementById("dropdownMenuButtonAnio");
+        var inputAnio = document.getElementById("anioSeleccionado");
         botonAnio.textContent = anio;
+        inputAnio.value = anio;
     }
 
     function seleccionarMes(mes) {
         var botonMes = document.getElementById("dropdownMenuButtonMes");
+        var inputMes = document.getElementById("mesSeleccionado");
         botonMes.textContent = mes;
+        inputMes.value = mes;
     }
 </script>
 

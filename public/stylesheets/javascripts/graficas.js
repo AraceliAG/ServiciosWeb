@@ -149,5 +149,3 @@ document.getElementById('tipoDatos').addEventListener('change', function () {
     mostrarGrafica(tipo);
 });
 
-
-
