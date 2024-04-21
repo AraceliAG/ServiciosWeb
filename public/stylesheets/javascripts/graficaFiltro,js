@@ -1,0 +1,53 @@
+
+
+
+
+// Obtener los parámetros de la URL
+const urlParams = new URLSearchParams(window.location.search);
+const anio = urlParams.get('anio');
+const mes = urlParams.get('mes');
+
+// Utilizar los valores de anio y mes como desees
+console.log('Año:', anio);
+console.log('Mes:', mes);
+
+// Filtrar los datos de temperatura para el mes y año seleccionados
+const temperaturesForMonth = chartData.filter(item => {
+    const itemDate = new Date(item.time);
+    return itemDate.getFullYear() === parseInt(anio) && itemDate.getMonth() + 1 === parseInt(mes); // Sumamos 1 al mes ya que getMonth() devuelve de 0 a 11
+});
+
+// Extraer las temperaturas y etiquetas para la gráfica
+const temperatureLabels = temperaturesForMonth.map(item => new Date(item.time).getDate()); // Etiquetas: Días del mes
+const temperatureValues = temperaturesForMonth.map(item => item.value); // Valores: Temperaturas
+
+// Mostrar la gráfica de temperaturas del mes seleccionado
+mostrarGrafica('temperatura', temperatureLabels, temperatureValues);
+
+// Función para mostrar la gráfica
+function mostrarGrafica(tipo, labels, data) {
+    var ctx = document.getElementById('myChart').getContext('2d');
+
+    // Destruir la gráfica anterior para evitar saturación
+    if (window.myChart instanceof Chart) {
+        window.myChart.destroy();
+    }
+
+    window.myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: tipo === 'temperatura' ? 'Temperaturas del Mes' : '', // Puedes cambiar el label si cambias el tipo de dato
+                data: data,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1,
+                fill: true
+            }]
+        },
+        options: {
+            // Opciones de la gráfica
+        }
+    });
+}

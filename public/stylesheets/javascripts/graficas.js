@@ -6,14 +6,6 @@ var chartData3 = [{"time": "2018-01-01", "value": 1026}, {"time": "2018-01-02", 
 
 
 
-// Obtener los parámetros de la URL
-const urlParams = new URLSearchParams(window.location.search);
-const anio = urlParams.get('anio');
-const mes = urlParams.get('mes');
-
-// Utilizar los valores de anio y mes como desees
-console.log('Año:', anio);
-console.log('Mes:', mes);
 
 // FUNCION PARA ASIGNAR NOMBRE DE CADA TRIMESTRE
 function getTrimesterName(month) {
@@ -151,7 +143,7 @@ const averagePressureByTrimester = calculateAverageByTrimester(pressureTrimester
 const pressureTrimestersLabels = Object.keys(averagePressureByTrimester);
 const averagePressure = Object.values(averagePressureByTrimester);
 
-//CAMBIAR GRAFICO CON LISTEN
+// Cambiar gráfico con listener
 document.getElementById('tipoDatos').addEventListener('change', function () {
     var tipo = this.value; // Valor del select
 
@@ -159,3 +151,15 @@ document.getElementById('tipoDatos').addEventListener('change', function () {
     mostrarGrafica(tipo);
 });
 
+// Filtrar los datos de temperatura para el mes y año seleccionados
+const temperaturesForMonth = chartData.filter(item => {
+    const itemDate = new Date(item.time);
+    return itemDate.getFullYear() === parseInt(anio) && itemDate.getMonth() + 1 === parseInt(mes); // Sumamos 1 al mes ya que getMonth() devuelve de 0 a 11
+});
+
+// Extraer las temperaturas y etiquetas para la gráfica
+const temperatureLabels = temperaturesForMonth.map(item => new Date(item.time).getDate()); // Etiquetas: Días del mes
+const temperatureValues = temperaturesForMonth.map(item => item.value); // Valores: Temperaturas
+
+// Mostrar la gráfica de temperaturas del mes seleccionado
+mostrarGrafica('temperatura', temperatureLabels, temperatureValues);
