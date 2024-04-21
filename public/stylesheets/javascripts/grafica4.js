@@ -98,10 +98,17 @@ const humiditySemestersLabels = Object.keys(averageHumidityBySemester);
 const averageHumidity = Object.values(averageHumidityBySemester);
 
 // Función para mostrar la gráfica correspondiente al tipo seleccionado
+// Función para mostrar la gráfica correspondiente al tipo seleccionado
 function mostrarGrafica(tipo) {
     var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'line', // Por defecto, se mostrará un gráfico de líneas
+    
+    // Destruir instancia anterior del gráfico si existe
+    if(window.myChart instanceof Chart){
+        window.myChart.destroy();
+    }
+
+    window.myChart = new Chart(ctx, {
+        type: 'line', // TIPO DE GRAFICA
         data: {
             labels: tipo === 'temperatura' ? temperatureSemestersLabels : humiditySemestersLabels,
             datasets: [{
@@ -127,7 +134,6 @@ function mostrarGrafica(tipo) {
 }
 
 
-
 // Event listener para el botón de cambiar tipo de datos
 document.getElementById('tipoDatos').addEventListener('change', function() {
     var tipo = this.value; // Valor del select
@@ -135,9 +141,6 @@ document.getElementById('tipoDatos').addEventListener('change', function() {
     // Mostrar la gráfica con los datos correspondientes al tipo seleccionado
     mostrarGrafica(tipo);
 });
-
-
-
 
 
 
