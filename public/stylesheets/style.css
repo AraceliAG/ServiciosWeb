@@ -20,3 +20,18 @@ a {
 height: 800px;
 }
 
+.containerPadre{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background-color: bisque;
+ 
+}
+
+#seleccion button {
+  margin-bottom: 10px; /* Agrega un espacio abajo de cada botón */
+}
+
+.botonesE{
+  background-color: aquamarine;
+}
