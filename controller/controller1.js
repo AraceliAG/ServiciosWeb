@@ -15,8 +15,9 @@ module.exports={
   
         const anio = req.body.anioSeleccionado
         const mes = req.body.mesSeleccionado
-        console.log('mes', mes)
         console.log('anio', anio)
+        console.log('mes', mes)
+        
         res.render('grafica');
     }
 }
