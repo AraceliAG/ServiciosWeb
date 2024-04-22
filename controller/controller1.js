@@ -22,5 +22,22 @@ module.exports={
         // Enviar datos mediante redirección con parámetros de consulta
         res.redirect(`/grafica?anio=${anio}&mes=${mes}`);
 
+    },
+
+    graficaP:function (req, res){
+
+        res.render('graficaP');
+    },
+    graficaDP: function(req, res) {
+  
+        const anio = req.body.anioSeleccionado
+        const mes = req.body.mesSeleccionado
+        console.log('anio', anio)
+        console.log('mes', mes)
+        
+        //res.redirect('grafica');
+        // Enviar datos mediante redirección con parámetros de consulta
+        res.redirect(`/graficaP?anio=${anio}&mes=${mes}`);
+
     }
 }
