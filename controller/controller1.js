@@ -29,15 +29,19 @@ module.exports={
         res.render('graficaP');
     },
     graficaDP: function(req, res) {
-  
+
         const anio = req.body.anioSeleccionado
         const mes = req.body.mesSeleccionado
+        const seccion = req.body.seccion
+      
+        
         console.log('anio', anio)
         console.log('mes', mes)
+        console.log('mes', seccion)
         
         //res.redirect('grafica');
         // Enviar datos mediante redirección con parámetros de consulta
-        res.redirect(`/graficaP?anio=${anio}&mes=${mes}`);
+        res.redirect(`/graficaP?anio=${anio}&mes=${mes}&seccion=${seccion}`);
 
     }
 }
