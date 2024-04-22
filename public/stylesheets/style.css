@@ -86,14 +86,15 @@ body {
 
 body2 {
   padding: 50px;
+  border-color: #e2e2e2;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e2e2e2;
-  margin: 0%;
+  /*margin: 0%;
   padding: 0%;
-  /*background-image: url('./assets/images/slide-03.jpg');
+  background-image: url('./assets/images/slide-03.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;*/
@@ -146,3 +147,41 @@ body2 {
 }
 
 
+.features-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+/* Estilo para el botón Modo Avanzado */
+.button-modo-avanzado {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Quita el borde */
+  color: white; /* Color del texto */
+  padding: 15px 32px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Quita la decoración del texto */
+  display: inline-block; /* Hace que el botón se comporte como un elemento de línea */
+  font-size: 16px; /* Tamaño del texto */
+  margin: 4px 2px; /* Margen exterior */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón Modo Avanzado al pasar el mouse */
+.button-modo-avanzado:hover {
+  background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.boton-y-titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sampletext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 100 "Lucida Grande", Helvetica, Arial, sans-serif;
+}
