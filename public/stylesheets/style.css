@@ -8,8 +8,10 @@ body {
 
 #chartContainer {
   height: 500px;
-    width: 800px; 
-    
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 	  
 }
 
@@ -20,7 +22,7 @@ body {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
-  background-color: rgb(20, 21, 52);
+  background-color: #c9d4c3;
   border: 5px solid rgb(228, 133, 10); /* Añade color al borde */
   border-radius: 10px;
   padding: 25px;
@@ -28,7 +30,7 @@ body {
 
   background-image: url('/stylesheets/assets/images/planeta.png'); /* Ruta de la imagen */
   background-size: 150px; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
-  background-position: center; /* Centra la imagen dentro del contenedor */
+  background-position: top right 8%; /* Centra la imagen dentro del contenedor */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
 
  
@@ -68,6 +70,8 @@ body {
 
 .form-select{
   width: auto;
+  background-color: #e9eee7;
+  border: 1px solid rgb(228, 133, 10);
 }
 
 
@@ -75,6 +79,24 @@ body {
 .section {
   padding: 50px 0; /* Añade más espacio alrededor del contenido */
   min-height: 1000px; /* Establece una altura mínima para la sección */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body2 {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e2e2;
+  margin: 0%;
+  padding: 0%;
+  /*background-image: url('./assets/images/slide-03.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
 }
 
 #titu {
