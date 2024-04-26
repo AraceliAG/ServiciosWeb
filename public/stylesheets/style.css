@@ -8,7 +8,7 @@
 }
 
 body {
-  background:rgba(140, 139, 146, 0.515);
+  background:rgb(183, 183, 183);
   
 }
 
@@ -18,7 +18,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: rgb(91, 88, 88);  /* COLOR */
+  background: rgb(162, 162, 162);  /* COLOR */
 
   /*SEPARAMOS NUESTROS ELEMENTOS (LOGO Y SECCIONES)*/
   display: flex;
@@ -49,11 +49,8 @@ body {
   color: rgb(11, 84, 11); /*COLOR AL MOMENTO DE SELECCIONAR ALGUNA SECCION CABCERA*/
 }
 
-.inicio { /*DIV PAPA DE MI SECCION INICIO*/
-  display: flex;
-  flex-direction: column; /* PARA AMPLIAR VERTICALMENTE LOS ELEMENTOS */
-}
 
+/*ESTILO TITULOS Y SUBTEMAS*/
 .titulo{ /*DIV TITULO*/
   height: 30vh;
   display: flex;
@@ -62,22 +59,33 @@ body {
   
 }
 
-
 .subtema{
   display: flex;
   align-items: center;
   justify-content: center;  /* CENTRA HORIZONTALMENTE */
 }
 
+
 /*ESTILO SECCIONES GENERAL*/
+.seccionInicio, .seccion2, .seccion3 {
+  height: 100vh; /* PARA QUE CADA SEECCION OCUPE EL TAMAÑO DE UNA VENTANA NORMAL */
+}
+.seccionInicio { /*DIV PAPA DE MI SECCION INICIO*/
+  display: flex;
+  flex-direction: column; /* PARA AMPLIAR VERTICALMENTE LOS ELEMENTOS */
+}
+
 .seccion2 {
-  background-color: lightgreen; /* Cambia el color de fondo de la sección "otra-seccion" */
+  background-color: rgb(114, 160, 99); /* Cambia el color de fondo de la sección "otra-seccion" */
+}
+.seccion3{
+  background-color: antiquewhite;
 }
 
 /*ESTILO DE CONTENEDORES SECCIONES*/
 .prediccion{ /*PREDICCION*/
   /* flex-direction: column; */
-  background: yellow;
+  /* background: yellow; */
   height: 50vh; /*ALTURA CONTENEDOR*/
   display: flex;
   align-items: center;
@@ -86,7 +94,7 @@ body {
   
 }
 .graficas{
-  background: yellow;
+  /* background: yellow; */
   height: 50vh; /*ALTURA CONTENEDOR*/
   display: flex;
   align-items: center;
