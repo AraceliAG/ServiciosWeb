@@ -8,7 +8,7 @@
 }
 
 body {
-  background:rgb(183, 183, 183);
+  background: rgb(190, 215, 253);
   
 }
 
@@ -22,7 +22,8 @@ html {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: rgb(162, 162, 162);  /* COLOR */
+  /* background: rgb(128, 178, 239);  COLOR */
+  background: rgb(14, 23, 34);  
 
   /*SEPARAMOS NUESTROS ELEMENTOS (LOGO Y SECCIONES)*/
   display: flex;
@@ -50,7 +51,7 @@ html {
 }
 
 .navbar a:hover{
-  color: rgb(11, 84, 11); /*COLOR AL MOMENTO DE SELECCIONAR ALGUNA SECCION CABCERA*/
+  color: rgb(93, 164, 175); /*COLOR AL MOMENTO DE SELECCIONAR ALGUNA SECCION CABCERA*/
 }
 
 
@@ -88,7 +89,25 @@ html {
   background-color: antiquewhite;
 }
 
+
+.contenedorPadreInicio {
+  display: flex;
+  flex-direction: row; 
+  background: gray;
+}
+
 /*ESTILO DE CONTENEDORES SECCIONES*/
+
+/*JUNTAMOS DOS CONTENEDORES DEL PADRE*/
+.prediccion, .tiempo {
+  flex: 1; /* Ambos divs hijos tomarán una proporción igual del espacio disponible */
+  padding: 10px; /* Añade relleno si es necesario */
+}
+
+.tiempo{
+  background: white;
+}
+
 .prediccion{ /*PREDICCION*/
   /* flex-direction: column; */
   /* background: yellow; */
@@ -97,8 +116,13 @@ html {
   align-items: center;
   justify-content: center; /* CENTRA HORIZONTALMENTE */
   margin: 0 50px;
+  background: yellow;
   
 }
+
+
+
+
 .graficas{
   /* background: yellow; */
   height: 50vh; /*ALTURA CONTENEDOR*/
