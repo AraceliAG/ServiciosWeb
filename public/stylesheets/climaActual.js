@@ -49,7 +49,7 @@ function obtenerDescripcionEnEspañol(descripcion) {
     'thunderstorm': 'tormenta eléctrica',
     'snow': 'nieve',
     'mist': 'niebla',
-    'overcast clouds': 'Nubes nubladas'
+    'overcast clouds': 'Nublado'
   };
 
   //SI NO EXISTE TRADUCCION SE MANDA ORIGINA
