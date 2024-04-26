@@ -75,17 +75,74 @@
       
     </section>
 
+
 <br>
     <!-- OTRA SECCION -->
   <section class="seccion2" id="seccion2">
-    <div class="titulo">
-      <h1>Graficas Ara</h1>
-    </div>
+
     <div class="graficas">
+        <div id="chartContainer">
+          <div id="titu">
+              <h2>Historicos a lo largo de cinco años</h2>
+          </div>
+          <canvas id="myChart"></canvas>
+      </div>
+
+      <!-- Botones de selección -->
+      <div id="seleccion" class="botonesE"> 
+          <br>
+          <button type="button" class="btn btn-info" onclick="mostrarGrafica('temperatura')">Temperatura</button> <br>
+          <button type="button" class="btn btn-info" onclick="mostrarGrafica('humedad')">Humedad</button> <br>
+          <button type="button" class="btn btn-info" onclick="mostrarGrafica('presion')">Presion</button> <br>
+          <div id="seleccion2">
+              <!-- Botón para mostrar el modal -->
+                  <!-- Button para abrir el modal -->
+              <!-- <button id="botonAvanzado" type="button" class="btn btn-info">Avanzado</button> -->
+          </div>
+      </div>
     </div>
+  </div>
+
+    <script>
+      // JavaScript para redirigir al archivo /graficaP
+      document.getElementById("botonAvanzado").addEventListener("click", function() {
+        window.location.href = "/graficaP";
+      });
+    </script>
+
+
+    <script>
+    function seleccionarAnio(anio) {
+      var botonAnio = document.getElementById("dropdownMenuButtonAnio");
+      var inputAnio = document.getElementById("anioSeleccionado");
+      botonAnio.textContent = anio;
+      inputAnio.value = anio;
+    }
+
+    function seleccionarMes(mes) {
+      var botonMes = document.getElementById("dropdownMenuButtonMes");
+      var inputMes = document.getElementById("mesSeleccionado");
+      botonMes.textContent = mes;
+      inputMes.value = mes;
+    }
+    </script>
+
+
+    <script>
+    function enviarDatosSeleccionados() {
+      // Obtener los valores seleccionados de año y mes
+      var anioSeleccionado = document.getElementById("dropdownMenuButtonAnio").textContent;
+      var mesSeleccionado = document.getElementById("dropdownMenuButtonMes").textContent;
+
+      // Enviar los datos al archivo JavaScript
+      mostrarDatosSeleccionados(anioSeleccionado, mesSeleccionado);
+    }
+    </script>
+
 
   </section>
   <br>
+
 
   <section class="seccion3" id="seccion3">
     <div class="titulo">
@@ -100,4 +157,14 @@
   </body>
    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="/stylesheets/climaActual.js"></script>
+
+
+   <!-- GRAFICA-->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <!-- <script src="/stylesheets/javascripts/graficas.js"></script> -->
+   <script src="/stylesheets/graficas.js"></script>
+
+   <!-- <script src="/stylesheets/javascripts/modal.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   
 </html>
