@@ -8,7 +8,7 @@
 }
 
 body {
-  background: rgb(190, 215, 253);
+  background: rgb(251, 253, 254);
   
 }
 
@@ -23,7 +23,10 @@ html {
   width: 100%;
   padding: 20px 10%;
   /* background: rgb(128, 178, 239);  COLOR */
-  background: rgb(14, 23, 34);  
+  /* background: rgba(34, 93, 211, 0.1); */
+  /*border: 3px solid rgb(251, 251, 255); /* Borde completo */
+  background: transparent;
+  
 
   /*SEPARAMOS NUESTROS ELEMENTOS (LOGO Y SECCIONES)*/
   display: flex;
@@ -80,7 +83,7 @@ html {
 .seccionInicio {
   display: flex;
   flex-direction: column;
-  background-image: url('./img/nubesFondo.jpg');
+  background-image: url('./img/imagen.jpg');
   background-size: cover; /* Ajustar el tamaño de la imagen */
   background-position: center; /* Centrar la imagen */
   background-color: rgb(45, 66, 152); /* Color de fondo */
@@ -88,10 +91,22 @@ html {
 }
 
 .seccion2 {
-  border: 2px solid rgb(251, 251, 255);
+  display: flex;
+  flex-direction: column;
+  background-image: url('./img/imagen.jpg');
+  background-size: cover; /* Ajustar el tamaño de la imagen */
+  background-position: center; /* Centrar la imagen */
+  background-color: rgb(45, 66, 152); /* Color de fondo */
+  opacity: .9; 
 }
 .seccion3{
-  border: 2px solid rgb(251, 251, 255);
+  display: flex;
+  flex-direction: column;
+  background-image: url('./img/imagen.jpg');
+  background-size: cover; /* Ajustar el tamaño de la imagen */
+  background-position: center; /* Centrar la imagen */
+  background-color: rgb(45, 66, 152); /* Color de fondo */
+  opacity: .9; 
 }
 
 
