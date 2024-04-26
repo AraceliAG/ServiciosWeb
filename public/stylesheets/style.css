@@ -88,10 +88,10 @@ html {
 }
 
 .seccion2 {
-  background-color: rgb(114, 160, 99); 
+  border: 2px solid rgb(251, 251, 255);
 }
 .seccion3{
-  background-color: antiquewhite;
+  border: 2px solid rgb(251, 251, 255);
 }
 
 
@@ -117,6 +117,7 @@ html {
   margin: 0 50px;
   background: rgba(34, 93, 211, 0.1);
   border: 3px solid rgb(251, 251, 255); /* Borde completo */
+  border-radius: 7px;
 }
 
 
@@ -129,6 +130,7 @@ html {
   backdrop-filter: blur(30px);
   color: white;
   border: 2px solid rgb(251, 251, 255);
+  border-radius: 7px;
 }
 
 .txtClima{
@@ -137,6 +139,7 @@ html {
   height: 55px;
   display: flex;
   align-items: center;
+  justify-content: center; /* Para centrar horizontalmente */
   background:transparent;
   color: white;
   border-bottom: 1px solid rgb(251, 251, 255);
