@@ -77,9 +77,14 @@ html {
   padding: 20px; /* Añade un espacio entre el contenido y el borde de la sección */
   scroll-margin-top: 50px;
 }
-.seccionInicio { /*DIV PAPA DE MI SECCION INICIO*/
+.seccionInicio {
   display: flex;
-  flex-direction: column; /* PARA AMPLIAR VERTICALMENTE LOS ELEMENTOS */
+  flex-direction: column;
+  background-image: url('./img/nubesFondo.jpg');
+  background-size: cover; /* Ajustar el tamaño de la imagen */
+  background-position: center; /* Centrar la imagen */
+  background-color: rgb(45, 66, 152); /* Color de fondo */
+  opacity: .9; 
 }
 
 .seccion2 {
