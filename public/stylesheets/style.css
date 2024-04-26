@@ -83,7 +83,7 @@ html {
 .seccionInicio {
   display: flex;
   flex-direction: column;
-  background-image: url('./img/imagen.jpg');
+  background-image: url('./img/nubesFondo.jpg');
   background-size: cover; /* Ajustar el tamaño de la imagen */
   background-position: center; /* Centrar la imagen */
   background-color: rgb(45, 66, 152); /* Color de fondo */
