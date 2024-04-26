@@ -97,7 +97,8 @@ html {
 
 .contenedorPadreInicio {
   display: flex;
-  background: rgb(59, 50, 128);
+  /* background: rgb(59, 50, 128); */
+  background-color: transparent;
 }
 
 /*ESTILO DE CONTENEDORES SECCIONES*/
@@ -108,17 +109,16 @@ html {
   padding: 10px; /* Añade relleno si es necesario */
 
 }
-.prediccion{ /*PREDICCION*/
-  /* flex-direction: column; */
-  /* background: yellow; */
-  height: 50vh; /*ALTURA CONTENEDOR*/
+.prediccion {
+  height: 50vh; /* Altura del contenedor */
   display: flex;
   align-items: center;
-  justify-content: center; /* CENTRA HORIZONTALMENTE */
+  justify-content: center; /* Centra horizontalmente */
   margin: 0 50px;
-  background: rgb(93, 93, 82);
-  
+  background: rgba(34, 93, 211, 0.1);
+  border: 3px solid rgb(251, 251, 255); /* Borde completo */
 }
+
 
 /*ESTILO CONTENEDOR TIEMPO */
 .tiempo{
@@ -127,8 +127,8 @@ html {
   height: 555px;
   background: rgba(34, 93, 211, 0.1);
   backdrop-filter: blur(30px);
-  border-bottom: 1px solid rgb(251, 251, 255);
   color: white;
+  border: 2px solid rgb(251, 251, 255);
 }
 
 .txtClima{
