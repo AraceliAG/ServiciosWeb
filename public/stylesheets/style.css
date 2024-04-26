@@ -12,6 +12,10 @@ body {
   
 }
 
+html {
+  scroll-behavior: smooth; /* Hace que el desplazamiento entre las secciones sea suave */
+}
+
 .header{ /* ESTILO CABECERA */
   position:fixed;
   top: 0;
@@ -69,6 +73,8 @@ body {
 /*ESTILO SECCIONES GENERAL*/
 .seccionInicio, .seccion2, .seccion3 {
   height: 100vh; /* PARA QUE CADA SEECCION OCUPE EL TAMAÑO DE UNA VENTANA NORMAL */
+  padding: 20px; /* Añade un espacio entre el contenido y el borde de la sección */
+  scroll-margin-top: 50px;
 }
 .seccionInicio { /*DIV PAPA DE MI SECCION INICIO*/
   display: flex;
