@@ -42,7 +42,7 @@ html {
 
 /*DISEÑO DE SECCIONES CABECERA*/
 .navbar a{
-  font-size: 18px;
+  font-size: 24px;
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -51,7 +51,7 @@ html {
 }
 
 .navbar a:hover{
-  color: rgb(93, 164, 175); /*COLOR AL MOMENTO DE SELECCIONAR ALGUNA SECCION CABCERA*/
+  color: rgb(1, 1, 1); /*COLOR AL MOMENTO DE SELECCIONAR ALGUNA SECCION CABCERA*/
 }
 
 
@@ -61,6 +61,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;  /* CENTRA HORIZONTALMENTE */
+  color: white;
+  font-size: 50px;
   
 }
 
