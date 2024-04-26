@@ -1,25 +1,59 @@
-// Reemplaza 'TU_API_KEY' con tu propia API Key de OpenWeatherMap
-// const apiKey = '0de3e31e737062e03a2a9553c4b4fb11';
-// const latitud = '20.6167';
-// const longitud = '-103.2333';
 
-// URL de la API de OpenWeatherMap para obtener el clima actual por coordenadas
+
+// URL API
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=20.6167&lon=-103.2333&appid=0de3e31e737062e03a2a9553c4b4fb11&units=metric';
 
 
-// Realiza una solicitud GET a la API
 fetch(apiUrl)
   .then(response => response.json())
   .then(data => {
-    // Procesa los datos recibidos
+    // PROCESA DATOS
     const temperatura = data.main.temp;
     const descripcion = data.weather[0].description;
-    
-    // Actualiza el contenido del elemento HTML con los datos del clima
-    const climaElement = document.getElementById('climaTonala');
-    climaElement.innerHTML = `El clima actual de tonala ${descripcion} con una temperatura de ${temperatura}°C.`;
+    const humedad = data.main.humidity; // Obtener humedad
+    const velocidadViento = data.wind.speed; // Obtener velocidad del viento
 
+    // MAPEA Y TRADUCE
+    const descripcionEspañol = obtenerDescripcionEnEspañol(descripcion);
+
+    // MANDA TEMPERATURA 
+    const temperaturaElement = document.querySelector('.temperaturaT');
+    temperaturaElement.innerHTML = `${temperatura} <span>°C</span>`;
+
+    // MANDA DESCRIPCIÓN
+    const descripcionElement = document.querySelector('.description');
+    descripcionElement.textContent = descripcionEspañol;
+
+    // MANDA HUMEDAD
+    const humedadElement = document.querySelector('.humedad .info-humidity span');
+    humedadElement.textContent = `${humedad}%`;
+
+    // MANDA VELOCIDAD DEL VIENTO
+    const velocidadVientoElement = document.querySelector('.wind .info-humidity span');
+    velocidadVientoElement.textContent = `${velocidadViento} Km/h`;
   })
   .catch(error => {
     console.error('Error al obtener datos del clima:', error);
   });
+
+
+// FUNCION PARA OBTENER TRADUCCION
+function obtenerDescripcionEnEspañol(descripcion) {
+  const descripcionesEnIngles = {
+    'clear sky': 'cielo despejado',
+    'few clouds': 'pocas nubes',
+    'scattered clouds': 'nubes dispersas',
+    'broken clouds': 'nubes dispersas',
+    'shower rain': 'lluvia ligera',
+    'rain': 'lluvia',
+    'thunderstorm': 'tormenta eléctrica',
+    'snow': 'nieve',
+    'mist': 'niebla',
+    'overcast clouds': 'Nubes nubladas'
+  };
+
+  //SI NO EXISTE TRADUCCION SE MANDA ORIGINA
+  return descripcionesEnIngles.hasOwnProperty(descripcion) ? descripcionesEnIngles[descripcion] : descripcion;
+}
+
+

@@ -92,8 +92,7 @@ html {
 
 .contenedorPadreInicio {
   display: flex;
-  flex-direction: row; 
-  background: gray;
+  background: rgb(59, 50, 128);
 }
 
 /*ESTILO DE CONTENEDORES SECCIONES*/
@@ -116,11 +115,15 @@ html {
   
 }
 
+/*ESTILO CONTENEDOR TIEMPO */
 .tiempo{
   position: relative;
   width: 400px;
   height: 555px;
-  background: rgb(24, 105, 236);
+  background: rgba(34, 93, 211, 0.1);
+  backdrop-filter: blur(30px);
+  border-bottom: 1px solid rgb(251, 251, 255);
+  color: white;
 }
 
 .txtClima{
@@ -129,9 +132,79 @@ html {
   height: 55px;
   display: flex;
   align-items: center;
-  background: rgb(80, 34, 232);
+  background:transparent;
   color: white;
+  border-bottom: 1px solid rgb(251, 251, 255);
+  
 }
+
+
+
+.weather-box{
+  text-align: center;
+  margin: 40px 0;
+}
+.weather-box img{
+  width: 40%;
+}
+
+.weather-box .temperaturaT{
+  position: relative;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 700;
+  margin: 20px 0 6px -30px;
+}
+.weather-box .temperaturaT span{
+  position: absolute;
+  font-size: 24px;
+  margin-left: 4px;
+}
+
+.weather-box .description {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  display: flex; /* Convertir el contenedor en un contenedor flexible */
+  justify-content: space-around; /* Espacio alrededor de los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+ 
+}
+
+.weather-details i{
+  font-size: 56px;
+}
+.weather-details > * {
+  width:500px; /* Ancho deseado para los elementos internos */
+}
+
+.weather-details span {
+ display: inline-block;
+ font-size: 22px;
+ font-weight: 500;
+}
+.weather-details .humedad,
+.weather-details .wind {
+  display: flex;
+
+}
+
+.weather-details .humedad,
+.weather-details .wind .text {
+  margin-left: 50px; /* Espacio entre el ícono y el texto */
+}
+
+
+
+
 
 
 
