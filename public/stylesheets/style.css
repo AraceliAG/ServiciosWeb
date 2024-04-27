@@ -359,4 +359,11 @@ html {
   margin: 0 auto; /* Alineación vertical */
 }
 
+.modal {
+  z-index: 1050; /* Ajusta el z-index del modal */
+}
+
+.modal-backdrop {
+  z-index: 1040; /* Ajusta el z-index del fondo modal */
+}
 
