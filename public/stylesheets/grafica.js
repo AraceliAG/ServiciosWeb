@@ -95,7 +95,7 @@ function mostrarGrafica(tipo) {
                 legend: {
                     labels: {
                         color: 'rgb(255, 255, 255)', // Blanco (texto de las leyendas)
-                        fontSize: 16
+                        fontSize: 50
                     }
                 }
             },
@@ -104,12 +104,14 @@ function mostrarGrafica(tipo) {
             scales: {
                 y: {
                     ticks: {
-                        color: 'rgb(255, 255, 255)' // Cambia el color de las etiquetas del eje Y
+                        color: 'rgb(255, 255, 255)',// Cambia el color de las etiquetas del eje Y
+                        fontSize: 50
                     }
                 },
                 x: {
                     ticks: {
-                        color: 'rgb(255, 255, 255)' // Cambia el color de las etiquetas del eje X
+                        color: 'rgb(255, 255, 255)', // Cambia el color de las etiquetas del eje X
+                        fontSize: 50
                     }
                 }
             }
