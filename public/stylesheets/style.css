@@ -343,6 +343,10 @@ html {
   font-size: 24px;
  
 }
+
+.modal {
+  z-index: 9999; /* Valor alto para asegurar que esté por encima de otros elementos */
+}
  
 
 

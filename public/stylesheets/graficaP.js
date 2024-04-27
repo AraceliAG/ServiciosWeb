@@ -64,7 +64,7 @@ function mostrarGrafica2(tipo, labels, data) {
             datasets: [{
                 label: tipo === 'temperatura' ? 'Temperaturas : ' + monthYear : (tipo === 'humedad' ? 'Humedad : ' + monthYear : (tipo === 'presion' ? 'Presión : ' + monthYear : '')), // Label dinámico según el tipo de dato
                 data: data,
-                backgroundColor: tipo === 'temperatura' ? 'rgba(255, 99, 132, 0.2)' : (tipo === 'humedad' ? 'rgba(54, 162, 235, 0.2)' : (tipo === 'presion' ? 'rgba(75, 192, 192, 0.2)' : '')), // Color de fondo dinámico
+                backgroundColor: tipo === 'temperatura' ? 'rgba(255, 0, 0, 0.5)' : (tipo === 'humedad' ? 'rgba(54, 162, 235, 0.5)' : (tipo === 'presion' ? 'rgba(255, 159, 64, 0.5)' : '')), // Color de fondo dinámico
                 borderColor: tipo === 'temperatura' ? 'rgba(255, 99, 132, 1)' : (tipo === 'humedad' ? 'rgba(54, 162, 235, 1)' : (tipo === 'presion' ? 'rgba(75, 192, 192, 1)' : '')), // Color de borde dinámico
                 borderWidth: 1,
                 fill: true
