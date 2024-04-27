@@ -157,6 +157,7 @@ html {
   background:transparent;
   color: white;
   border-bottom: 1px solid rgb(251, 251, 255);
+  font-size: 24px;
   
 }
 
@@ -261,7 +262,7 @@ html {
   margin-bottom: 8px;
   font-size: 20px;
   width: 200px;
-  background-color: rgb(53, 8, 132);
+  background-color: rgb(8, 60, 132);
   border-color: transparent;
   color: white;
   transition: background-color 0.3s; /* Agregamos una transición para suavizar el cambio de color */
@@ -297,6 +298,22 @@ html {
   border-color: rgb(255, 255, 255);
 
 }
+
+/*CARRUSEL*/
+.carrusel {
+  position: relative; /* Asegura que el carrusel respete el tamaño del contenedor */
+  width: 100%; /* Ancho del carrusel igual al 100% del contenedor */
+  height: 90%; /* Ajusta la altura al 90% de la sección */
+  overflow: hidden; /* Oculta los elementos fuera del carrusel */
+}
+
+.item {
+  display: inline-block; /* Muestra los elementos en línea */
+  width: 100%; /* Ancho igual al 100% del contenedor */
+  height: 100%; /* Altura igual al 100% del contenedor */
+  transition: transform 0.5s ease; /* Agrega una transición suave al desplazamiento */
+}
+
 
 
  
