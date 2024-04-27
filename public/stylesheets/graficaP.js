@@ -8,8 +8,8 @@ var chartData32 = [{"time": "2018-01-01", "value": 1026}, {"time": "2018-01-02",
 
 // OBTENCION DE DATOS DESDE EL CONTROLADOR 
 const urlParams = new URLSearchParams(window.location.search);
-const anio2 = urlParams.get('anio2');
-const mes2 = urlParams.get('mes2');
+const anio2 = urlParams.get('anioSeleccionado');
+const mes2 = urlParams.get('mesSeleccionado');
 const seccion2 = urlParams.get('seccion');
 
 // VER EN CONSOLA LOS DATOS 
