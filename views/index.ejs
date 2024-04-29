@@ -123,20 +123,20 @@
       
       <div id="seleccion" class="botonesE">
 
-          <h3>Selecciona un año</h3>
+        <h3>Selecciona un año</h3>
           <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonAnio" data-bs-toggle="dropdown" aria-expanded="false">
                   Año
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonAnio">
-                  <li><a class="dropdown-item" href="#" onclick="seleccionarAnio('Todos los años')">Todos los años</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="seleccionarAnio(2018)">2018</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="seleccionarAnio(2019)">2019</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="seleccionarAnio(2020)">2020</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="seleccionarAnio(2021)">2021</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="seleccionarAnio(2022)">2022</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="seleccionarAnio(2023)">2023</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="seleccionarAnio(2024)">2024</a></li>
+                  <li><a class="dropdown-item"  onclick="seleccionarAnio('Todos los años')">Todos los años</a></li>
+                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2018)">2018</a></li>
+                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2019)">2019</a></li>
+                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2020)">2020</a></li>
+                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2021)">2021</a></li>
+                  <li><a class="dropdown-item" onclick="seleccionarAnio(2022)">2022</a></li>
+                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2023)">2023</a></li>
+                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2024)">2024</a></li>
               </ul>
           </div>
 
@@ -249,20 +249,11 @@
 
 
 
-
-
-     <!-- Modal -->
-
-
-    
-    
-              <!-- method="" action="" -->
-
-
-
+ 
 
 <script>
   function seleccionarAnio(anio) {
+    event.preventDefault();
       var botonAnio = document.getElementById("dropdownMenuButtonAnio");
       var inputAnio = document.getElementById("anioSeleccionado");
       botonAnio.textContent = anio;
@@ -270,6 +261,7 @@
   }
 
   function seleccionarMes(mes) {
+    event.preventDefault();
       var botonMes = document.getElementById("dropdownMenuButtonMes");
       var inputMes = document.getElementById("mesSeleccionado");
       botonMes.textContent = mes;
@@ -277,6 +269,7 @@
   }
 
   function seleccionarSeccion(seccion) {
+    event.preventDefault();
       var botonSeccion = document.getElementById("dropdownMenuSeccion");
       var inputSeccion = document.getElementById("seccion");
       botonSeccion.textContent = seccion;
@@ -285,6 +278,8 @@
 </script>
     </div>
   </div>
+
+
 
   
     </body>
