@@ -142,25 +142,26 @@
 
           <h3>Selecciona un mes</h3>
           <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonMes" data-bs-toggle="dropdown" aria-expanded="false">
-                  Mes
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonMes">
-                  <li><a class="dropdown-item"  onclick="seleccionarMes('Todos los meses')">Todos los meses</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(1)">Enero</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(2)">Febrero</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(3)">Marzo</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(4)">Abril</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(5)">Mayo</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(6)">Junio</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(7)">Julio</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(8)">Agosto</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(9)">Septiembre</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(10)">Octubre</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(11)">Noviembre</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarMes(12)">Diciembre</a></li>
-              </ul>
-          </div>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonMes" data-bs-toggle="dropdown" aria-expanded="false">
+                Mes
+            </button>
+            <ul class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButtonMes">
+                <li><a class="dropdown-item"  onclick="seleccionarMes('Todos los meses')">Todos los meses</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(1)">Enero</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(2)">Febrero</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(3)">Marzo</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(4)">Abril</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(5)">Mayo</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(6)">Junio</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(7)">Julio</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(8)">Agosto</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(9)">Septiembre</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(10)">Octubre</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(11)">Noviembre</a></li>
+                <li><a class="dropdown-item"  onclick="seleccionarMes(12)">Diciembre</a></li>
+            </ul>
+        </div>
+        
 
           <h3>Selecciona Tipo</h3>
           
@@ -175,11 +176,11 @@
           </ul>
 
       </div>
-                  <form id="parametros"  onsubmit="mostrarDatosSeleccionados()"  action="#">
+                  <form id="btnguardar">
                       <input type="hidden" name="anioSeleccionado" id="anioSeleccionado">
                       <input type="hidden" name="mesSeleccionado" id="mesSeleccionado">
                       <input type="hidden" name="seccion" id="seccion">
-                      <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                      <button type="submit" class="btn btn-primary" id="btnguardar">Guardar cambios</button>
                   </form>
     
         <button id="botonAvanzado1" type="button" class="btn btn-info">Regresar</button>
@@ -218,9 +219,6 @@
 
   </section>
 
-
-
-  
 
   <br>
   <section class="seccion3" id="seccion3">

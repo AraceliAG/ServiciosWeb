@@ -32,6 +32,13 @@ html {
   border-radius: 15px;
 }
 
+.scrollable-menu {
+  height: auto;
+  max-height: 200px; /* Define aquí la altura máxima que deseas */
+  overflow-y: auto;
+}
+
+
 /*DISEÑO LOGO*/
 .logo{
   font-size: 25px;
@@ -253,7 +260,7 @@ html {
 }
 
 #seleccion {
-  display: flex;
+  display: inline-table;
   flex-direction: column;
   align-items: center;
 }
