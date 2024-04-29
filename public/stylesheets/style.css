@@ -130,7 +130,7 @@ html {
   padding: 10px; /* Añade relleno si es necesario */
 
 }
-.prediccion {
+.prediccion{
   height: 66vh; /* Altura del contenedor */
   display: flex;
   align-items: center;
@@ -328,7 +328,7 @@ html {
 /*SECCION GRAFICA 2*/
 /*SECCION GRAFICAS ARACELI HISTÔRICOS*/
 /*CONTENEDOR*/
-.graficas2 {
+.graficas3 {
   position: relative;
   height: 90%; /* Ajusta la altura al 90% de la sección */
   width: 100%; /* Ajusta el ancho al 100% de la sección */
@@ -342,6 +342,19 @@ html {
   border-radius: 7px;
   padding: 25px;
   overflow: hidden; /* Evita que el contenido desborde */
+}
+
+.graficas2{
+  height: 66vh; /* Altura del contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+  margin: 0 50px;
+  background: rgba(34, 93, 211, 0.1);
+  border: 3px solid rgb(251, 251, 255); /* Borde completo */
+  border-radius: 7px;
+  backdrop-filter: blur(30px);
+  padding: 25px;
 }
 
 .chartContainer2 {
