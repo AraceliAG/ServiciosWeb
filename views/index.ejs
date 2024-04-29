@@ -180,7 +180,8 @@
                       <input type="hidden" name="anioSeleccionado" id="anioSeleccionado">
                       <input type="hidden" name="mesSeleccionado" id="mesSeleccionado">
                       <input type="hidden" name="seccion" id="seccion">
-                      <button type="submit" class="btn btn-primary" id="btnguardar">Guardar cambios</button>
+                      <button type="button" class="btn btn-primary" id="btnGuardarCambios">Guardar cambios</button>
+
                   </form>
     
         <button id="botonAvanzado1" type="button" class="btn btn-info">Regresar</button>
@@ -246,7 +247,13 @@
     <script src="/stylesheets/graficaP.js"></script>
 
 
-
+    <script>
+      document.getElementById('btnGuardarCambios').addEventListener('click', function(event) {
+          event.preventDefault(); // Evita el comportamiento predeterminado del botón (enviar el formulario)
+          document.getElementById('btnguardar').submit(); // Envía el formulario con el id "btnguardar"
+          return false;
+      });
+  </script>
  
 
 <script>
