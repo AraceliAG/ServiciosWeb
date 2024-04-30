@@ -5,6 +5,7 @@ import openmeteo_requests
 import requests_cache
 import pandas as pd
 from retry_requests import retry
+from sklearn.linear_model import Ridge
 
 # Establecer periodo de tiempo
 inicio = datetime(2015, 1, 12)
@@ -18,11 +19,18 @@ data = Daily(tonala, inicio, fin)
 data = data.fetch()
 #print(data) #TODO BIEN ACA SOLO IMPRIME LOS PARAMETROS JUNTO A LA FECHA
 # print(data.head()) #TODO BIEN LAS CABECERAS
-data.to_csv('2018-2023.csv', index=True) # Para guardar sin el índice del DataFrame
+data.head()
+
+
+
+def uno ():
+    data.to_csv('2018-2023.csv', index=True) # Para guardar sin el índice del DataFrame
+
 # Setup the Open-Meteo API client with cache and retry on error
 cache_session = requests_cache.CachedSession('.cache', expire_after = -1)
 retry_session = retry(cache_session, retries = 5, backoff_factor = 0.2)
 openmeteo = openmeteo_requests.Client(session = retry_session)
+
 # Make sure all required weather variables are listed here
 # The order of variables in hourly or daily is important to assign them correctly below
 url = "https://archive-api.open-meteo.com/v1/archive"
@@ -37,10 +45,10 @@ responses = openmeteo.weather_api(url, params=params)
 
 # Process first location. Add a for-loop for multiple locations or weather models
 response = responses[0]
-# print(f"Coordinates {response.Latitude()}°N {response.Longitude()}°E")
-# print(f"Elevation {response.Elevation()} m asl")
-# print(f"Timezone {response.Timezone()} {response.TimezoneAbbreviation()}")
-# print(f"Timezone difference to GMT+0 {response.UtcOffsetSeconds()} s")
+print(f"Coordinates {response.Latitude()}°N {response.Longitude()}°E")
+print(f"Elevation {response.Elevation()} m asl")
+print(f"Timezone {response.Timezone()} {response.TimezoneAbbreviation()}")
+print(f"Timezone difference to GMT+0 {response.UtcOffsetSeconds()} s")
 
 # Process daily data. The order of variables needs to be the same as requested.
 daily = response.Daily()
@@ -69,9 +77,11 @@ daily_data["precipitation_hours"] = daily_precipitation_hours
 daily_data["wind_speed_10m_max"] = daily_wind_speed_10m_max
 
 daily_dataframe_10 = pd.DataFrame(data = daily_data)
-# print(daily_dataframe_10)
-daily_dataframe_10.to_csv('2000 - 2010 - APIH2.csv', index=True) # Para guardar sin el índice del DataFrame
-# Setup the Open-Meteo API client with cache and retry on error
+print(daily_dataframe_10)
+
+def dos ():
+    daily_dataframe_10.to_csv('2000 - 2010 - APIH2.csv', index=True) # Para guardar sin el índice del DataFrame
+    # Setup the Open-Meteo API client with cache and retry on error
 cache_session = requests_cache.CachedSession('.cache', expire_after = -1)
 retry_session = retry(cache_session, retries = 5, backoff_factor = 0.2)
 openmeteo = openmeteo_requests.Client(session = retry_session)
@@ -90,10 +100,10 @@ responses = openmeteo.weather_api(url, params=params)
 
 # Process first location. Add a for-loop for multiple locations or weather models
 response = responses[0]
-# print(f"Coordinates {response.Latitude()}°N {response.Longitude()}°E")
-# print(f"Elevation {response.Elevation()} m asl")
-# print(f"Timezone {response.Timezone()} {response.TimezoneAbbreviation()}")
-# print(f"Timezone difference to GMT+0 {response.UtcOffsetSeconds()} s")
+print(f"Coordinates {response.Latitude()}°N {response.Longitude()}°E")
+print(f"Elevation {response.Elevation()} m asl")
+print(f"Timezone {response.Timezone()} {response.TimezoneAbbreviation()}")
+print(f"Timezone difference to GMT+0 {response.UtcOffsetSeconds()} s")
 
 # Process daily data. The order of variables needs to be the same as requested.
 daily = response.Daily()
@@ -122,8 +132,95 @@ daily_data["precipitation_hours"] = daily_precipitation_hours
 daily_data["wind_speed_10m_max"] = daily_wind_speed_10m_max
 
 daily_dataframe = pd.DataFrame(data = daily_data)
-# print(daily_dataframe)
-daily_dataframe.to_csv('2010 - 2022 - APIH.csv', index=True) # Para guardar sin el índice del DataFrame
-df_2000_2010 = pd.read_csv('2000 - 2010 - APIH.csv')
-df_2010_2022 = pd.read_csv('2010 - 2022 - APIH.csv')
-df_2000_2010.head()
+print(daily_dataframe)
+
+
+
+#FUNCION Dataset para predicciones
+def tres():
+    daily_dataframe.to_csv('2010 - 2022 - APIH.csv', index=True) # Para guardar sin el índice del DataFrame
+    df_2000_2010 = pd.read_csv('2000 - 2010 - APIH.csv')
+    df_2010_2022 = pd.read_csv('2010 - 2022 - APIH.csv')
+    df_2000_2010.head()
+    df_2010_2022.head()
+    # Concatenar los DataFrames
+    dfs = [df_2000_2010, df_2010_2022] # Concatenar los DataFrames
+    df_historica = pd.concat(dfs, ignore_index=True)
+    df_historica = df_historica.drop(columns=['Unnamed: 0'])# Eliminar columnas que no sirven
+    # Cambiar nombre de columnas
+    new_columns = ['fecha', 'temp_max', 'temp_min', 'temp_prom', 'precp', 'lluvia', 'nieve', 'precp_h', 'viento']
+
+    # Asignar los nuevos nombres de columnas
+    df_historica.columns = new_columns
+    df_historica['fecha'] = pd.to_datetime(df_historica['fecha'], errors='coerce')
+
+    # Extraer solo el año, mes y día de la columna de fecha
+    df_historica['fecha'] = df_historica['fecha'].dt.date
+    # Convertir la columna de fecha de nuevo a tipo datetime
+    df_historica['fecha'] = pd.to_datetime(df_historica['fecha'])
+    print("RESLTADO FINAL: ")
+    print(df_historica.head()) #MUESTRA RESULTADO FINAL
+    # Verificar si hay valores nulos
+    nulos_totales = df_historica.isnull().sum()
+    print(nulos_totales)
+    registros_por_año = df_historica.groupby(df_historica['fecha'].dt.year).size()
+    print(registros_por_año)
+    # Establecer la columna de fecha como el índice del DataFrame
+    df_historica = df_historica.set_index('fecha')
+    df_historica.info()
+    
+    df_historica["temp_max"].plot()
+    df_historica["temp_min"].plot()
+    plt.show()
+    
+#Machine Learning - Predecir la temperatura futura
+def cuatro():
+    daily_dataframe.to_csv('2010 - 2022 - APIH.csv', index=True) # Para guardar sin el índice del DataFrame
+    df_2000_2010 = pd.read_csv('2000 - 2010 - APIH.csv')
+    df_2010_2022 = pd.read_csv('2010 - 2022 - APIH.csv')
+    df_2000_2010.head()
+    df_2010_2022.head()
+    # Concatenar los DataFrames
+    dfs = [df_2000_2010, df_2010_2022] # Concatenar los DataFrames
+    df_historica = pd.concat(dfs, ignore_index=True)
+    df_historica = df_historica.drop(columns=['Unnamed: 0'])# Eliminar columnas que no sirven
+    # Cambiar nombre de columnas
+    new_columns = ['fecha', 'temp_max', 'temp_min', 'temp_prom', 'precp', 'lluvia', 'nieve', 'precp_h', 'viento']
+
+    # Asignar los nuevos nombres de columnas
+    df_historica.columns = new_columns
+    df_historica['fecha'] = pd.to_datetime(df_historica['fecha'], errors='coerce')
+
+    # Extraer solo el año, mes y día de la columna de fecha
+    df_historica['fecha'] = df_historica['fecha'].dt.date
+    # Convertir la columna de fecha de nuevo a tipo datetime
+    df_historica['fecha'] = pd.to_datetime(df_historica['fecha'])
+    print("RESLTADO FINAL: ")
+    print(df_historica.head()) #MUESTRA RESULTADO FINAL
+    # Verificar si hay valores nulos
+    nulos_totales = df_historica.isnull().sum()
+    print(nulos_totales)
+    registros_por_año = df_historica.groupby(df_historica['fecha'].dt.year).size()
+    print(registros_por_año)
+    # Establecer la columna de fecha como el índice del DataFrame
+    df_historica = df_historica.set_index('fecha')
+    df_historica.info()
+    
+    df_historica["target"] = df_historica.shift(-1)["temp_max"]
+    df_historica = df_historica.ffill() # Solucionar el target de la ultima fecha
+    print("RESULTADO: ")
+    #print(df_historica)
+    
+    # Encontrar correlaciones
+    print(df_historica.corr())
+    
+
+    
+#uno()
+#dos()
+#tres() #FUNCION Dataset para predicciones GRAFICA TEM MIN AND MAX
+cuatro()
+
+
+
+
