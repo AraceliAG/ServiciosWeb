@@ -6,6 +6,7 @@ import requests_cache
 import pandas as pd
 from retry_requests import retry
 from sklearn.linear_model import Ridge
+from sklearn.metrics import mean_absolute_error
 
 # Establecer periodo de tiempo
 inicio = datetime(2015, 1, 12)
@@ -195,25 +196,52 @@ def cuatro():
     df_historica['fecha'] = df_historica['fecha'].dt.date
     # Convertir la columna de fecha de nuevo a tipo datetime
     df_historica['fecha'] = pd.to_datetime(df_historica['fecha'])
-    print("RESLTADO FINAL: ")
-    print(df_historica.head()) #MUESTRA RESULTADO FINAL
+    #print("RESLTADO FINAL: ")
+    #print(df_historica.head()) #MUESTRA RESULTADO FINAL
     # Verificar si hay valores nulos
     nulos_totales = df_historica.isnull().sum()
-    print(nulos_totales)
+    #print(nulos_totales)
     registros_por_año = df_historica.groupby(df_historica['fecha'].dt.year).size()
-    print(registros_por_año)
+    #print(registros_por_año)
     # Establecer la columna de fecha como el índice del DataFrame
     df_historica = df_historica.set_index('fecha')
-    df_historica.info()
+    #df_historica.info()
     
     df_historica["target"] = df_historica.shift(-1)["temp_max"]
     df_historica = df_historica.ffill() # Solucionar el target de la ultima fecha
-    print("RESULTADO: ")
+    
     #print(df_historica)
     
     # Encontrar correlaciones
-    print(df_historica.corr())
+    #print(df_historica.corr())
     
+    rr = Ridge(alpha=.1)
+    predictors = df_historica.columns[~df_historica.columns.isin(["target"])]
+    #print(predictors)
+    def backtest(df_historica, model, predictors, start=3654, step=90):
+        all_predictions = []
+
+        for i in range(start, df_historica.shape[0], step):
+            train = df_historica.iloc[:i,:]
+            test = df_historica.iloc[i:(i+step),:]
+
+            model.fit(train[predictors], train["target"])
+
+            preds = model.predict(test[predictors])
+
+            preds = pd.Series(preds, index=test.index)
+            combined = pd.concat([test["target"], preds], axis=1)
+
+            combined.columns = ["actual", "prediction"]
+            combined["diff"] = (combined["prediction"] - combined["actual"]).abs()
+
+            all_predictions.append(combined)
+
+        return pd.concat(all_predictions)
+    predictions = backtest(df_historica, rr, predictors)
+    print("RESULTADO: ")
+    #print(predictions)
+    print(mean_absolute_error(predictions["actual"], predictions["prediction"])) #En promedio predice 0.9439700364843344 grados de más o menos (lo cuál no está tan mal, de hecho está muy bien)
 
     
 #uno()
