@@ -12,4 +12,5 @@ tonala = Point(20.6667, -103.3833, 1570)
 # Get daily data for 2018
 data = Daily(tonala, inicio, fin)
 data = data.fetch()
-print(data) #TODO BIEN ACA SOLO IMPRIME LOS PARAMETROS JUNTO A LA FECHA
+#print(data) #TODO BIEN ACA SOLO IMPRIME LOS PARAMETROS JUNTO A LA FECHA
+print(data.head())
