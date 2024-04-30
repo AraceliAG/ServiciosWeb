@@ -7,6 +7,7 @@ import pandas as pd
 from retry_requests import retry
 from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error
+import seaborn as sns
 
 # Establecer periodo de tiempo
 inicio = datetime(2015, 1, 12)
@@ -241,8 +242,22 @@ def cuatro():
     predictions = backtest(df_historica, rr, predictors)
     print("RESULTADO: ")
     #print(predictions)
-    print(mean_absolute_error(predictions["actual"], predictions["prediction"])) #En promedio predice 0.9439700364843344 grados de más o menos (lo cuál no está tan mal, de hecho está muy bien)
+    # print(mean_absolute_error(predictions["actual"], predictions["prediction"])) #En promedio predice 0.9439700364843344 grados de más o menos (lo cuál no está tan mal, de hecho está muy bien)
+    # print(predictions.sort_values("diff", ascending=False))
+    # print(df_historica.loc["2011-06-20":"2011-06-30"])
+    # print(predictions["diff"].round().value_counts().sort_index())
+    # predictions["diff"].round().value_counts().sort_index().plot()
+    # plt.show()#muestra grafica
+    # plt.figure(figsize=(10, 6))
+    # plt.plot(predictions.index, predictions['actual'], label='Valores reales', color='blue')
+    # plt.plot(predictions.index, predictions['prediction'], label='Predicciones', color='red')
 
+    # plt.xlabel('Fecha')
+    # plt.ylabel('Valor')
+    # plt.title('Comparación de predicciones y valores reales')
+    # plt.legend()
+
+    # plt.show()#aqui muestra las graficas del los datos procesados y de las predicciones
     
 #uno()
 #dos()
