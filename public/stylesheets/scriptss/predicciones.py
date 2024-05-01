@@ -344,38 +344,41 @@ def calculadora():
     # Imprimir la predicción
     print("Predicción:", prediccion_2)
 
-def obtener_valores_caracteristicas():
-    valores = {}
-    print("Ingrese los valores de las características:")
-    valores["temp_max"] = float(input("Temperatura máxima: "))
-    valores["temp_min"] = float(input("Temperatura mínima: "))
-    print("Temperatura promedio:", (valores["temp_max"] + valores["temp_min"]) / 2)  # Calcular y mostrar la temperatura promedio
-    valores["precp"] = float(input("Precipitación: "))
-    valores["lluvia"] = float(input("Lluvia: "))
-    valores["nieve"] = float(input("Nieve: "))
-    valores["precp_h"] = float(input("Precipitación (horas): "))
-    valores["viento"] = float(input("Viento: "))
-    return valores
+    def obtener_valores_caracteristicas():
+        valores = {}
+        print("Ingrese los valores de las características:")
+        valores["temp_max"] = float(input("Temperatura máxima: "))
+        valores["temp_min"] = float(input("Temperatura mínima: "))
+        valores["temp_prom"] = (valores["temp_max"] + valores["temp_min"]) / 2
+        valores["precp"] = float(input("Precipitación: "))
+        valores["lluvia"] = float(input("Lluvia: "))
+        valores["nieve"] = float(input("Nieve: "))
+        valores["precp_h"] = float(input("Precipitación (horas): "))
+        valores["viento"] = float(input("Viento: "))
+        return valores
 
-def hacer_prediccion(modelo, valores):
-    datos_prueba = pd.DataFrame([valores])
-    prediccion_5 = modelo.predict(datos_prueba)
-    return prediccion_5
+    def hacer_prediccion(modelo, valores):
+        datos_prueba = pd.DataFrame([valores])
+        prediccion_5 = modelo.predict(datos_prueba)
+        return prediccion_5
+    
+ # Llamar a la función para obtener los valores de las características
+    valores = obtener_valores_caracteristicas()
 
-# Llamar a la función para obtener los valores de las características
-valores = obtener_valores_caracteristicas()
+    # Hacer predicción con los valores ingresados por el usuario
+    prediccion_5 = hacer_prediccion( rr, valores)
+    # Mostrar la predicción al usuario
+    print("La predicción es:", prediccion_5)   
 
-# Hacer predicción con los valores ingresados por el usuario
-prediccion_5 = hacer_prediccion( rr, valores)
-# Mostrar la predicción al usuario
-print("La predicción es:", prediccion_5)
+
+
     
 #uno()
 #dos()
 #tres() #FUNCION Dataset para predicciones GRAFICA TEM MIN AND MAX
 # cuatro()
 calculadora()
- # 
+ 
 
 
 
