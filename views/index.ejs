@@ -309,12 +309,45 @@
       <h1>Seccion3</h1>
     </div>
     <div class="informacion">
-    <div class="prediccion">
-      Preddiciones unu
+      <div class="prediccion">
+        <div class="input-column">
+          <div class="input-group">
+            <label for="maxTemp">Temperatura máxima:</label>
+            <input type="number" id="maxTemp" placeholder="">
+          </div>
+          <div class="input-group">
+            <label for="minTemp">Temperatura mínima:</label>
+            <input type="number" id="minTemp" placeholder="">
+          </div>
+          <div class="input-group">
+            <label for="prec">Precipitación:</label>
+            <input type="number" id="prec" placeholder="">
+          </div>
+          <div class="input-group">
+            <label for="lluv">Lluvia:</label>
+            <input type="number" id="lluv" placeholder="">
+          </div>
+          <div class="input-group">
+            <label for="niev">Nieve:</label>
+            <input type="number" id="niev" placeholder="">
+          </div>
+          <div class="input-group">
+            <label for="precHoras">Precipitación (horas):</label>
+            <input type="number" id="precHoras" placeholder="">
+          </div>
+          <div class="input-group">
+            <label for="Aire">Viento:</label>
+            <input type="number" id="Aire" placeholder="">
+          </div>
+        </div>
+  
+        <button onclick="calcular()">Calcular</button> <!-- Botón para calcular -->
+  
+        <input type="text" id="resultado" readonly> <!-- Cuadro grande de solo lectura donde se mostrará el resultado -->
+      </div>
     </div>
-    </div>
-
   </section>
+  
 
   <section class="seccion3" id="seccion4">
     <div class="titulo">

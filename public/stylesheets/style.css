@@ -390,4 +390,23 @@ html {
 .modal-backdrop {
   z-index: 1040; /* Ajusta el z-index del fondo modal */
 }
+.input-column {
+  display: flex; /* Utiliza flexbox para organizar los grupos de entrada en columnas */
+  flex-direction: column; /* Los grupos de entrada se muestran en columnas */
+  margin-right: 20px; /* Espacio entre las columnas */
+}
 
+.input-group {
+  margin-bottom: 10px; /* Espacio entre los grupos de entrada */
+}
+
+.input-group label {
+  display: block; /* Muestra las etiquetas en una línea nueva */
+  margin-bottom: 5px; /* Espacio entre las etiquetas y los inputs */
+}
+
+.input-group input[type="number"] {
+  width: 100%; /* Los inputs ocupan todo el ancho disponible */
+  padding: 5px; /* Espacio dentro del input */
+  box-sizing: border-box; /* El padding se incluye en el ancho del input */
+}
