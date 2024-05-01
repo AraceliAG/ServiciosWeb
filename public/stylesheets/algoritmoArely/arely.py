@@ -84,6 +84,29 @@ daily_data["wind_speed_10m_max"] = daily_wind_speed_10m_max
 daily_dataframe_10 = pd.DataFrame(data = daily_data)
 print(daily_dataframe_10)
 
+json_file_path = 'datos.json'
+daily_dataframe_10.to_json(json_file_path, orient='records', date_format='iso')
+
+        # Lee el archivo JSON en Python
+with open(json_file_path, 'r') as f:
+        data = json.load(f)
+
+        # Escribe los datos en el archivo JavaScript
+js_file_path = 'graficaA1.js'
+with open(js_file_path, 'w') as f:
+    f.write('const data = ')
+    json.dump(data, f)
+    f.write(';')
+
+    print("Datos exportados exitosamente a 'graficaA1.js'.")
+    if os.path.exists(js_file_path):
+        with open(js_file_path, 'r') as f:
+            lines = f.readlines()
+    else:
+        # SI NO  EXISTE EL ARCHIVO ACTUAL SE GENERA UN ARCHIVO NUEVO
+        with open(js_file_path, 'w') as f:
+            json.dump(daily_dataframe_10, f)
+    
 
 def dos ():
     daily_dataframe_10.to_csv('2000 - 2010 - APIH2.csv', index=True) # Para guardar sin el índice del DataFrame
@@ -141,15 +164,29 @@ daily_dataframe = pd.DataFrame(data = daily_data)
 print(daily_dataframe)
 
 
-current_directory = os.path.dirname(os.path.abspath(__file__))
-js_file_path = os.path.join(daily_dataframe, 'graficaA1.js')
-if os.path.exists(js_file_path):
-    with open(js_file_path, 'r') as f:
-        lines = f.readlines()
-else:
-    # SI NO  EXISTE EL ARCHIVO ACTUAL SE GENERA UN ARCHIVO NUEVO
-    with open(js_file_path, 'w') as f:
-        json.dump(daily_dataframe, f)
+
+# json_file_path = 'datos.json'
+# daily_dataframe.to_json(json_file_path, orient='records', date_format='iso')
+
+#     # Lee el archivo JSON en Python
+# with open(json_file_path, 'r') as f:
+#     data = json.load(f)
+
+#     # Escribe los datos en el archivo JavaScript
+# js_file_path = 'graficaA1.js'
+# with open(js_file_path, 'w') as f:
+#     f.write('const data = ')
+#     json.dump(data, f)
+#     f.write(';')
+
+#     print("Datos exportados exitosamente a 'graficaA1.js'.")
+# if os.path.exists(js_file_path):
+#     with open(js_file_path, 'r') as f:
+#         lines = f.readlines()
+# else:
+#     # SI NO  EXISTE EL ARCHIVO ACTUAL SE GENERA UN ARCHIVO NUEVO
+#     with open(js_file_path, 'w') as f:
+#         json.dump(daily_dataframe, f)
         
 
 
@@ -192,7 +229,7 @@ def tres():
     df_historica["temp_max"].plot()
     df_historica["temp_min"].plot()
     plt.show()
-    
+      
 #Machine Learning - Predecir la temperatura futura
 def cuatro():
     daily_dataframe.to_csv('2010 - 2022 - APIH.csv', index=True) # Para guardar sin el índice del DataFrame
@@ -389,11 +426,12 @@ def calculadora():
     print("La predicción es:", prediccion_5)
         
 #uno()
-dos() #CVS
+#dos() #CVS
 #tres() #FUNCION Dataset para predicciones GRAFICA TEM MIN AND MAX PRIMERAS DOS GRAFICAS
 #cuatro()  #GRAFICA TEM MIN AND MAX ULTIMAS DOS GRAFICAS
 #calculadora()
 
+        
 
 
 
