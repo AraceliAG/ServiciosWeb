@@ -332,7 +332,7 @@ def calculadora():
         return pd.concat(all_predictions)
     predictions = backtest(df_historica, rr, predictors)
     print("RESULTADO: ")
-   
+
     valores_caracteristicas = {'temp_max': 25.613500, 'temp_min': 16.613500, 'temp_prom': 21.290585, 'precp': 2.90000, 'lluvia':2.90000, 'nieve':0.0, 'precp_h':4.0, 'viento': 9.6598}
 
     # Convertir 'valores_caracteristicas' en un DataFrame
@@ -349,7 +349,7 @@ def obtener_valores_caracteristicas():
     print("Ingrese los valores de las características:")
     valores["temp_max"] = float(input("Temperatura máxima: "))
     valores["temp_min"] = float(input("Temperatura mínima: "))
-    valores["temp_prom"] = (valores["temp_max"] + valores["temp_min"]) / 2
+    print("Temperatura promedio:", (valores["temp_max"] + valores["temp_min"]) / 2)  # Calcular y mostrar la temperatura promedio
     valores["precp"] = float(input("Precipitación: "))
     valores["lluvia"] = float(input("Lluvia: "))
     valores["nieve"] = float(input("Nieve: "))
@@ -366,7 +366,7 @@ def hacer_prediccion(modelo, valores):
 valores = obtener_valores_caracteristicas()
 
 # Hacer predicción con los valores ingresados por el usuario
-prediccion_5 = hacer_prediccion(rr, valores)
+prediccion_5 = hacer_prediccion( rr, valores)
 # Mostrar la predicción al usuario
 print("La predicción es:", prediccion_5)
     
