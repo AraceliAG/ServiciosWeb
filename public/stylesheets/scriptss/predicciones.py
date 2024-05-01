@@ -349,7 +349,7 @@ def calculadora():
         print("Ingrese los valores de las características:")
         valores["temp_max"] = float(input("Temperatura máxima: "))
         valores["temp_min"] = float(input("Temperatura mínima: "))
-        valores["temp_prom"] = print((valores["temp_max"] + valores["temp_min"]) / 2)
+        valores["temp_prom"] = (valores["temp_max"] + valores["temp_min"]) / 2
         valores["precp"] = float(input("Precipitación: "))
         valores["lluvia"] = float(input("Lluvia: "))
         valores["nieve"] = float(input("Nieve: "))
