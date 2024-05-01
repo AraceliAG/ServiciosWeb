@@ -8,6 +8,9 @@ from retry_requests import retry
 from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error
 import seaborn as sns
+import json
+import os
+
 
 # Establecer periodo de tiempo
 inicio = datetime(2015, 1, 12)
@@ -81,6 +84,7 @@ daily_data["wind_speed_10m_max"] = daily_wind_speed_10m_max
 daily_dataframe_10 = pd.DataFrame(data = daily_data)
 print(daily_dataframe_10)
 
+
 def dos ():
     daily_dataframe_10.to_csv('2000 - 2010 - APIH2.csv', index=True) # Para guardar sin el índice del DataFrame
     # Setup the Open-Meteo API client with cache and retry on error
@@ -135,6 +139,20 @@ daily_data["wind_speed_10m_max"] = daily_wind_speed_10m_max
 
 daily_dataframe = pd.DataFrame(data = daily_data)
 print(daily_dataframe)
+
+
+current_directory = os.path.dirname(os.path.abspath(__file__))
+js_file_path = os.path.join(daily_dataframe, 'graficaA1.js')
+if os.path.exists(js_file_path):
+    with open(js_file_path, 'r') as f:
+        lines = f.readlines()
+else:
+    # SI NO  EXISTE EL ARCHIVO ACTUAL SE GENERA UN ARCHIVO NUEVO
+    with open(js_file_path, 'w') as f:
+        json.dump(daily_dataframe, f)
+        
+
+
 
 
 
@@ -371,9 +389,9 @@ def calculadora():
     print("La predicción es:", prediccion_5)
         
 #uno()
-#dos()
+dos() #CVS
 #tres() #FUNCION Dataset para predicciones GRAFICA TEM MIN AND MAX PRIMERAS DOS GRAFICAS
-cuatro()  #GRAFICA TEM MIN AND MAX ULTIMAS DOS GRAFICAS
+#cuatro()  #GRAFICA TEM MIN AND MAX ULTIMAS DOS GRAFICAS
 #calculadora()
 
 
