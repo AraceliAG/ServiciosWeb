@@ -372,8 +372,8 @@ def calculadora():
         
 #uno()
 #dos()
-#tres() #FUNCION Dataset para predicciones GRAFICA TEM MIN AND MAX
-cuatro()
+#tres() #FUNCION Dataset para predicciones GRAFICA TEM MIN AND MAX PRIMERAS DOS GRAFICAS
+cuatro()  #GRAFICA TEM MIN AND MAX ULTIMAS DOS GRAFICAS
 #calculadora()
 
 
