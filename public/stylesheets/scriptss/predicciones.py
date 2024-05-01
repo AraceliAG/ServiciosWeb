@@ -349,7 +349,7 @@ def calculadora():
         print("Ingrese los valores de las características:")
         valores["temp_max"] = float(input("Temperatura máxima: "))
         valores["temp_min"] = float(input("Temperatura mínima: "))
-        valores["temp_prom"] = (valores["temp_max"] + valores["temp_min"]) / 2
+        valores["temp_prom"] = print((valores["temp_max"] + valores["temp_min"]) / 2)
         valores["precp"] = float(input("Precipitación: "))
         valores["lluvia"] = float(input("Lluvia: "))
         valores["nieve"] = float(input("Nieve: "))
@@ -361,24 +361,21 @@ def calculadora():
         datos_prueba = pd.DataFrame([valores])
         prediccion_5 = modelo.predict(datos_prueba)
         return prediccion_5
-    
- # Llamar a la función para obtener los valores de las características
+
+    # Llamar a la función para obtener los valores de las características
     valores = obtener_valores_caracteristicas()
 
     # Hacer predicción con los valores ingresados por el usuario
     prediccion_5 = hacer_prediccion( rr, valores)
     # Mostrar la predicción al usuario
-    print("La predicción es:", prediccion_5)   
-
-
-
-    
+    print("La predicción es:", prediccion_5)
+        
 #uno()
 #dos()
 #tres() #FUNCION Dataset para predicciones GRAFICA TEM MIN AND MAX
 # cuatro()
 calculadora()
- 
+ # 
 
 
 
