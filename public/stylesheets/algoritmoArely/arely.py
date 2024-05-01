@@ -241,32 +241,32 @@ def cuatro():
         return pd.concat(all_predictions)
     predictions = backtest(df_historica, rr, predictors)
     print("RESULTADO: ")
-    #print(predictions)
-    # print(mean_absolute_error(predictions["actual"], predictions["prediction"])) #En promedio predice 0.9439700364843344 grados de más o menos (lo cuál no está tan mal, de hecho está muy bien)
-    # print(predictions.sort_values("diff", ascending=False))
-    # print(df_historica.loc["2011-06-20":"2011-06-30"])
-    # print(predictions["diff"].round().value_counts().sort_index())
-    # predictions["diff"].round().value_counts().sort_index().plot()
-    # plt.show()#muestra grafica
-    # plt.figure(figsize=(10, 6))
-    # plt.plot(predictions.index, predictions['actual'], label='Valores reales', color='blue')
-    # plt.plot(predictions.index, predictions['prediction'], label='Predicciones', color='red')
+    print(predictions)
+    print(mean_absolute_error(predictions["actual"], predictions["prediction"])) #En promedio predice 0.9439700364843344 grados de más o menos (lo cuál no está tan mal, de hecho está muy bien)
+    print(predictions.sort_values("diff", ascending=False))
+    print(df_historica.loc["2011-06-20":"2011-06-30"])
+    print(predictions["diff"].round().value_counts().sort_index())
+    predictions["diff"].round().value_counts().sort_index().plot()
+    plt.show()#muestra grafica
+    plt.figure(figsize=(10, 6))
+    plt.plot(predictions.index, predictions['actual'], label='Valores reales', color='blue')
+    plt.plot(predictions.index, predictions['prediction'], label='Predicciones', color='red')
 
-    # plt.xlabel('Fecha')
-    # plt.ylabel('Valor')
-    # plt.title('Comparación de predicciones y valores reales')
-    # plt.legend()
+    plt.xlabel('Fecha')
+    plt.ylabel('Valor')
+    plt.title('Comparación de predicciones y valores reales')
+    plt.legend()
 
-    # plt.show()#aqui muestra las graficas del los datos procesados y de las predicciones
-    # sns.set_style("whitegrid")
-    # plt.figure(figsize=(10, 6))
-    # sns.lineplot(data=predictions, palette=["blue", "red"])
+    plt.show()#aqui muestra las graficas del los datos procesados y de las predicciones
+    sns.set_style("whitegrid")
+    plt.figure(figsize=(10, 6))
+    sns.lineplot(data=predictions, palette=["blue", "red"])
 
-    # plt.xlabel('Fecha')
-    # plt.ylabel('Valor')
-    # plt.title('Comparación de predicciones y valores reales')
+    plt.xlabel('Fecha')
+    plt.ylabel('Valor')
+    plt.title('Comparación de predicciones y valores reales')
 
-    # plt.show()#comparacion 
+    plt.show()#comparacion 
 def calculadora():
     daily_dataframe.to_csv('2010 - 2022 - APIH.csv', index=True) # Para guardar sin el índice del DataFrame
     df_2000_2010 = pd.read_csv('2000 - 2010 - APIH.csv')
@@ -373,9 +373,9 @@ def calculadora():
 #uno()
 #dos()
 #tres() #FUNCION Dataset para predicciones GRAFICA TEM MIN AND MAX
-# cuatro()
-calculadora()
- # 
+cuatro()
+#calculadora()
+
 
 
 
