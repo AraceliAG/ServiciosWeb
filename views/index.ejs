@@ -283,63 +283,95 @@
   
 
   <section class="seccion2" id="seccion2">
-    <br>
-  
-    <div class="carrusel">
-      <div class="item">
-        <div class="graficas">
-          <h1>Hola</h1>
-          <img src="/stylesheets/img/comparacionDePrediccionesYValaoresReales.png" alt="1">
-  
-        </div>
-        <div class="botones-navegacion">
-          <button class="boton-anterior">Anterior</button>
-          <button class="boton-siguiente">Siguiente</button>
-        </div>
+  <br>
+
+  <div class="carrusel">
+    <div class="item">
+      <div class="graficas">
+        
+        <img src="/stylesheets/img/comparacionDePrediccionesYValaoresReales.png" alt="1">
+
       </div>
-  
-      <div class="item">
-        <div class="graficas2">
-          <h1>Hola2</h1>
-          <img src="/stylesheets/img/ComparacionDePrediccionesYValores.png" alt="2">
-  
-        </div>
-        <div class="botones-navegacion">
-          <button class="boton-anterior">Anterior</button>
-          <button class="boton-siguiente">Siguiente</button>
-        </div>
+      <div class="botones-navegacion">
+        <button class="boton-anterior">Anterior</button>
+        <button class="boton-siguiente">Siguiente</button>
       </div>
-  
-      <div class="item">
-        <div class="graficas3">
-          <h1>Hola3</h1>
-          <img src="/stylesheets/img/temMinHistorico.png" alt="3">
-  
-        </div>
-        <div class="botones-navegacion">
-          <button class="boton-anterior">Anterior</button>
-          <button class="boton-siguiente">Siguiente</button>
-        </div>
-      </div>
-  
-      <div class="item">
-        <div class="graficas4">
-          <h1>Hola4</h1>
-          <img src="/stylesheets/img/temMinHistorico2.png" alt="4">
-  
-        </div>
-        <div class="botones-navegacion">
-          <button class="boton-anterior">Anterior</button>
-          <button class="boton-siguiente">Siguiente</button>
-        </div>
-      </div>
-  
-      <!-- Añade más elementos según sea necesario -->
-  
     </div>
-  </section>
-  
-  
+
+    <div class="item">
+      <div class="graficas">
+       
+        <img src="/stylesheets/img/ComparacionDePrediccionesYValores.png" alt="2">
+
+      </div>
+      <div class="botones-navegacion">
+        <button class="boton-anterior">Anterior</button>
+        <button class="boton-siguiente">Siguiente</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="graficas">
+        
+        <img src="/stylesheets/img/temMinHistorico.png" alt="3">
+
+      </div>
+      <div class="botones-navegacion">
+        <button class="boton-anterior">Anterior</button>
+        <button class="boton-siguiente">Siguiente</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="graficas">
+        
+        <img src="/stylesheets/img/temMaxHistorico.png" alt="4">
+
+      </div>
+      <div class="botones-navegacion">
+        <button class="boton-anterior">Anterior</button>
+        <button class="boton-siguiente">Siguiente</button>
+      </div>
+    </div>
+
+    <!-- Añade más elementos según sea necesario -->
+
+    <!-- CARRUSEL -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var botonesSiguiente = document.querySelectorAll(".boton-siguiente");
+    var botonesAnterior = document.querySelectorAll(".boton-anterior");
+
+    botonesSiguiente.forEach(function(boton) {
+      boton.addEventListener("click", function() {
+        var carrusel = boton.closest(".carrusel");
+        var item = boton.closest(".item");
+        var siguienteItem = item.nextElementSibling;
+
+        if (siguienteItem) {
+          carrusel.appendChild(item); // Mueve el elemento al final
+        }
+      });
+    });
+
+    botonesAnterior.forEach(function(boton) {
+      boton.addEventListener("click", function() {
+        var carrusel = boton.closest(".carrusel");
+        var item = boton.closest(".item");
+        var anteriorItem = item.previousElementSibling;
+
+        if (anteriorItem) {
+          carrusel.insertBefore(item, anteriorItem); // Mueve el elemento al principio
+        }
+      });
+    });
+  });
+</script>
+
+  </div>
+</section>
+
+
 
   </body>
 
