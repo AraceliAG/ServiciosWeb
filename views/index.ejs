@@ -82,142 +82,99 @@
 
 
 
-   <!-- OTRA SECCION -->
-<!-- OTRA SECCION -->
+<!-- CARRUSEL -->
 <section class="seccion2" id="seccion2">
   <br>
 
   <div class="carrusel">
     <div class="item">
       <div class="graficas">
-        <div id="chartContainer" class="chartContainer">
-          <div id="titu">
-            <h2>Historicos a lo largo de cinco años</h2>
-          </div>
-          <canvas id="myChart"></canvas>
-        </div>
+        <h1>Hola</h1>
+        <img src="/public/stylesheets/img/comparacionDePrediccionesYValaoresReales.png" alt="1">
 
-        <!-- Botones de selección -->
-        <div id="seleccion" class="botonesE"> 
-          <br>
-          <button type="button" class="btn btn-info" onclick="mostrarGrafica('temperatura')">Temperatura</button> <br>
-          <button type="button" class="btn btn-info" onclick="mostrarGrafica('humedad')">Humedad</button> <br>
-          <button type="button" class="btn btn-info" onclick="mostrarGrafica('presion')">Presion</button> <br>
-          <button id="botonAvanzado1" type="button" class="btn btn-info">Avanzado</button>
-        </div>
+      </div>
+      <div class="botones-navegacion">
+        <button class="boton-anterior">Anterior</button>
+        <button class="boton-siguiente">Siguiente</button>
       </div>
     </div>
 
-
-
-   <!-- NUEVO ELEMENTO -->
-   <div class="item">
-    <div class="graficas2">
-
-      <div id="chartContainer" class="chartContainer2">
-        <div id="titu">
-          <h2>Personaliza los parametros</h2>
-        </div>
-        <canvas id="myChart2"></canvas>
-      </div>
-      <!-- Botón para mostrar el modal -->
-      
-      <div id="seleccion" class="botonesE">
-
-        <h3>Selecciona un año</h3>
-          <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonAnio" data-bs-toggle="dropdown" aria-expanded="false">
-                  Año
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonAnio">
-                  <li><a class="dropdown-item"  onclick="seleccionarAnio('Todos los años')">Todos los años</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2018)">2018</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2019)">2019</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2020)">2020</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2021)">2021</a></li>
-                  <li><a class="dropdown-item" onclick="seleccionarAnio(2022)">2022</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2023)">2023</a></li>
-                  <li><a class="dropdown-item"  onclick="seleccionarAnio(2024)">2024</a></li>
-              </ul>
-          </div>
-
-          <h3>Selecciona un mes</h3>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonMes" data-bs-toggle="dropdown" aria-expanded="false">
-                Mes
-            </button>
-            <ul class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButtonMes">
-                <li><a class="dropdown-item"  onclick="seleccionarMes('Todos los meses')">Todos los meses</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(1)">Enero</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(2)">Febrero</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(3)">Marzo</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(4)">Abril</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(5)">Mayo</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(6)">Junio</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(7)">Julio</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(8)">Agosto</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(9)">Septiembre</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(10)">Octubre</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(11)">Noviembre</a></li>
-                <li><a class="dropdown-item"  onclick="seleccionarMes(12)">Diciembre</a></li>
-            </ul>
-        </div>
-        
-
-          <h3>Selecciona Tipo</h3>
-          
-      <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuSeccion" data-bs-toggle="dropdown" aria-expanded="false">
-              Tipo
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuSeccion">
-              <li><a class="dropdown-item"  onclick="seleccionarSeccion('temperatura')">Temperatura</a></li>
-              <li><a class="dropdown-item"  onclick="seleccionarSeccion('humedad')">Humedad</a></li>
-              <li><a class="dropdown-item"  onclick="seleccionarSeccion('presion')">Presion</a></li>
-          </ul>
+    <div class="item">
+      <div class="graficas2">
+        <h1>Hola2</h1>
+        <img src="/public/stylesheets/img/ComparacionDePrediccionesYValores.png" alt="2">
 
       </div>
-                  <form id="btnguardar">
-                      <input type="hidden" name="anioSeleccionado" id="anioSeleccionado">
-                      <input type="hidden" name="mesSeleccionado" id="mesSeleccionado">
-                      <input type="hidden" name="seccion" id="seccion">
-                      <button type="button" class="btn btn-primary" id="btnGuardarCambios">Guardar cambios</button>
-
-                  </form>
-    
-        <button id="botonAvanzado1" type="button" class="btn btn-info">Regresar</button>
-        
+      <div class="botones-navegacion">
+        <button class="boton-anterior">Anterior</button>
+        <button class="boton-siguiente">Siguiente</button>
       </div>
     </div>
 
-</div>
+    <div class="item">
+      <div class="graficas3">
+        <h1>Hola3</h1>
+        <img src="/public/stylesheets/img/temMinHistorico.png" alt="3">
+
+      </div>
+      <div class="botones-navegacion">
+        <button class="boton-anterior">Anterior</button>
+        <button class="boton-siguiente">Siguiente</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="graficas4">
+        <h1>Hola4</h1>
+        <img src="/public/stylesheets/img/temMinHistorico2.png" alt="4">
+
+      </div>
+      <div class="botones-navegacion">
+        <button class="boton-anterior">Anterior</button>
+        <button class="boton-siguiente">Siguiente</button>
+      </div>
+    </div>
+
+    <!-- Añade más elementos según sea necesario -->
+
+  </div>
+</section>
 
 
 
 <!-- CARRUSEL -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var carrusel = document.querySelector(".carrusel");
-      var botonesAvanzado = document.querySelectorAll("#botonAvanzado1, #botonAvanzado2");
-  
-      botonesAvanzado.forEach(function(boton) {
-        boton.addEventListener("click", function() {
-          var primerItem = carrusel.querySelector(".item");
-          var anchoItem = primerItem.offsetWidth;
-  
-          carrusel.appendChild(primerItem); // MUEVE CARRUSEL
-  
-          carrusel.style.transition = "none";
-          carrusel.style.transform = "translateX(-" + anchoItem + "px)";
-  
-          setTimeout(function() {
-            carrusel.style.transition = "transform 0.5s ease";
-            carrusel.style.transform = "translateX(0)";
-          }, 50);
-        });
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var botonesSiguiente = document.querySelectorAll(".boton-siguiente");
+    var botonesAnterior = document.querySelectorAll(".boton-anterior");
+
+    botonesSiguiente.forEach(function(boton) {
+      boton.addEventListener("click", function() {
+        var carrusel = boton.closest(".carrusel");
+        var item = boton.closest(".item");
+        var siguienteItem = item.nextElementSibling;
+
+        if (siguienteItem) {
+          carrusel.appendChild(item); // Mueve el elemento al final
+        }
       });
     });
-  </script>
+
+    botonesAnterior.forEach(function(boton) {
+      boton.addEventListener("click", function() {
+        var carrusel = boton.closest(".carrusel");
+        var item = boton.closest(".item");
+        var anteriorItem = item.previousElementSibling;
+
+        if (anteriorItem) {
+          carrusel.insertBefore(item, anteriorItem); // Mueve el elemento al principio
+        }
+      });
+    });
+  });
+</script>
+
+
 
   </section>
 
