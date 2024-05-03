@@ -108,7 +108,7 @@ html {
 .seccion3{
   display: flex;
   flex-direction: column;
-  background-image: url('./img/fondo2.jpg');
+  background-image: url('./img/fondo2.jpg');  
   background-size: cover; /* Ajustar el tamaño de la imagen */
   background-position: center; /* Centrar la imagen */
   background-color: rgb(45, 66, 152); /* Color de fondo */
@@ -410,3 +410,50 @@ html {
   padding: 5px; /* Espacio dentro del input */
   box-sizing: border-box; /* El padding se incluye en el ancho del input */
 }
+
+
+
+/* CALCULADORA */
+
+.letra {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#xd{
+  background-color: rgb(218, 161, 27);
+  height: 60px;
+  width: 300px;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.letra2 {
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.prediccion{
+  height: 66vh; /* Altura del contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+  margin: 0 50px;
+  background: rgba(34, 93, 211, 0.1);
+  border: 3px solid rgb(251, 251, 255); /* Borde completo */
+  border-radius: 7px;
+  backdrop-filter: blur(30px);
+  padding: 25px;
+}
+
+
+#resultado{
+  font-size: 26px;
+  font-weight: bold;
+  height: 60px;
+  width: 300px;
+}
+
+

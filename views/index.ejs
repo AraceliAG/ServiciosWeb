@@ -13,8 +13,8 @@
       <a href="#" class="logo">Tu Clima en Tonala</a> <!-- LOGO -->
       <nav class="navbar"> <!-- SECCIONES DE NUESTRA PAGINA -->
         <a href="#seccionInicio" scroll>Inicio</a>
-        <a href="#seccion2" scroll>Graficas</a>
-        <a href="#seccion3" scroll>Más</a>
+        <a href="#seccion2" scroll>Históricos</a>
+        <a href="#seccion3" scroll>Calculadora</a>
         <a href="#seccion4" scroll>Predicciones</a>
       </nav>
     </header>
@@ -79,7 +79,7 @@
       
             <div id="chartContainer" class="chartContainer2">
               <div id="titu">
-                <h2>Personaliza los parametros</h2>
+                <h2>Personaliza los parámetros</h2>
               </div>
               <canvas id="myChart2"></canvas>
             </div>
@@ -87,7 +87,7 @@
             
             <div id="seleccion" class="botonesE">
       
-              <h3>Selecciona un año</h3>
+              <h3 class="letra">Selecciona un año</h3>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonAnio" data-bs-toggle="dropdown" aria-expanded="false">
                         Año
@@ -104,7 +104,7 @@
                     </ul>
                 </div>
       
-                <h3>Selecciona un mes</h3>
+                <h3 class="letra">Selecciona un mes</h3>
                 <div class="dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonMes" data-bs-toggle="dropdown" aria-expanded="false">
                       Mes
@@ -127,7 +127,7 @@
               </div>
               
       
-                <h3>Selecciona Tipo</h3>
+                <h3 class="letra">Selecciona Tipo</h3>
                 
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuSeccion" data-bs-toggle="dropdown" aria-expanded="false">
@@ -173,7 +173,7 @@
       <div class="graficas">
         <div id="chartContainer" class="chartContainer">
           <div id="titu">
-            <h2>Historicos a lo largo de cinco años</h2>
+            <h2>Históricos a lo largo de cinco años</h2>
           </div>
           <canvas id="myChart"></canvas>
         </div>
@@ -228,60 +228,118 @@
   <br>
   <section class="seccion3" id="seccion3">
     <div class="titulo">
-      <h1>Seccion3</h1>
+      <h1>Calculadora de Predicciones</h1>
     </div>
     <div class="informacion">
       <div class="prediccion">
         <div class="input-column">
           <div class="input-group">
-            <label for="maxTemp">Temperatura máxima:</label>
-            <input type="number" id="maxTemp" placeholder="">
+            <label for="maxTemp" class="letra">Temperatura máxima:</label>
+            <input class="letra2" type="number" id="maxTemp" placeholder="">
           </div>
           <div class="input-group">
-            <label for="minTemp">Temperatura mínima:</label>
-            <input type="number" id="minTemp" placeholder="">
+            <label for="minTemp" class="letra">Temperatura mínima:</label>
+            <input class="letra2" type="number" id="minTemp" placeholder="">
           </div>
           <div class="input-group">
-            <label for="prec">Precipitación:</label>
-            <input type="number" id="prec" placeholder="">
+            <label for="prec" class="letra">Precipitación:</label>
+            <input class="letra2" type="number" id="prec" placeholder="">
           </div>
           <div class="input-group">
-            <label for="lluv">Lluvia:</label>
-            <input type="number" id="lluv" placeholder="">
+            <label class="letra" for="lluv" class="letra">Lluvia:</label>
+            <input class="letra2" type="number" id="lluv" placeholder="">
           </div>
-          <div class="input-group">
+          <!-- <div class="input-group">
             <label for="niev">Nieve:</label>
             <input type="number" id="niev" placeholder="">
-          </div>
+          </div> -->
           <div class="input-group">
-            <label for="precHoras">Precipitación (horas):</label>
-            <input type="number" id="precHoras" placeholder="">
+            <label for="precHoras" class="letra"">Precipitación (horas):</label>
+            <input class="letra2" type="number" id="precHoras" placeholder="">
           </div>
-          <div class="input-group">
-            <label for="Aire">Viento:</label>
-            <input type="number" id="Aire" placeholder="">
+          <div class="input-group" >
+            <label for="Aire" class="letra">Viento:</label>
+            <input class="letra2" type="number" id="Aire" placeholder="">
           </div>
         </div>
   
-        <button onclick="calcular()">Calcular</button> <!-- Botón para calcular -->
+        <button class="btn btn-secondary dropdown-toggle" id="xd" onclick="calcular()">Calcular</button> <!-- Botón para calcular -->
   
         <input type="text" id="resultado" readonly> <!-- Cuadro grande de solo lectura donde se mostrará el resultado -->
+        <script>
+          function calcular() {
+              // Obtener el cuadro de texto por su ID
+              var resultado = document.getElementById("resultado");
+      
+              // Asignar el valor deseado al cuadro de texto
+              resultado.value = "24.57";
+          }
+      </script>
       </div>
     </div>
   </section>
+
+  <br>
   
 
-  <section class="seccion3" id="seccion4">
-    <div class="titulo">
-      <h1>Seccion 4</h1>
+  <section class="seccion2" id="seccion2">
+    <br>
+  
+    <div class="carrusel">
+      <div class="item">
+        <div class="graficas">
+          <h1>Hola</h1>
+          <img src="/stylesheets/img/comparacionDePrediccionesYValaoresReales.png" alt="1">
+  
+        </div>
+        <div class="botones-navegacion">
+          <button class="boton-anterior">Anterior</button>
+          <button class="boton-siguiente">Siguiente</button>
+        </div>
+      </div>
+  
+      <div class="item">
+        <div class="graficas2">
+          <h1>Hola2</h1>
+          <img src="/stylesheets/img/ComparacionDePrediccionesYValores.png" alt="2">
+  
+        </div>
+        <div class="botones-navegacion">
+          <button class="boton-anterior">Anterior</button>
+          <button class="boton-siguiente">Siguiente</button>
+        </div>
+      </div>
+  
+      <div class="item">
+        <div class="graficas3">
+          <h1>Hola3</h1>
+          <img src="/stylesheets/img/temMinHistorico.png" alt="3">
+  
+        </div>
+        <div class="botones-navegacion">
+          <button class="boton-anterior">Anterior</button>
+          <button class="boton-siguiente">Siguiente</button>
+        </div>
+      </div>
+  
+      <div class="item">
+        <div class="graficas4">
+          <h1>Hola4</h1>
+          <img src="/stylesheets/img/temMinHistorico2.png" alt="4">
+  
+        </div>
+        <div class="botones-navegacion">
+          <button class="boton-anterior">Anterior</button>
+          <button class="boton-siguiente">Siguiente</button>
+        </div>
+      </div>
+  
+      <!-- Añade más elementos según sea necesario -->
+  
     </div>
-    <div class="informacion">
-    <div class="prediccion">
-      Mas preddiciones unu
-    </div>
-    </div>
-
   </section>
+  
+  
 
   </body>
 
