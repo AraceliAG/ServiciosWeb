@@ -400,9 +400,30 @@
   </script>
  
 
-<script>
- 
+ <script>
+  function seleccionarAnio(anio) {
+    event.preventDefault();
+      var botonAnio = document.getElementById("dropdownMenuButtonAnio");
+      var inputAnio = document.getElementById("anioSeleccionado");
+      botonAnio.textContent = anio;
+      inputAnio.value = anio;
+  }
 
+  function seleccionarMes(mes) {
+    event.preventDefault();
+      var botonMes = document.getElementById("dropdownMenuButtonMes");
+      var inputMes = document.getElementById("mesSeleccionado");
+      botonMes.textContent = mes;
+      inputMes.value = mes;
+  }
+
+  function seleccionarSeccion(seccion) {
+    event.preventDefault();
+      var botonSeccion = document.getElementById("dropdownMenuSeccion");
+      var inputSeccion = document.getElementById("seccion");
+      botonSeccion.textContent = seccion;
+      inputSeccion.value = seccion;
+  }
 </script>
     </div>
   </div>
