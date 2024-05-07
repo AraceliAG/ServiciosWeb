@@ -232,10 +232,10 @@
   <section class="seccion3" id="seccion3">
     <script type="text/python">
       from browser import document
-
+  
       def display(text):
-          document["output"].text = text
-
+          document["resultado"].value = text
+  
       def sumar_numeros():
           try:
               max = float(document["max"].value)
@@ -244,47 +244,66 @@
               display(f"La suma es: {resultado}")
           except ValueError:
               display("¡Por favor ingresa números válidos!")
-
+  
       # Agregar función para sumar números cuando se hace clic en el botón
       document["calcular"].bind("click", lambda ev: sumar_numeros()) #IMPORTANTE
-  </script>
-  <div>
-      <!-- Input para ingresar el primer número -->
-      <label  class="letra" for="numero1">Temperatura Maxima:</label>
-      <input class="letra2" type="number" id="max" ">
-  </div>
-
-  <div>
-      <!-- Input para ingresar el segundo número -->
-      <label class="letra" for="numero2">Temperatura Minima:</label>
-      <input class="letra2" type="number" id="min" ">
-  </div>
-
-  <div>
-    <!-- Input para ingresar el segundo número -->
-    <label class="letra" for="numero2">Precipitación:</label>
-    <input class="letra2" type="number" id="pre" ">
-</div>
-
-<div>
-  <!-- Input para ingresar el segundo número -->
-  <label class="letra" for="numero2">Precipitación Horas:</label>
-  <input class="letra2" type="number" id="preH" ">
-</div>
-
-<div>
-  <!-- Input para ingresar el segundo número -->
-  <label class="letra" for="numero2">Viento:</label>
-  <input class="letra2" type="number" id="vien" ">
-</div>
-
-
-  <div>
-      <!-- Botón para sumar los números -->
-      <button class="btn btn-secondary dropdown-toggle" id="calcular">Calcular</button>
-  </div>
-  <div id="output" readonly class="letra"></div>
+    </script>
+    
+    <!-- Lista vertical de inputs -->
+    <div class="input-list">
+      <div class="input-item">
+        <label class="letra" for="max">Temperatura Maxima:</label>
+        <br>
+        <input class="letra2" type="number" id="max">
+      </div>
+  
+      <div class="input-item">
+        <label class="letra" for="min">Temperatura Minima:</label>
+        <br>
+        <input class="letra2" type="number" id="min">
+      </div>
+  
+      <div class="input-item">
+        <label class="letra" for="pre">Precipitación:</label>
+        <br>
+        <input class="letra2" type="number" id="pre">
+      </div>
+  
+      <div class="input-item">
+        <label class="letra" for="preH">Precipitación Horas:</label>
+        <br>
+        <input class="letra2" type="number" id="preH">
+      </div>
+  
+      <div class="input-item">
+        <label class="letra" for="vien">Viento:</label>
+        <br>
+        <input class="letra2" type="number" id="vien">
+      </div>
+    </div>
+  
+    <!-- Contenedor para el botón de calcular y el resultado -->
+    <div class="button-result-container">
+      <!-- Resultado -->
+      <div class="result-container">
+        <label class="letra" for="resultado">Resultado:</label>
+        <br>
+        <input id="resultado" class="letra2" type="text" readonly>
+      </div>
+      
+      <!-- Botón para calcular -->
+      <div class="button-container">
+        <button class="btn btn-secondary dropdown-toggle" id="calcular">Calcular</button>
+      </div>
+    </div>
   </section>
+s  
+  
+  
+  
+  
+  
+  
   
   <br>
   

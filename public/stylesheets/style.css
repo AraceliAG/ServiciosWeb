@@ -449,12 +449,35 @@ html {
 }
 
 
-#resultado{
-  font-size: 26px;
-  font-weight: bold;
-  height: 60px;
-  width: 300px;
+.input-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.input-item {
+  margin-bottom: 20px;
+}
+
+.button-result-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.button-container {
+  text-align: right; /* Alinea el botón a la derecha */
+}
+
+.result-container {
+  text-align: left; /* Alinea el input de resultado a la izquierda */
+}
+
+
+
+
+
 
 
 /* CARRUSELE SECCION 4*/
