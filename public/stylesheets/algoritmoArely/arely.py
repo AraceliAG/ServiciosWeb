@@ -429,7 +429,7 @@ def calculadora():
 #dos() #CVS
 #tres() #FUNCION Dataset para predicciones GRAFICA TEM MIN AND MAX PRIMERAS DOS GRAFICAS
 #cuatro()  #GRAFICA TEM MIN AND MAX ULTIMAS DOS GRAFICAS
-#calculadora()
+calculadora()
 
         
 
