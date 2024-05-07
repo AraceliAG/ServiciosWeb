@@ -335,38 +335,53 @@
       </div>
     </div>
 
-    <!-- Añade más elementos según sea necesario -->
 
     <!-- CARRUSEL -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    var botonesSiguiente = document.querySelectorAll(".boton-siguiente");
-    var botonesAnterior = document.querySelectorAll(".boton-anterior");
+  var botonesSiguiente = document.querySelectorAll(".boton-siguiente");
+  var botonesAnterior = document.querySelectorAll(".boton-anterior");
 
-    botonesSiguiente.forEach(function(boton) {
-      boton.addEventListener("click", function() {
-        var carrusel = boton.closest(".carrusel");
-        var item = boton.closest(".item");
-        var siguienteItem = item.nextElementSibling;
+  botonesSiguiente.forEach(function(boton) {
+    boton.addEventListener("click", function() {
+      var carrusel = boton.closest(".carrusel");
+      var item = boton.closest(".item");
+      var siguienteItem = item.nextElementSibling;
 
-        if (siguienteItem) {
-          carrusel.appendChild(item); // Mueve el elemento al final
-        }
-      });
+      if (siguienteItem) {
+        carrusel.appendChild(item);
+        
+      
+        carrusel.style.transition = "transform 0.5s ease";
+        carrusel.style.transform = "translateX(-100%)";
+        
+       
+        setTimeout(function() {
+          carrusel.style.transition = "none";
+          carrusel.style.transform = "translateX(0)";
+        }, 500);
+      }
     });
+  });
 
-    botonesAnterior.forEach(function(boton) {
-      boton.addEventListener("click", function() {
-        var carrusel = boton.closest(".carrusel");
-        var item = boton.closest(".item");
-        var anteriorItem = item.previousElementSibling;
-
-        if (anteriorItem) {
-          carrusel.insertBefore(item, anteriorItem); // Mueve el elemento al principio
-        }
-      });
+  botonesAnterior.forEach(function(boton) {
+    boton.addEventListener("click", function() {
+      var carrusel = boton.closest(".carrusel");
+      var item = carrusel.querySelector(".item:last-child");
+      carrusel.insertBefore(item, carrusel.firstChild);
+      
+      
+      carrusel.style.transition = "transform 0.5s ease";
+      carrusel.style.transform = "translateX(-100%)";
+      
+      
+      setTimeout(function() {
+        carrusel.style.transition = "none";
+        carrusel.style.transform = "translateX(0)";
+      }, 500);
     });
-  });
+  });
+});
 </script>
 
   </div>
@@ -398,29 +413,8 @@
  
 
 <script>
-  function seleccionarAnio(anio) {
-    event.preventDefault();
-      var botonAnio = document.getElementById("dropdownMenuButtonAnio");
-      var inputAnio = document.getElementById("anioSeleccionado");
-      botonAnio.textContent = anio;
-      inputAnio.value = anio;
-  }
+ 
 
-  function seleccionarMes(mes) {
-    event.preventDefault();
-      var botonMes = document.getElementById("dropdownMenuButtonMes");
-      var inputMes = document.getElementById("mesSeleccionado");
-      botonMes.textContent = mes;
-      inputMes.value = mes;
-  }
-
-  function seleccionarSeccion(seccion) {
-    event.preventDefault();
-      var botonSeccion = document.getElementById("dropdownMenuSeccion");
-      var inputSeccion = document.getElementById("seccion");
-      botonSeccion.textContent = seccion;
-      inputSeccion.value = seccion;
-  }
 </script>
     </div>
   </div>
