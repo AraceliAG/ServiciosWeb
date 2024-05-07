@@ -81,8 +81,8 @@ def calculadora():
         valores["temp_min"] = float(input("Temperatura mínima: "))
         valores["temp_prom"] = (valores["temp_max"] + valores["temp_min"]) / 2
         valores["precp"] = float(input("Precipitación: "))
-        valores["lluvia"] = float(input("Lluvia: "))
-        valores["nieve"] = float(input("Nieve: "))
+        valores["lluvia"] = valores["precp"]
+        valores["nieve"] = 0.0
         valores["precp_h"] = float(input("Precipitación (horas): "))
         valores["viento"] = float(input("Viento: "))
         return valores
@@ -95,7 +95,6 @@ def calculadora():
     valores = obtener_valores_caracteristicas()
 
     prediccion_5 = hacer_prediccion( rr, valores)
-
     print("La predicción es:", prediccion_5)
 
 calculadora()

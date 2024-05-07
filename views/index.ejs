@@ -246,21 +246,42 @@
               display("¡Por favor ingresa números válidos!")
 
       # Agregar función para sumar números cuando se hace clic en el botón
-      document["boton"].bind("click", lambda ev: sumar_numeros())
+      document["calcular"].bind("click", lambda ev: sumar_numeros()) #IMPORTANTE
   </script>
   <div>
       <!-- Input para ingresar el primer número -->
       <label  class="letra" for="numero1">Temperatura Maxima:</label>
       <input class="letra2" type="number" id="max" ">
   </div>
+
   <div>
       <!-- Input para ingresar el segundo número -->
       <label class="letra" for="numero2">Temperatura Minima:</label>
       <input class="letra2" type="number" id="min" ">
   </div>
+
+  <div>
+    <!-- Input para ingresar el segundo número -->
+    <label class="letra" for="numero2">Precipitación:</label>
+    <input class="letra2" type="number" id="pre" ">
+</div>
+
+<div>
+  <!-- Input para ingresar el segundo número -->
+  <label class="letra" for="numero2">Precipitación Horas:</label>
+  <input class="letra2" type="number" id="preH" ">
+</div>
+
+<div>
+  <!-- Input para ingresar el segundo número -->
+  <label class="letra" for="numero2">Viento:</label>
+  <input class="letra2" type="number" id="vien" ">
+</div>
+
+
   <div>
       <!-- Botón para sumar los números -->
-      <button class="btn btn-secondary dropdown-toggle" id="boton">Sumar</button>
+      <button class="btn btn-secondary dropdown-toggle" id="calcular">Calcular</button>
   </div>
   <div id="output" readonly class="letra"></div>
   </section>
