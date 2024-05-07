@@ -242,17 +242,9 @@
             <input class="letra2" type="number" id="minTemp" placeholder="">
           </div>
           <div class="input-group">
-            <label for="prec" class="letra">Precipitación:</label>
-            <input class="letra2" type="number" id="prec" placeholder="">
-          </div>
-          <div class="input-group">
             <label class="letra" for="lluv" class="letra">Lluvia:</label>
             <input class="letra2" type="number" id="lluv" placeholder="">
           </div>
-          <!-- <div class="input-group">
-            <label for="niev">Nieve:</label>
-            <input type="number" id="niev" placeholder="">
-          </div> -->
           <div class="input-group">
             <label for="precHoras" class="letra"">Precipitación (horas):</label>
             <input class="letra2" type="number" id="precHoras" placeholder="">
@@ -263,12 +255,15 @@
           </div>
         </div>
   
+        <div class="botones">
         <button class="btn btn-secondary dropdown-toggle" id="xd" onclick="calcular()">Calcular</button> <!-- Botón para calcular -->
-  
         <input type="text" id="resultado" readonly> <!-- Cuadro grande de solo lectura donde se mostrará el resultado -->
-        
+        <br>
+        <button class="btn btn-secondary dropdown-toggle" id="xd" onclick="limpiar()">Limpiar</button>
+        </div>
         <script src="/stylesheets/graficasManuelAra/prediccion.js"></script>
       </div>
+      
     </div>
   </section>
 
