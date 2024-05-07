@@ -1,13 +1,6 @@
-from datetime import datetime
-import matplotlib.pyplot as plt
-from meteostat import Point, Daily
-import openmeteo_requests
-import requests_cache
 import pandas as pd
-from retry_requests import retry
 from sklearn.linear_model import Ridge
-from sklearn.metrics import mean_absolute_error
-import seaborn as sns
+
 
 def calculadora():
     #daily_dataframe.to_csv('2010 - 2022 - APIH.csv', index=True) # Para guardar sin el índice del DataFrame
@@ -72,7 +65,6 @@ def calculadora():
     datos_prueba = pd.DataFrame([valores_caracteristicas])
 
     prediccion_2 = rr.predict(datos_prueba)
-
 
     def obtener_valores_caracteristicas():
         valores = {}
