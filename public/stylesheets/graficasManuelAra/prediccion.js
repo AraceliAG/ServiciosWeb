@@ -1,13 +1,10 @@
 function limpiar() {
     document.getElementById("maxTemp").value = "";
     document.getElementById("minTemp").value = "";
-    document.getElementById("prec").value = "";
     document.getElementById("lluv").value = "";
     document.getElementById("precHoras").value = "";
     document.getElementById("Aire").value = "";
-    document.getElementById("resultado").value = "";
 }
-
 
 function calcular() {
     // Obtener los valores ingresados por el usuario
@@ -22,5 +19,7 @@ function calcular() {
 
     // Asignar el resultado directamente al elemento resultado
     document.getElementById("resultado").value = maxTempSiguienteDia.toFixed(2) + " °C";
-}
 
+    // Limpiar los campos después de calcular
+    limpiar();
+}
