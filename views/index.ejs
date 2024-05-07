@@ -7,8 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
   </head>
-  <body>
+  <body onload="brython()">
     <header class="header"> <!-- CABECERA DE NUESTRA PAGINA -->
       <a href="#" class="logo">Tu Clima en Tonala</a> <!-- LOGO -->
       <nav class="navbar"> <!-- SECCIONES DE NUESTRA PAGINA -->
@@ -227,45 +230,41 @@
 
   <br>
   <section class="seccion3" id="seccion3">
-    <div class="titulo">
-      <h1>Calculadora de Predicciones</h1>
-    </div>
-    <div class="informacion">
-      <div class="prediccion">
-        <div class="input-column">
-          <div class="input-group">
-            <label for="maxTemp" class="letra">Temperatura máxima:</label>
-            <input class="letra2" type="number" id="maxTemp" placeholder="">
-          </div>
-          <div class="input-group">
-            <label for="minTemp" class="letra">Temperatura mínima:</label>
-            <input class="letra2" type="number" id="minTemp" placeholder="">
-          </div>
-          <div class="input-group">
-            <label class="letra" for="lluv" class="letra">Lluvia:</label>
-            <input class="letra2" type="number" id="lluv" placeholder="">
-          </div>
-          <div class="input-group">
-            <label for="precHoras" class="letra"">Precipitación (horas):</label>
-            <input class="letra2" type="number" id="precHoras" placeholder="">
-          </div>
-          <div class="input-group" >
-            <label for="Aire" class="letra">Viento:</label>
-            <input class="letra2" type="number" id="Aire" placeholder="">
-          </div>
-        </div>
-  
-        <div class="botones">
-        <button class="btn btn-secondary dropdown-toggle" id="xd" onclick="calcular()">Calcular</button> <!-- Botón para calcular -->
-        <input type="text" id="resultado" readonly> <!-- Cuadro grande de solo lectura donde se mostrará el resultado -->
-        <br>
-        <!-- <button class="btn btn-secondary dropdown-toggle" id="xd" onclick="limpiar()">Limpiar</button> -->
-        </div>
-      </div>
-      
-    </div>
-  </section>
+    <script type="text/python">
+      from browser import document
 
+      def display(text):
+          document["output"].text = text
+
+      def sumar_numeros():
+          try:
+              max = float(document["max"].value)
+              min = float(document["min"].value)
+              resultado = max + min
+              display(f"La suma es: {resultado}")
+          except ValueError:
+              display("¡Por favor ingresa números válidos!")
+
+      # Agregar función para sumar números cuando se hace clic en el botón
+      document["boton"].bind("click", lambda ev: sumar_numeros())
+  </script>
+  <div>
+      <!-- Input para ingresar el primer número -->
+      <label  class="letra" for="numero1">Temperatura Maxima:</label>
+      <input class="letra2" type="number" id="max" ">
+  </div>
+  <div>
+      <!-- Input para ingresar el segundo número -->
+      <label class="letra" for="numero2">Temperatura Minima:</label>
+      <input class="letra2" type="number" id="min" ">
+  </div>
+  <div>
+      <!-- Botón para sumar los números -->
+      <button class="btn btn-secondary dropdown-toggle" id="boton">Sumar</button>
+  </div>
+  <div id="output" readonly class="letra"></div>
+  </section>
+  
   <br>
   
 
@@ -389,7 +388,7 @@
     <script src="/stylesheets/graficasManuelAra/climaActual.js"></script>
     <script src="/stylesheets/graficasManuelAra/grafica.js"></script>
     <script src="/stylesheets/graficasManuelAra/graficaP.js"></script>
-    <script src="/stylesheets/graficasManuelAra/prediccion.js"></script>
+    <!-- <script src="/stylesheets/graficasManuelAra/prediccion.js"></script> -->
 
 
     <script>
