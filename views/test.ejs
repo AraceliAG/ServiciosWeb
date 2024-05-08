@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario con Suma Total</title>
 </head>
 <body>
-  <script src="/stylesheets/algoritmoArely/cliente.js"></script>
-      
+    <h1>Ingrese los datos para generar la predicción:</h1>
+    <form id="formulario">
+        <label for="temp_max">Temperatura Máxima:</label>
+        <input type="number" id="temp_max" name="temp_max" required><br><br>
+
+        <label for="temp_min">Temperatura Mínima:</label>
+        <input type="number" id="temp_min" name="temp_min" required><br><br>
+
+        <label for="precp">Precipitación:</label>
+        <input type="number" id="precp" name="precp" required><br><br>
+
+        <label for="precp_h">Precipitación (horas):</label>
+        <input type="number" id="precp_h" name="precp_h" required><br><br>
+
+        <label for="viento">Viento:</label>
+        <input type="number" id="viento" name="viento" required><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Suma Total:</h2>
+    <p id="suma_total"></p>
+
+    <script src="/stylesheets/algoritmoArely/cliente.js"></script>
+
 </body>
 </html>

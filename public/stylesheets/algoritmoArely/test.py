@@ -1,5 +1,6 @@
 import asyncio
 import websockets
+import json  # Agregar esta línea
 
 PORT = 6969
 clientes = set()
@@ -10,9 +11,20 @@ async def websocket_handler(websocket, path):
         while True:
             try:
                 message = await websocket.recv()
-                await asyncio.gather(*[cliente.send(message) for cliente in clientes])
                 if message == "exit":
                     break
+                else:
+                    # Convertir el mensaje JSON a un diccionario de Python
+                    datos = json.loads(message)
+                    
+                    # Realizar la suma de los valores recibidos
+                    suma_total = sum(datos.values())
+                    
+                    # Convertir el resultado de la suma a un mensaje JSON
+                    resultado_suma = json.dumps({"suma_total": suma_total})
+                    
+                    # Enviar el resultado de vuelta a todos los clientes conectados
+                    await asyncio.gather(*[cliente.send(resultado_suma) for cliente in clientes])
             except websockets.ConnectionClosed:
                 break
     finally:
