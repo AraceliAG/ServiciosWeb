@@ -1,84 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Predicción de temperatura máxima</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js"></script>
 </head>
 <body>
-    <section class="seccion2" id="seccion2">
-        <br>
-      
-        <div class="carrusel">
-          <div class="item">
-            <div class="graficas">
-              <div id="chartContainer" class="chartContainer">
-                <div id="titu">
-                  <h2>Historicos a lo largo de cinco años</h2>
-                </div>
-                <canvas id="myChart"></canvas>
-              </div>
-      
-              <!-- Botones de selección -->
-              <div id="seleccion" class="botonesE"> 
-                <br>
-                <button type="button" class="btn btn-info" onclick="mostrarGrafica('temperatura')">Temperatura</button> <br>
-                <button type="button" class="btn btn-info" onclick="mostrarGrafica('humedad')">Humedad</button> <br>
-                <button type="button" class="btn btn-info" onclick="mostrarGrafica('presion')">Presion</button> <br>
-                <!-- <button id="botonAvanzado1" type="button" class="btn btn-info">Avanzado</button> -->
-              </div>
-            </div>
-          </div>
-      
-              
-            </div>
-          </div>
-      
-      </div> 
-      
-  
-      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  
-      <!-- SCRIPTS GRAFICAS ETC -->
-      <script src="/stylesheets/graficasManuelAra/graficaA1.js"></script>
-  
-  
-      <script>
-        document.getElementById('btnGuardarCambios').addEventListener('click', function(event) {
-            event.preventDefault();
-            document.getElementById('btnguardar').submit();
-        });
-    </script>
-   
-  
-  <script>
-    function seleccionarAnio(anio) {
-      event.preventDefault();
-        var botonAnio = document.getElementById("dropdownMenuButtonAnio");
-        var inputAnio = document.getElementById("anioSeleccionado");
-        botonAnio.textContent = anio;
-        inputAnio.value = anio;
-    }
-  
-    function seleccionarMes(mes) {
-      event.preventDefault();
-        var botonMes = document.getElementById("dropdownMenuButtonMes");
-        var inputMes = document.getElementById("mesSeleccionado");
-        botonMes.textContent = mes;
-        inputMes.value = mes;
-    }
-  
-    function seleccionarSeccion(seccion) {
-      event.preventDefault();
-        var botonSeccion = document.getElementById("dropdownMenuSeccion");
-        var inputSeccion = document.getElementById("seccion");
-        botonSeccion.textContent = seccion;
-        inputSeccion.value = seccion;
-    }
-  </script>
-      
+    <h1>Predicción de temperatura máxima</h1>
+    <form id="formulario">
+        <label for="temp_max">Temperatura máxima:</label>
+        <input type="number" id="temp_max" name="temp_max" required><br><br>
+
+        <label for="temp_min">Temperatura mínima:</label>
+        <input type="number" id="temp_min" name="temp_min" required><br><br>
+
+        <label for="precp">Precipitación:</label>
+        <input type="number" id="precp" name="precp" required><br><br>
+
+        <label for="precp_h">Precipitación (horas):</label>
+        <input type="number" id="precp_h" name="precp_h" required><br><br>
+
+        <label for="viento">Velocidad del viento:</label>
+        <input type="number" id="viento" name="viento" required><br><br>
+
+        <button type="submit">Predecir temperatura máxima</button>
+    </form>
+
+    <div id="resultado">xd</div>
+
+    <!-- Aquí puedes incluir tus scripts de JavaScript -->
+
+    <script src="/stylesheets/algoritmoArely/calcu2.js"></script>
 </body>
 </html>

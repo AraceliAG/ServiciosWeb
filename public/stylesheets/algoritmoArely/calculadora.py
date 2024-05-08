@@ -1,5 +1,11 @@
 import pandas as pd
 from sklearn.linear_model import Ridge
+import json
+
+
+def guardar_datos_json(datos, nombre_archivo):
+    with open(nombre_archivo, 'w') as archivo:
+        json.dump(datos, archivo)
 
 def calculadora():
    
@@ -23,10 +29,11 @@ def calculadora():
     df_historica = df_historica.set_index('fecha')
     df_historica["target"] = df_historica.shift(-1)["temp_max"]
     df_historica = df_historica.ffill() # Solucionar el target de la ultima fecha
-
     rr = Ridge(alpha=.1)
     predictors = df_historica.columns[~df_historica.columns.isin(["target"])]
-    #print(predictors)
+    
+    #print(df_historica)
+    
     def backtest(df_historica, model, predictors, start=3654, step=90):
         all_predictions = []
 
@@ -40,6 +47,7 @@ def calculadora():
             combined.columns = ["actual", "prediction"]
             combined["diff"] = (combined["prediction"] - combined["actual"]).abs()
             all_predictions.append(combined)
+        
         return pd.concat(all_predictions)
     predictions = backtest(df_historica, rr, predictors)
     valores_caracteristicas = {'temp_max': 25.613500, 'temp_min': 16.613500, 'temp_prom': 21.290585, 'precp': 2.90000, 'lluvia':2.90000, 'nieve':0.0, 'precp_h':4.0, 'viento': 9.6598}
@@ -67,11 +75,13 @@ def calculadora():
     valores = obtener_valores_caracteristicas()
     prediccion_5 = hacer_prediccion( rr, valores)
     print("La predicción es:", prediccion_5)
+    
+    # Convertir fechas a strings antes de guardar en JSON
+    df_historica_dict = df_historica.reset_index().to_dict(orient='records')
+    for item in df_historica_dict:
+        item['fecha'] = item['fecha'].strftime('%Y-%m-%d')
+
+    # Guardar los datos históricos en un archivo JSON
+    #guardar_datos_json(df_historica_dict, 'datos_historicos.json')
 
 calculadora()
-
-        
-
-
-
-
