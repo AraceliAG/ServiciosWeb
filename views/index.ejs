@@ -230,74 +230,36 @@
 
   <br>
   <section class="seccion3" id="seccion3">
-    <script type="text/python">
-      from browser import document
-  
-      def display(text):
-          document["resultado"].value = text
-  
-      def sumar_numeros():
-          try:
-              max = float(document["max"].value)
-              min = float(document["min"].value)
-              resultado = max + min
-              display(f"La suma es: {resultado}")
-          except ValueError:
-              display("¡Por favor ingresa números válidos!")
-  
-      # Agregar función para sumar números cuando se hace clic en el botón
-      document["calcular"].bind("click", lambda ev: sumar_numeros()) #IMPORTANTE
-    </script>
+
+    <h1>Ingrese los datos para generar la predicción:</h1>
+    <form id="formulario">
+        <label for="temp_max">Temperatura Máxima:</label>
+        <input type="text" id="temp_max" name="temp_max" required><br><br>
+
+        <label for="temp_min">Temperatura Mínima:</label>
+        <input type="text" id="temp_min" name="temp_min" required><br><br>
+
+        <label for="precp">Precipitación:</label>
+        <input type="text" id="precp" name="precp" required><br><br>
+
+        <label for="precp_h">Precipitación (horas):</label>
+        <input type="text" id="precp_h" name="precp_h" required><br><br>
+
+        <label for="viento">Viento:</label>
+        <input type="text" id="viento" name="viento" required><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Tu Predicción es:</h2>  
+    <p id="suma_total"></p>
+
+    <script src="/stylesheets/algoritmoArely/cliente.js"></script>
     
-    <!-- Lista vertical de inputs -->
-    <div class="input-list">
-      <div class="input-item">
-        <label class="letra" for="max">Temperatura Maxima:</label>
-        <br>
-        <input class="letra2" type="number" id="max">
-      </div>
+    
   
-      <div class="input-item">
-        <label class="letra" for="min">Temperatura Minima:</label>
-        <br>
-        <input class="letra2" type="number" id="min">
-      </div>
-  
-      <div class="input-item">
-        <label class="letra" for="pre">Precipitación:</label>
-        <br>
-        <input class="letra2" type="number" id="pre">
-      </div>
-  
-      <div class="input-item">
-        <label class="letra" for="preH">Precipitación Horas:</label>
-        <br>
-        <input class="letra2" type="number" id="preH">
-      </div>
-  
-      <div class="input-item">
-        <label class="letra" for="vien">Viento:</label>
-        <br>
-        <input class="letra2" type="number" id="vien">
-      </div>
-    </div>
-  
-    <!-- Contenedor para el botón de calcular y el resultado -->
-    <div class="button-result-container">
-      <!-- Resultado -->
-      <div class="result-container">
-        <label class="letra" for="resultado">Resultado:</label>
-        <br>
-        <input id="resultado" class="letra2" type="text" readonly>
-      </div>
-      
-      <!-- Botón para calcular -->
-      <div class="button-container">
-        <button class="btn btn-secondary dropdown-toggle" id="calcular">Calcular</button>
-      </div>
-    </div>
   </section>
-s  
+
   
   
   
