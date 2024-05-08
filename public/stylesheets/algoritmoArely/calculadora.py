@@ -80,8 +80,17 @@ def calculadora():
     df_historica_dict = df_historica.reset_index().to_dict(orient='records')
     for item in df_historica_dict:
         item['fecha'] = item['fecha'].strftime('%Y-%m-%d')
-
+        item['temp_max'] = str(item['temp_max'])
+        item['temp_min'] = str(item['temp_min'])
+        item['temp_prom'] = str(item['temp_prom'])
+        item['precp'] = str(item['precp'])
+        item['lluvia'] = str(item['lluvia'])
+        item['nieve'] = str(item['nieve'])
+        item['precp_h'] = str(item['precp_h'])
+        item['viento'] = str(item['viento'])
+        item.pop('target', None) #ELIMINAR TARGET
+        
     # Guardar los datos históricos en un archivo JSON
-    #guardar_datos_json(df_historica_dict, 'datos_historicos.json')
+    #guardar_datos_json(df_historica_dict, 'historicos.json')
 
 calculadora()
