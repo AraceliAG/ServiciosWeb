@@ -23,7 +23,7 @@ async def websocket_handler(websocket, path):
                     prediccion = hacer_prediccion(rr, datos, df_historica, predictors)
                     
                     # Enviar la predicción de vuelta a todos los clientes conectados
-                    await asyncio.gather(*[cliente.send(json.dumps({"prediccion": prediccion})) for cliente in clientes])
+                    await asyncio.gather(*[cliente.send(json.dumps( prediccion)) for cliente in clientes])
             except websockets.ConnectionClosed:
                 break
     finally:
