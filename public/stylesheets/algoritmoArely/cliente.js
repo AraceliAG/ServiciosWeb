@@ -6,7 +6,7 @@ const websocket = new WebSocket("ws://localhost:6969");
             document.getElementById("suma_total").textContent = event.data;
             setTimeout(() => {
                 document.getElementById("suma_total").textContent = "";
-            }, 5000); // 5000 milisegundos = 5 segundos
+            }, 20000); // 5000 milisegundos = 5 segundos
         };
 
         websocket.onerror = function (event) {

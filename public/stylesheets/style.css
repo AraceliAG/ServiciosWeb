@@ -413,15 +413,16 @@ html {
 
 
 
-/* CALCULADORA */
 
+
+/* CALCULADORA */
 .letra {
   color: white;
   font-size: 26px;
   font-weight: bold;
 }
 
-#xd{
+#xd {
   background-color: rgb(218, 161, 27);
   height: 60px;
   width: 300px;
@@ -435,7 +436,7 @@ html {
   font-weight: bold;
 }
 
-.prediccion{
+.prediccion {
   height: 66vh; /* Altura del contenedor */
   display: flex;
   align-items: center;
@@ -448,23 +449,20 @@ html {
   padding: 25px;
 }
 
-
 .input-list {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
 .input-item {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.button-result-container {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
-  margin-top: 20px;
+.input-item label {
+  margin-bottom: 5px;
 }
 
 .button-container {
@@ -474,6 +472,18 @@ html {
 .result-title {
   text-align: center;
 }
+
+.centrado { /* Nueva clase CSS */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#suma_total { /* Aplicando centrado al texto del resultado */
+  text-align: center;
+  width: 300px; /* Ajustando el ancho del contenedor */
+}
+
 
 
 

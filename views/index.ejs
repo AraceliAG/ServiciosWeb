@@ -230,55 +230,50 @@
 
   <br>
   <section class="seccion3" id="seccion3">
-
-    <h3>Ingrese los datos para generar la predicción:</h3>
-    <form id="formulario" class="input-list">
-      <div class="input-item">
-        <div>
-          <label for="temp_max" class="letra">Temperatura Máxima:</label>
-          <input type="text" id="temp_max" name="temp_max" class="letra2" required>
-        </div>
+    <div class="informacion centrado"> <!-- Cambio aquí -->
+      <div class="input-list">
+        <h3>Ingrese los datos para generar la predicción:</h3>
+        <form id="formulario">
+          <div class="input-item">
+            <label for="temp_max" class="letra">Temperatura Máxima:</label>
+            <input type="text" id="temp_max" name="temp_max" class="letra2" required>
+          </div>
+  
+          <div class="input-item">
+            <label for="temp_min" class="letra">Temperatura Mínima:</label>
+            <input type="text" id="temp_min" name="temp_min" class="letra2" required>
+          </div>
+  
+          <div class="input-item">
+            <label for="precp" class="letra">Precipitación:</label>
+            <input type="text" id="precp" name="precp" class="letra2" required>
+          </div>
+  
+          <div class="input-item">
+            <label for="precp_h" class="letra">Precipitación (horas):</label>
+            <input type="text" id="precp_h" name="precp_h" class="letra2" required>
+          </div>
+  
+          <div class="input-item">
+            <label for="viento" class="letra">Viento:</label>
+            <input type="text" id="viento" name="viento" class="letra2" required>
+          </div>
+  
+          <div class="button-container">
+            <button type="submit" class="btn btn-info">Enviar</button>
+          </div>
+        </form>
       </div>
   
-      <div class="input-item">
-        <div>
-          <label for="temp_min" class="letra">Temperatura Mínima:</label>
-          <input type="text" id="temp_min" name="temp_min" class="letra2" required>
-        </div>
-      </div>
+      <h2 class="result-title">Tu Predicción es:</h2>
+      <p id="suma_total" class="letra"></p>
   
-      <div class="input-item">
-        <div>
-          <label for="precp" class="letra">Precipitación:</label>
-          <input type="text" id="precp" name="precp" class="letra2" required>
-        </div>
-      </div>
-  
-      <div class="input-item">
-        <div>
-          <label for="precp_h" class="letra">Precipitación (horas):</label>
-          <input type="text" id="precp_h" name="precp_h" class="letra2" required>
-        </div>
-      </div>
-  
-      <div class="input-item">
-        <div>
-          <label for="viento" class="letra">Viento:</label>
-          <input type="text" id="viento" name="viento" class="letra2" required>
-        </div>
-      </div>
-  
-      <div class="button-container">
-        <button type="submit" class="btn btn-info">Enviar</button>
-      </div>
-    </form>
-  
-    <h2 class="result-title">Tu Predicción es:</h2>
-    <p id="suma_total" class="letra"></p>
+    </div>
   
     <script src="/stylesheets/algoritmoArely/cliente.js"></script>
-  
   </section>
+  
+  
   
 
   
