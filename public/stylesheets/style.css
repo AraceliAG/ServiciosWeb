@@ -455,6 +455,7 @@ html {
   align-items: center;
 }
 
+
 .input-item {
   margin-bottom: 20px;
 }
@@ -470,8 +471,8 @@ html {
   text-align: right; /* Alinea el botón a la derecha */
 }
 
-.result-container {
-  text-align: left; /* Alinea el input de resultado a la izquierda */
+.result-title {
+  text-align: center;
 }
 
 
